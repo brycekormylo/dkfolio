@@ -6,13 +6,13 @@ import { useRouter } from "next/navigation";
 
 const NavbarItems = [
   {
-    name: "Home",
-    slug: "intro",
+    name: "About Us",
+    slug: "about",
     icon: LuHome,
   },
   {
-    name: "About",
-    slug: "about",
+    name: "Portfolio",
+    slug: "portfolio",
     icon: LuUser2,
   },
   {
@@ -21,12 +21,12 @@ const NavbarItems = [
     icon: LuSquareStack,
   },
   {
-    name: "Links",
-    slug: "links",
+    name: "Store",
+    slug: "store",
     icon: LuLink2,
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     slug: "contact",
     icon: LuLink2,
   },
@@ -77,7 +77,7 @@ export default function NavBar({
       );
 
       NavbarItems.forEach((item) => {
-        const target = document.querySelector(`#${item.slug}`);
+        const target = document.querySelector(`/${item.slug}`);
         if (target) {
           observer.observe(target);
         }
@@ -92,10 +92,12 @@ export default function NavBar({
   }, []);
 
   return (
-    <div className="fixed top-0 z-20 flex w-screen items-center justify-between px-5">
-      <div className="text-3xl">
-        <p>Kormylo Photography</p>
-      </div>
+    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between bg-timber px-10 [&_*]:transition-all [&_*]:ease-linear">
+      <button onClick={() => router.push(`/intro`)}>
+        <div className="text-3xl uppercase">
+          <p>Kormylo Photography</p>
+        </div>
+      </button>
       <div className="flex flex-row gap-2">
         {NavbarItems.map((item, index) => {
           return (
@@ -108,17 +110,18 @@ export default function NavBar({
               }`}
               onMouseLeave={() => handleTooltipVisibility(index, false)}
               onMouseEnter={() => handleTooltipVisibility(index, true)}
-              onClick={() => router.push(`#${item.slug}`)}
+              onClick={() => router.push(`/${item.slug}`)}
             >
-              <div className="flex flex-col p-2 text-lg md:text-2xl">
-                <p>{item.name}</p>
+              <div className="text-md md:text-md flex flex-col">
                 {tooltipVisibility[index] && (
                   <div className="h-[1px] w-full bg-smoke"></div>
                 )}
+                <p className="truncate uppercase">{item.name}</p>
               </div>
             </button>
           );
         })}
+        <p className="wave self-center">👋🏼</p>
       </div>
     </div>
   );

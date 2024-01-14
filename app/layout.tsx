@@ -1,14 +1,14 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import NavBar from './nav'
-import './globals.css'
+import type { Metadata } from "next";
+import { montserrat } from "@/public/fonts";
+import NavBar from "./nav";
+import { Providers } from "./providers";
+import "../public/styles/globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Danielle Kormylo // Film Photographer',
-  description: 'Portfolio website',
-}
+  title: "Danielle Kormylo // Film Photographer",
+  description: "Portfolio website",
+};
 
 export default function RootLayout({
   children,
@@ -18,12 +18,16 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div className={`${inter.className}`}>
-          <main className="flex min-h-screen overflow-x-hidden text-smoke bg-space-gray">
-            <NavBar path="intro" />
-            {children}
-          </main>
-        </div>
+        <Providers>
+          <div className={`${montserrat.className}`}>
+            <main className="flex min-h-screen overflow-x-hidden text-smoke">
+              <div className="flex flex-col">
+                <NavBar path="intro" />
+                {children}
+              </div>
+            </main>
+          </div>
+        </Providers>
       </body>
     </html>
   );

@@ -16,7 +16,10 @@ const config: Config = {
       },
       boxShadow: {
         'dark': '0px 0px 8px 0px rgba(0, 0, 0, 0.7)',
-      }
+        'inset': 'inset 0rem 0.2rem 0.4rem 0 rgba(0,0,0,0.1)',
+        'neo': '0.625rem 0.625rem 0.875rem 0 rgba(225,226,228,0.7), -0.5rem -0.5rem 1.125rem 0 rgba(255,255,255,0.6)',
+        'neo2': '0.625rem 0.625rem 0.875rem 0 rgb(225,226,228), -0.5rem -0.5rem 1.125rem 0 rgb(255,255,255)'
+      },
     },
     colors: {
       transparent: 'transparent',
@@ -30,15 +33,10 @@ const config: Config = {
         400: '#d3d0cb',
       },
       'oceanic': '#587b7f',
-      'myrtle': '#20A39E',
-      'giallo': {
-        default: '#FFBA49',
-        800: '#FFBA49'
-      },
       'black': '#000000',
       'ash': '#B7BFB0',
       'smoke': '#111505',
-      'timber': '#D9D9D7'
+      'timber': '#f2f3f9'
     }
   },
   plugins: [

@@ -1,9 +1,9 @@
+import Intro from "./intro/page";
+
 export default function Home() {
   return (
-    <main className="bg-timber w-screen">
-      <div>
-        <p></p>
-      </div>
+    <main className="w-screen bg-timber">
+      <Intro />
     </main>
-  )
+  );
 }
