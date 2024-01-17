@@ -4,6 +4,8 @@ import Banner from "./(components)/banner";
 import OpeningPhase from "./(components)/opener";
 import Circles from "./(components)/circles";
 import About from "./(components)/about";
+import PreviewImages from "./(components)/preview_images";
+import Socials from "./(components)/socials";
 
 const Intro = () => {
   return (
@@ -11,10 +13,15 @@ const Intro = () => {
       <div className="z-0">
         <Banner />
       </div>
-      <div className="relative z-20 flex h-auto w-screen flex-col gap-10 bg-timber">
+      <div className="relative z-20 flex h-auto flex-col gap-10 bg-timber pb-[100vh]">
         <OpeningPhase />
+        <div className="h-[1px] w-[40vw] self-end bg-ash" />
         <Circles />
+        <div className="h-[1px] w-[40vw] self-start bg-ash" />
         <About />
+        <div className="h-[1px] w-[40vw] self-end bg-ash" />
+        <PreviewImages />
+        <Socials />
       </div>
     </div>
   );

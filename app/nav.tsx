@@ -75,13 +75,6 @@ export default function NavBar({
         },
         { threshold: 0.9 }
       );
-
-      NavbarItems.forEach((item) => {
-        const target = document.querySelector(`/${item.slug}`);
-        if (target) {
-          observer.observe(target);
-        }
-      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -92,13 +85,13 @@ export default function NavBar({
   }, []);
 
   return (
-    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between bg-timber px-10 [&_*]:transition-all [&_*]:ease-linear">
+    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between bg-timber px-8 [&_*]:transition-all [&_*]:ease-linear">
       <button onClick={() => router.push(`/intro`)}>
-        <div className="text-3xl uppercase">
+        <div className="text-3xl uppercase hover:scale-[1.02] hover:shadow-neo px-4 py-2 rounded-xl">
           <p>Kormylo Photography</p>
         </div>
       </button>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row">
         {NavbarItems.map((item, index) => {
           return (
             <button
@@ -112,16 +105,19 @@ export default function NavBar({
               onMouseEnter={() => handleTooltipVisibility(index, true)}
               onClick={() => router.push(`/${item.slug}`)}
             >
-              <div className="text-md md:text-md flex flex-col">
-                {tooltipVisibility[index] && (
-                  <div className="h-[1px] w-full bg-smoke"></div>
+              <div className="text-md md:text-md flex flex-col rounded-xl px-4 py-2 hover:scale-[1.02] hover:shadow-neo">
+                {item.slug == "contact" ? (
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="truncate uppercase">{item.name}</p>
+                    <p className="wave self-center">👋🏼</p>
+                  </div>
+                ) : (
+                  <p className="truncate uppercase">{item.name}</p>
                 )}
-                <p className="truncate uppercase">{item.name}</p>
               </div>
             </button>
           );
         })}
-        <p className="wave self-center">👋🏼</p>
       </div>
     </div>
   );

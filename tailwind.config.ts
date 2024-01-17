@@ -25,6 +25,7 @@ const config: Config = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
+      'crimson': '#FF0000',
       'space-gray': '#262523',
       'cement': {
         default: '#d3d0cb',

@@ -4,7 +4,6 @@ import NavBar from "./nav";
 import { Providers } from "./providers";
 import "../public/styles/globals.css";
 
-
 export const metadata: Metadata = {
   title: "Danielle Kormylo // Film Photographer",
   description: "Portfolio website",
@@ -19,14 +18,12 @@ export default function RootLayout({
     <html>
       <body>
         <Providers>
-          <div className={`${montserrat.className}`}>
-            <main className="flex min-h-screen overflow-x-hidden text-smoke">
-              <div className="flex flex-col">
-                <NavBar path="intro" />
-                {children}
-              </div>
-            </main>
-          </div>
+          <main
+            className={`flex min-h-screen flex-col overflow-x-hidden text-smoke ${montserrat.className}`}
+          >
+            <NavBar path="intro" />
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

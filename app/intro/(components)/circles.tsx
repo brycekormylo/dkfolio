@@ -1,21 +1,25 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import millie_ic from "../../../public/images/millie_ic.jpg"
+import yosemite from "../../../public/images/yosemite.jpg"
+import cow from "../../../public/images/cow.jpg"
+
 
 const CircleItems = [
   {
     name: "Portfolio",
     slug: "portfolio",
-    img: "https://source.unsplash.com/random/300×300/?sexy",
+    img: cow,
   },
   {
     name: "Projects",
     slug: "projects",
-    img: "https://source.unsplash.com/random/300×300/?dog",
+    img: millie_ic,
   },
   {
     name: "Store",
     slug: "store",
-    img: "https://source.unsplash.com/random/300×300/?bdsm",
+    img: yosemite,
   },
 ];
 
@@ -35,7 +39,7 @@ const Circles = () => {
               src={item.img}
               alt="Circle Image"
               fill={true}
-              className="rounded-full"
+              className="rounded-full object-cover"
             />
           </div>
           <div className="flex h-10 w-40 justify-center rounded-full">

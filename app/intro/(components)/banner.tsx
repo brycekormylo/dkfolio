@@ -5,9 +5,15 @@ import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 const Banner = () => {
   return (
     <ParallaxBanner className="h-[24rem]">
-      <ParallaxBannerLayer speed={-20}> 
-        <div className="shadow-inner w-screen">
-            <Image priority src={chimney_lg} fill={true} objectFit="contain" alt="Banner Image" />
+      <ParallaxBannerLayer speed={-20}>
+        <div className="w-screen shadow-inner">
+          <Image
+            priority
+            src={chimney_lg}
+            fill={true}
+            objectFit="contain"
+            alt="Banner Image"
+          />
         </div>
       </ParallaxBannerLayer>
     </ParallaxBanner>
