@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { MdErrorOutline } from "react-icons/md";
 
 interface FormData {
   name: string;
@@ -60,10 +59,10 @@ function ContactForm() {
 
   return (
     <div className="flex flex-col px-10 gap-10">
-      <h2 className="text-2xl">Send us a message?</h2>
+      <h2 className="text-2xl">Let&apos;s chat!</h2>
       <form
         onSubmit={onSubmit}
-        className="flex flex-col items-start gap-4 [&_*]:transition-all [&_*]:ease-linear"
+        className="flex flex-col items-start gap-4"
       >
         <input
           type="text"
@@ -113,7 +112,7 @@ function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="rounded-xl bg-ash/25 px-4 py-2 text-xl hover:scale-[1.02] hover:shadow-neo"
+          className="rounded-xl bg-ash/25 px-4 py-2 text-xl neo"
         >
           {state.submitting ? "Submitting..." : "Submit"}
         </button>

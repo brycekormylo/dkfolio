@@ -17,13 +17,13 @@ const About = () => {
           <div className="translate h-[78vh] w-[78vh] -translate-y-[10rem] rounded-full bg-ash/25"></div>
         </Parallax>
       </div>
-      <div className="flex flex-row justify-between gap-8 p-10 [&_*]:transition-all [&_*]:ease-linear">
+      <div className="flex flex-row justify-between gap-8 p-10">
         <div className="flex max-w-[60%] flex-col justify-center gap-4 indent-6">
           <p>{AboutMeIntro}</p>
           <p>{AboutMeIntro}</p>
           <button
             onClick={() => router.push("about")}
-            className="max-w-[10rem] self-end rounded-2xl bg-ash/25 p-4 hover:scale-[1.02] hover:shadow-neo"
+            className="max-w-[10rem] self-end rounded-2xl bg-ash/25 px-4 py-2 neo"
           >
             <div className="flex items-center justify-evenly gap-2">
               <p>Read more</p>

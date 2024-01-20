@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import ModalImage from "@/app/(components)/modal_image";
 import chimney_cow from "../../../public/images/chimney_cow.jpg";
 import river from "../../../public/images/river.jpg";
 import cow from "../../../public/images/cow.jpg";
@@ -11,35 +13,28 @@ import devils_slide from "../../../public/images/devils_slide.jpg";
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
+import LandscapeRow from "../(components)/landscape_row";
+import PortraitRow from "../(components)/portrait_row";
 
 const Film = () => {
-  const images = [
-    chimney_cow,
+  const portraits = [
     river,
     cow,
     la_jolla_seals,
     squirrel,
     aspen,
     beach_cliff,
-    bee,
-    devils_slide,
     lifeguard_tower,
     millie_ic,
-    yosemite,
   ];
+  const landscapes = [devils_slide, chimney_cow, yosemite, bee];
 
   return (
-    <div className="grid grid-cols-2 gap-5 p-5">
-      {images.map((image, i) => (
-        <div key={i} className="relative h-[80vh] w-auto">
-          <Image
-            src={image}
-            fill={true}
-            className="object-contain"
-            alt="Portfolio Image"
-          />
-        </div>
-      ))}
+    <div className="flex min-h-[300vh] w-screen flex-col gap-3">
+      <PortraitRow images={[river, cow, aspen]} />
+      <LandscapeRow images={[devils_slide, chimney_cow]} />
+      <PortraitRow images={[la_jolla_seals, squirrel, beach_cliff]} />
+      <LandscapeRow images={[yosemite, bee]} />
     </div>
   );
 };

@@ -3,6 +3,9 @@
 import { LuHome, LuUser2, LuSquareStack, LuLink2 } from "react-icons/lu";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useTheme } from "next-themes";
+import {BsMoonStars} from "react-icons/bs"
 
 const NavbarItems = [
   {
@@ -12,7 +15,7 @@ const NavbarItems = [
   },
   {
     name: "Portfolio",
-    slug: "portfolio",
+    slug: "portfolio/film",
     icon: LuUser2,
   },
   {
@@ -84,10 +87,11 @@ export default function NavBar({
     };
   }, []);
 
+
   return (
-    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between bg-timber px-8 [&_*]:transition-all [&_*]:ease-linear">
+    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between bg-timber px-8">
       <button onClick={() => router.push(`/intro`)}>
-        <div className="text-3xl uppercase hover:scale-[1.02] hover:shadow-neo px-4 py-2 rounded-xl">
+        <div className="text-3xl uppercase neo px-4 py-2 rounded-xl">
           <p>Kormylo Photography</p>
         </div>
       </button>
@@ -96,20 +100,20 @@ export default function NavBar({
           return (
             <button
               key={index}
-              className={`relative flex h-full w-full items-center justify-center rounded-xl border-[1.4px] p-1 duration-300 ease-in-out md:border-2 md:p-2 ${
+              className={`${
                 activeSection === item.slug
                   ? "border-myrtle bg-space-gray"
-                  : "border-transparent "
+                  : "border-transparent"
               }`}
               onMouseLeave={() => handleTooltipVisibility(index, false)}
               onMouseEnter={() => handleTooltipVisibility(index, true)}
-              onClick={() => router.push(`/${item.slug}`)}
+              onClick={() => router.push(`/${item.slug}`, { scroll: false})}
             >
-              <div className="text-md md:text-md flex flex-col rounded-xl px-4 py-2 hover:scale-[1.02] hover:shadow-neo">
+              <div className="text-md rounded-xl px-4 py-2 neo">
                 {item.slug == "contact" ? (
                   <div className="flex items-center justify-between gap-2">
                     <p className="truncate uppercase">{item.name}</p>
-                    <p className="wave self-center">👋🏼</p>
+                    <p className="wave">👋🏼</p>
                   </div>
                 ) : (
                   <p className="truncate uppercase">{item.name}</p>

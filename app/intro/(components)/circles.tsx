@@ -27,12 +27,12 @@ const Circles = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col py-10 md:flex-row md:justify-evenly md:gap-4 [&_*]:transition-all [&_*]:ease-linear">
+    <div className="flex flex-col py-10 md:flex-row md:justify-evenly md:gap-4">
       {CircleItems.map((item, i) => (
         <button
           key={i}
           onClick={() => router.push(item.slug)}
-          className="flex flex-col items-center justify-between gap-6 rounded-2xl px-4 py-10 hover:scale-[1.02] hover:shadow-neo"
+          className="flex flex-col items-center justify-between gap-6 rounded-2xl px-4 py-10 neo"
         >
           <div className="relative flex h-[18rem] w-[18rem]">
             <Image

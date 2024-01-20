@@ -6,7 +6,9 @@ export default function About() {
   return (
     <div className="flex min-h-[200vh] w-screen flex-col gap-[10rem] pt-10">
       <Ellie />
+      <div className="divider self-end"/>
       <Bryce />
+      <div className="divider self-start"/>
       <Dogs />
     </div>
   );

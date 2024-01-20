@@ -15,11 +15,11 @@ const Intro = () => {
       </div>
       <div className="relative z-20 flex h-auto flex-col gap-10 bg-timber pb-[100vh]">
         <OpeningPhase />
-        <div className="h-[1px] w-[40vw] self-end bg-ash" />
+        <div className="divider self-end" />
         <Circles />
-        <div className="h-[1px] w-[40vw] self-start bg-ash" />
+        <div className="divider self-start" />
         <About />
-        <div className="h-[1px] w-[40vw] self-end bg-ash" />
+        <div className="divider self-end" />
         <PreviewImages />
         <Socials />
       </div>

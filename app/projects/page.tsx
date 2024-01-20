@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
-    <div>
-        <p>Projects</p>
+    <div className="flex flex-col items-center justify-start py-10">
+        <p className="text-xl">Projects</p>
     </div>
   );
 }
