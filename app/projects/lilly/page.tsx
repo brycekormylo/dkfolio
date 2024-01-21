@@ -15,6 +15,8 @@ import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
 import LandscapeRow from "../(components)/landscape_row";
 import PortraitRow from "../(components)/portrait_row";
+import CircleImage from "@/app/(components)/circle_image";
+import millie from "../../../public/images/millie_ic.jpg";
 
 const PuppyProjectIntro = [
   "Let's join paws and make a difference together! We channel our passion into supporting dog rescues and shelters across the SF Bay Area to expedite adoptions and create lasting connections between dogs and their compatible families. The Puppy Project, inspired by our very sweet and misunderstood senior dog Wolfe, reshaped our adoption perspectives. Wolfe's reactivity issues, stemming from 9 years of abuse, led us to professional training, benefiting us even today. The unexpected loss of Ollie at just 4 years old finally initiated our project, emphasizing the urgency of placing dogs, especially seniors, into the right homes swiftly. Committed to ensuring no time is lost for pups seeking forever homes, every moment with our companions is precious!",
@@ -37,23 +39,28 @@ const LillyLegacy = () => {
 
   return (
     <div className="flex flex-col gap-12">
-      <h1 className="px-20 pt-10 text-6xl uppercase self-end">
-        Puppy Project
-      </h1>
-      <div className="flex max-w-[69rem] flex-col items-start justify-start gap-4 px-2 indent-6 text-md md:px-12">
-        {PuppyProjectIntro.map((section, i) => (
-          <p key={i}>{section}</p>
-        ))}
+      <h1 className="self-end px-20 pt-10 text-6xl uppercase">Puppy Project</h1>
+      <div className="flex flex-row justify-between">
+        <div className="text-md flex max-w-[69rem] flex-col items-start justify-start gap-4 px-2 indent-6 md:px-12">
+          {PuppyProjectIntro.map((section, i) => (
+            <p key={i}>{section}</p>
+          ))}
+        </div>
+        <div className="flex h-[36rem] w-[36rem] flex-row justify-center">
+          <CircleImage src={millie} alignment="self-start" mini={true} />
+          <CircleImage src={millie} alignment="self-end" mini={true} />
+        </div>
       </div>
-      <div className="divider self-start" />
-      <div className="flex min-h-[300vh] w-screen flex-col gap-3">
-        <PortraitRow images={[river, cow, aspen]} />
-        <LandscapeRow images={[devils_slide, chimney_cow]} />
-        <PortraitRow images={[la_jolla_seals, squirrel, beach_cliff]} />
-        <LandscapeRow images={[yosemite, bee]} />
+      <div className="flex flex-col gap-12 -mt-20">
+        <div className="divider self-start" />
+        <div className="flex w-screen flex-col gap-3">
+          <PortraitRow images={[river, cow, aspen]} />
+          <LandscapeRow images={[devils_slide, chimney_cow]} />
+          <PortraitRow images={[la_jolla_seals, squirrel, beach_cliff]} />
+          <LandscapeRow images={[yosemite, bee]} />
+        </div>
+        <div className="divider my-10 self-end" />
       </div>
-      <div className="divider self-end my-10" />
-
     </div>
   );
 };
