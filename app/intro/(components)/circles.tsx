@@ -1,19 +1,18 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import millie_ic from "../../../public/images/millie_ic.jpg"
-import yosemite from "../../../public/images/yosemite.jpg"
-import cow from "../../../public/images/cow.jpg"
-
+import millie_ic from "../../../public/images/millie_ic.jpg";
+import yosemite from "../../../public/images/yosemite.jpg";
+import cow from "../../../public/images/cow.jpg";
 
 const CircleItems = [
   {
     name: "Portfolio",
-    slug: "portfolio",
+    slug: "portfolio/film",
     img: cow,
   },
   {
     name: "Projects",
-    slug: "projects",
+    slug: "projects/lilly",
     img: millie_ic,
   },
   {
@@ -32,7 +31,7 @@ const Circles = () => {
         <button
           key={i}
           onClick={() => router.push(item.slug)}
-          className="flex flex-col items-center justify-between gap-6 rounded-2xl px-4 py-10 neo"
+          className="neo flex flex-col items-center justify-between gap-6 rounded-2xl px-4 py-10"
         >
           <div className="relative flex h-[18rem] w-[18rem]">
             <Image
