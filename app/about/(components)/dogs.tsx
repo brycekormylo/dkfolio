@@ -13,7 +13,7 @@ const about_dogs = [
 
 const Dogs = () => {
   return (
-    <div className="flex h-screen items-center justify-evenly py-20">
+    <div className="flex h-screen items-center justify-evenly -mt-[10rem]">
       <div className="flex flex-col justify-between gap-10 md:max-w-[48rem]">
         <h1 className="self-end text-5xl uppercase">Hi, we&apos;re Charlie and Millie</h1>
         <div className="flex flex-col justify-evenly gap-4">
@@ -24,9 +24,9 @@ const Dogs = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-row justify-center w-[36rem] h-[36rem]">
-        <CircleImage src={millie} alignment="self-start" mini={true}/>
+      <div className="flex flex-row justify-center w-[36rem] h-[32rem]">
         <CircleImage src={millie} alignment="self-end" mini={true}/>
+        <CircleImage src={millie} alignment="self-start" mini={true}/>
       </div>
     </div>
   );
