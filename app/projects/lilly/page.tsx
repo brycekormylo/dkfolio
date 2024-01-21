@@ -36,7 +36,7 @@ const LillyLegacy = () => {
   const landscapes = [devils_slide, chimney_cow, yosemite, bee];
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-12">
       <h1 className="px-20 pt-10 text-6xl uppercase self-end">
         Puppy Project
       </h1>
@@ -52,6 +52,8 @@ const LillyLegacy = () => {
         <PortraitRow images={[la_jolla_seals, squirrel, beach_cliff]} />
         <LandscapeRow images={[yosemite, bee]} />
       </div>
+      <div className="divider self-end my-10" />
+
     </div>
   );
 };
