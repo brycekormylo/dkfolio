@@ -24,7 +24,7 @@ const Dogs = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-row justify-center w-[36rem] h-[32rem]">
+      <div className="flex flex-row justify-center w-[36rem] h-[36rem]">
         <CircleImage src={millie} alignment="self-end" mini={true}/>
         <CircleImage src={millie} alignment="self-start" mini={true}/>
       </div>
