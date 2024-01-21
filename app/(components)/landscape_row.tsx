@@ -7,12 +7,12 @@ type ImageProps = {
   images: StaticImageData[];
 };
 
-const PortraitRow: React.FC<ImageProps> = ({ images }) => {
+const LandscapeRow: React.FC<ImageProps> = ({ images }) => {
   return (
-    <div className="flex h-[44rem] w-screen justify-center px-10">
+    <div className="flex justify-center h-auto w-screen gap-4">
       {images.map((image, i) => {
         return (
-          <div key={i} className="relative aspect-[7/5] w-[50%]">
+          <div key={i} className="relative aspect-[7/5] w-[45.5vw]">
             <ModalImage src={image} />
           </div>
         );
@@ -21,4 +21,4 @@ const PortraitRow: React.FC<ImageProps> = ({ images }) => {
   );
 };
 
-export default PortraitRow;
+export default LandscapeRow;

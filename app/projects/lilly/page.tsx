@@ -13,8 +13,8 @@ import devils_slide from "../../../public/images/devils_slide.jpg";
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
-import LandscapeRow from "../(components)/landscape_row";
-import PortraitRow from "../(components)/portrait_row";
+import LandscapeRow from "../../(components)/landscape_row";
+import PortraitRow from "../../(components)/portrait_row";
 import CircleImage from "@/app/(components)/circle_image";
 import millie from "../../../public/images/millie_ic.jpg";
 

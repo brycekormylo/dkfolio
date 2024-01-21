@@ -9,10 +9,10 @@ type ImageProps = {
 
 const PortraitRow: React.FC<ImageProps> = ({ images }) => {
   return (
-    <div className="flex h-[44rem] w-screen justify-center px-10">
+    <div className="flex h-auto w-screen justify-center gap-4">
       {images.map((image, i) => {
         return (
-          <div key={i} className="relative aspect-[7/5] w-[50%]">
+          <div key={i} className="relative aspect-[5/7] w-[30vw]">
             <ModalImage src={image} />
           </div>
         );

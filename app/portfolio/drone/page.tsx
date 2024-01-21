@@ -13,8 +13,8 @@ import devils_slide from "../../../public/images/devils_slide.jpg";
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
-import LandscapeRow from "../(components)/landscape_row";
-import PortraitRow from "../(components)/portrait_row";
+import LandscapeRow from "../../(components)/landscape_row";
+import PortraitRow from "../../(components)/portrait_row";
 
 const Drone = () => {
   const portraits = [
@@ -35,6 +35,7 @@ const Drone = () => {
       <LandscapeRow images={[yosemite, bee]} />
       <PortraitRow images={[river, cow, aspen]} />
       <LandscapeRow images={[devils_slide, chimney_cow]} />
+      <div className="divider my-10 self-end" />
     </div>
   );
 };

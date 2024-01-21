@@ -15,13 +15,13 @@ const ModalImage: React.FC<ImageProps> = ({ src }) => {
   };
 
   return (
-    <div
+    <button
       onClick={toggleModal}
     >
       <Image
         src={src}
         fill={true}
-        className="object-contain"
+        className="object-fill"
         alt="Portfolio Image"
       />
       {isModalVisible && (
@@ -38,7 +38,7 @@ const ModalImage: React.FC<ImageProps> = ({ src }) => {
           />
         </div>
       )}
-    </div>
+    </button>
   );
 };
 

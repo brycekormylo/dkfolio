@@ -106,7 +106,7 @@ function ContactForm() {
               type="button"
               onClick={() => handleSubjectButtonClick(subject)}
               className={`w-auto rounded-xl px-4 py-2 ${
-                formData.subject === subject ? "bg-white dark:bg-black border-[1px] border-black/50 shadow-neo scale-[1.02]" : "neo bg-timber dark:bg-smoke"
+                formData.subject === subject ? "bg-white dark:bg-black border-[1px] border-black/50 shadow-neo dark:shadow-neodark scale-[1.02]" : "neo bg-timber dark:bg-smoke"
               }`}
             >
               {subject}
