@@ -3,11 +3,13 @@
 import { Parallax } from "react-scroll-parallax";
 import devils_slide from "../../public/images/devils_slide.jpg";
 import Image from "next/image";
+import ScrollUp from "../(components)/scroll_up";
 
 export default function Store() {
   return (
-    <div className="flex min-h-screen w-screen flex-col items-center justify-start py-[4rem] gap-20 overflow-hidden">
-      <h2 className="z-10 flex h-[25rem] w-[40rem] items-center justify-center rounded-xl px-4 py-2 text-xl shadow-neo bg-timber/75 dark:bg-smoke/75 dark:shadow-neodark">
+    <div className="flex min-h-screen w-screen flex-col items-center justify-start gap-20 overflow-hidden py-[4rem]">
+      <ScrollUp />
+      <h2 className="z-10 flex h-[25rem] w-[40rem] items-center justify-center rounded-xl bg-timber/75 px-4 py-2 text-xl shadow-neo dark:bg-smoke/75 dark:shadow-neodark">
         Store coming soon!
       </h2>
       <div className="flex flex-row justify-end">

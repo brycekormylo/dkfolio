@@ -5,10 +5,12 @@ import Links from "./(components)/links";
 import { Parallax } from "react-scroll-parallax";
 import la_jolla_seals from "../../public/images/la_jolla_seals.jpg";
 import Image from "next/image";
+import ScrollUp from "../(components)/scroll_up";
 
 export default function Contact() {
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-start overflow-hidden py-[4rem]">
+      <ScrollUp />
       <div className="z-10 flex flex-row justify-evenly">
         <ContactForm />
       </div>
