@@ -42,9 +42,10 @@ a {
 
 @layer components{
   .neo{
-    @apply [&_*]:transition-all [&_*]:ease-linear hover:scale-[1.02] hover:shadow-neo active:shadow-neo active:scale-[1.02]
+    @apply [&_*]:transition-all [&_*]:ease-linear hover:scale-[1.02] hover:shadow-neo active:shadow-neo active:scale-[1.02] dark:hover:shadow-neodark
   }
   .divider{
     @apply h-[1px] w-[40vw] bg-ash
   }
 }
+

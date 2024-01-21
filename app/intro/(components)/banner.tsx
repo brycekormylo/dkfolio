@@ -4,7 +4,7 @@ import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 
 const Banner = () => {
   return (
-    <ParallaxBanner className="h-[24rem]">
+    <ParallaxBanner className="h-[22.5rem]">
       <ParallaxBannerLayer speed={-20}>
         <div className="w-screen shadow-inner">
           <Image

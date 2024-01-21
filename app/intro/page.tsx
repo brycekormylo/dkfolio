@@ -13,7 +13,7 @@ const Intro = () => {
       <div className="z-0">
         <Banner />
       </div>
-      <div className="relative z-20 flex h-auto flex-col gap-10 bg-timber pb-[100vh]">
+      <div className="relative z-20 flex h-auto flex-col gap-10">
         <OpeningPhase />
         <div className="divider self-end" />
         <Circles />

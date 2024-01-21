@@ -27,7 +27,7 @@ const ModalImage: React.FC<ImageProps> = ({ src }) => {
       {isModalVisible && (
         <div
           onClick={toggleModal}
-          className="fixed top-0 left-0 z-50 w-full h-full bg-timber/90 backdrop-blur-lg"
+          className="fixed top-0 left-0 z-50 w-full h-full bg-timber/85 backdrop-blur-lg"
         >
           <Image
             src={src}

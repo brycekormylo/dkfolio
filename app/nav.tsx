@@ -4,8 +4,7 @@ import { LuHome, LuUser2, LuSquareStack, LuLink2 } from "react-icons/lu";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import {BsMoonStars} from "react-icons/bs"
+import ThemeButton from "./(components)/theme_button";
 
 const NavbarItems = [
   {
@@ -20,7 +19,7 @@ const NavbarItems = [
   },
   {
     name: "Projects",
-    slug: "projects",
+    slug: "projects/lilly",
     icon: LuSquareStack,
   },
   {
@@ -87,15 +86,17 @@ export default function NavBar({
     };
   }, []);
 
-
   return (
-    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between bg-timber px-8">
-      <button onClick={() => router.push(`/intro`)}>
-        <div className="text-3xl uppercase neo px-4 py-2 rounded-xl">
-          <p>Kormylo Photography</p>
-        </div>
-      </button>
-      <div className="flex flex-row">
+    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between px-8">
+      <div className="flex flex-row justify-start items-center">
+        <button onClick={() => router.push(`/intro`)}>
+          <div className="neo rounded-xl px-4 py-2 text-3xl uppercase">
+            <p>Kormylo Photography</p>
+          </div>
+        </button>
+        <ThemeButton />
+      </div>
+      <div className="flex flex-row items-center">
         {NavbarItems.map((item, index) => {
           return (
             <button
@@ -107,9 +108,9 @@ export default function NavBar({
               }`}
               onMouseLeave={() => handleTooltipVisibility(index, false)}
               onMouseEnter={() => handleTooltipVisibility(index, true)}
-              onClick={() => router.push(`/${item.slug}`, { scroll: false})}
+              onClick={() => router.push(`/${item.slug}`, { scroll: false })}
             >
-              <div className="text-md rounded-xl px-4 py-2 neo">
+              <div className="text-md neo rounded-xl px-4 py-2">
                 {item.slug == "contact" ? (
                   <div className="flex items-center justify-between gap-2">
                     <p className="truncate uppercase">{item.name}</p>
