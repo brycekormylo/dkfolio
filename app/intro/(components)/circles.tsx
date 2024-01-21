@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
@@ -28,9 +29,10 @@ const Circles = () => {
   return (
     <div className="flex flex-col py-10 md:flex-row md:justify-evenly md:gap-4">
       {CircleItems.map((item, i) => (
-        <button
+        <Link
           key={i}
-          onClick={() => router.push(item.slug)}
+          href={item.slug}
+          scroll={false}
           className="neo flex flex-col items-center justify-between gap-6 rounded-2xl px-4 py-10"
         >
           <div className="relative flex h-[18rem] w-[18rem]">
@@ -44,7 +46,7 @@ const Circles = () => {
           <div className="flex h-10 w-40 justify-center rounded-full">
             <h2 className="self-center text-2xl">{item.name}</h2>
           </div>
-        </button>
+        </Link>
       ))}
     </div>
   );
