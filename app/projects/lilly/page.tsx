@@ -53,7 +53,7 @@ const LillyLegacy = () => {
       </div>
       <div className="flex flex-col gap-12 -mt-20">
         <div className="divider self-start" />
-        <div className="flex w-screen flex-col gap-3">
+        <div className="flex w-screen flex-col gap-4">
           <PortraitRow images={[river, cow, aspen]} />
           <LandscapeRow images={[devils_slide, chimney_cow]} />
           <PortraitRow images={[la_jolla_seals, squirrel, beach_cliff]} />
