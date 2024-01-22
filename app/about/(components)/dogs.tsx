@@ -3,7 +3,9 @@
 import Image from "next/image";
 import CircleImage from "@/app/(components)/circle_image";
 import { Parallax } from "react-scroll-parallax";
-import millie from "../../../public/images/millie_ic.jpg";
+import millie from "../../../public/images/boat_millie.jpg";
+import charlie from "../../../public/images/roadtrip_charlie.jpg";
+
 
 const about_dogs = [
   "Charlie, our resident Ravenclaw, is an Australian shepherd who thrives on challenges, both physical and mental. She delights in road trips, beach frisbee, and tricks with top-notch snacks! A creative genius and super intelligent, Charlie's love for high-quality treats will forever be unmatched. This affectionate ball of joy can brighten anyone's day, making us proud pet parents. When Charlie isn't conquering the great outdoors, she kicks back by indulging in her favourite shows; Avatar, Moana, and Shrek! And of course, the experience isn't complete until she peacefully dozes off with a ball in her mouth.",
@@ -25,8 +27,8 @@ const Dogs = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center w-[36rem] h-[36rem] -mt-32">
-        <CircleImage src={millie} alignment="self-end" mini={true}/>
-        <CircleImage src={millie} alignment="self-start" mini={true}/>
+        <CircleImage src={millie} alignment="self-end -mx-20" mini={true}/>
+        <CircleImage src={charlie} alignment="self-start -mx-20" mini={true}/>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
-import ellie_overlook from "../../../public/images/ellie_overlook.jpg";
+import bee from "../../../public/images/bee.jpg";
 
 const contact_text =
   "Whether you're yearning to recreate memories, elevate your space with unique artwork, or to simply bask in the beauty of breathtaking scenes and majestic creatures, we're your golden ticket to transforming your dreams into a reality worthy of framing!";
@@ -16,7 +16,7 @@ const Socials = () => {
       <Parallax speed={-15}>
         <div className="relative h-[40rem] w-[40rem] -translate-x-20">
           <Image
-            src={ellie_overlook}
+            src={bee}
             alt="Circle Image"
             fill={true}
             className="rounded-full object-cover"

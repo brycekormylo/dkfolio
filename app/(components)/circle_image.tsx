@@ -45,14 +45,14 @@ const CircleImage: React.FC<ImageProps> = ({ src, alignment, mini = false }) => 
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${alignment} relative aspect-[3/5] rounded-md ${
+      className={`${alignment} relative ${mini ? "aspect-[1/1]": "aspect-[3/5]"} rounded-md ${
         isHovered ? "h-[40rem] w-[40rem]" : "h-[28rem] w-[28rem]"
       }`}
     >
       <Image
         src={src}
         fill={true}
-        className="object-contain rounded-md"
+        className={`object-contain rounded-md`}
         alt="Portfolio Image"
       />
     </div>

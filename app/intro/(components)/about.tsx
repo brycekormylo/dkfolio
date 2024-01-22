@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { LuGlasses } from "react-icons/lu";
-import ellie_overlook from "../../../public/images/ellie_overlook.jpg";
+import us_photo from "../../../public/images/bryce_and_danielle_christian.jpg";
 import { Parallax, useParallax } from "react-scroll-parallax";
 
 const AboutMeIntro = [
@@ -39,7 +39,7 @@ const About = () => {
         </div>
         <div className="relative h-[72vh] w-[80vh] translate-x-40">
           <Image
-            src={ellie_overlook}
+            src={us_photo}
             alt="Circle Image"
             fill={true}
             className="rounded-full object-cover"

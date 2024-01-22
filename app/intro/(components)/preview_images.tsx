@@ -7,39 +7,45 @@ import river from "../../../public/images/river.jpg";
 import la_jolla_seals from "../../../public/images/la_jolla_seals.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
 import devils_slide from "../../../public/images/devils_slide.jpg";
-import mussel_paraglider from "../../../public/images/mussel_paraglider.jpg";
+import paraglider from "../../../public/images/paraglider.jpg";
+import drone_shore from "../../../public/images/drone_shore.jpg";
+import chimney_cow from "../../../public/images/chimney_cow.jpg";
+import squirrel from "../../../public/images/squirrel.jpg";
 
 const PreviewImages = () => {
   return (
     <div className="min-h-[60rem]">
-      <div className="my-10 min-h-[30rem] w-screen flex flex-row items-center justify-center">
-        <CircleImage src={la_jolla_seals} alignment="justify-self-end self-end" />
+      <div className="my-10 flex min-h-[30rem] w-screen flex-row items-center justify-center">
+        <CircleImage
+          src={la_jolla_seals}
+          alignment="justify-self-end self-end"
+        />
         <div className="relative h-[12rem] w-[12rem] self-end justify-self-center rounded-full">
           <Image
-            src={yosemite}
+            src={river}
             fill={true}
             alt="Seals"
-            className="rounded-full object-cover"
+            className="object-cover rounded-full"
           />
         </div>
         <CircleImage src={beach_cliff} alignment="self-center" />
       </div>
-      <div className="my-10 min-h-[30rem] flex flex-row flex-wrap w-screen items-center justify-center">
-        <div className="relative h-[10rem] w-[10rem] rounded-full self-start">
+      <div className="my-10 flex min-h-[30rem] w-screen flex-row flex-wrap items-center justify-center">
+        <div className="relative h-[10rem] w-[10rem] self-start rounded-full">
           <Image
-            src={devils_slide}
+            src={chimney_cow}
             fill={true}
             alt="Seals"
-            className="rounded-full object-cover"
+            className="object-cover rounded-full"
           />
         </div>
-        <CircleImage src={river} alignment="self-start justify-self-center" />
-        <div className="relative h-[8rem] w-[8rem] rounded-full self-center justify-self-center">
+        <CircleImage src={lifeguard_tower} alignment="self-start justify-self-center" />
+        <div className="relative h-[8rem] w-[8rem] self-center justify-self-center rounded-full">
           <Image
-            src={mussel_paraglider}
+            src={squirrel}
             fill={true}
             alt="Seals"
-            className="rounded-full object-cover"
+            className="object-cover rounded-full"
           />
         </div>
       </div>

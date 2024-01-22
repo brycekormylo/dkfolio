@@ -1,25 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import millie_ic from "../../../public/images/millie_ic.jpg";
-import yosemite from "../../../public/images/yosemite.jpg";
-import cow from "../../../public/images/cow.jpg";
+import sca_foggy_sunset from "../../../public/images/sca_foggy_sunset.jpg";
+import drone_shore from "../../../public/images/drone_shore.jpg";
+import squirrel from "../../../public/images/squirrel.jpg";
 
 const SelectorItems = [
   {
     name: "Film",
     slug: "film",
-    img: cow,
+    img: squirrel,
   },
   {
     name: "Digital",
     slug: "digital",
-    img: millie_ic,
+    img: sca_foggy_sunset,
   },
   {
     name: "Drone",
     slug: "drone",
-    img: yosemite,
+    img: drone_shore,
   },
 ];
 

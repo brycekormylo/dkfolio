@@ -2,14 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import millie_ic from "../../../public/images/millie_ic.jpg";
-import yosemite from "../../../public/images/yosemite.jpg";
-import cow from "../../../public/images/cow.jpg";
 
 const SelectorItems = [
   {
     name: "Puppy Project",
     slug: "lilly",
-    img: cow,
+    img: millie_ic,
   }
 ];
 
