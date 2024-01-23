@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <main
-            className={`flex min-h-screen flex-col overflow-x-hidden text-smoke bg-timber dark:bg-smoke dark:text-timber ${montserrat.className}`}
+            className={`flex flex-col overflow-x-hidden text-smoke bg-timber dark:bg-smoke dark:text-timber ${montserrat.className}`}
           >
             <NavBar path="intro" />
             {children}

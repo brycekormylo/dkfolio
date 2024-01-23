@@ -47,7 +47,6 @@ export default function NavBar({
     false,
   ]);
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [scrollPosition, setScrollPosition] = useState<number>(0);
 
   const handleTooltipVisibility = (index: number, isVisible: boolean) => {
     setTooltipVisibility((prev) => {
@@ -57,49 +56,20 @@ export default function NavBar({
     });
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-      const observer = new IntersectionObserver(
-        (entries) => {
-          let maxVisibleRatio = 0;
-          let activeSectionId = null;
-
-          entries.forEach((entry) => {
-            const visibleRatio = Math.min(1, entry.intersectionRatio);
-
-            if (visibleRatio > maxVisibleRatio) {
-              maxVisibleRatio = visibleRatio;
-              activeSectionId = entry.target.id;
-            }
-          });
-          setActiveSection(activeSectionId);
-        },
-        { threshold: 0.9 }
-      );
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="top-0 z-20 flex h-24 w-screen items-center justify-between px-8">
-      <div className="flex flex-row justify-start items-center">
-        <button onClick={() => router.push(`/intro`)}>
+      <div className="flex flex-row items-center justify-start">
+        <Link href={`/intro`}>
           <div className="neo rounded-xl px-4 py-2 text-3xl uppercase">
             <p>Kormylo Photography</p>
           </div>
-        </button>
+        </Link>
         <ThemeButton />
       </div>
       <div className="flex flex-row items-center">
         {NavbarItems.map((item, index) => {
           return (
-            <button
+            <Link
               key={index}
               className={`${
                 activeSection === item.slug
@@ -108,7 +78,8 @@ export default function NavBar({
               }`}
               onMouseLeave={() => handleTooltipVisibility(index, false)}
               onMouseEnter={() => handleTooltipVisibility(index, true)}
-              onClick={() => router.push(`/${item.slug}`, { scroll: false })}
+              href={`/${item.slug}`}
+              scroll={false}
             >
               <div className="text-md neo rounded-xl px-4 py-2">
                 {item.slug == "contact" ? (
@@ -120,7 +91,7 @@ export default function NavBar({
                   <p className="truncate uppercase">{item.name}</p>
                 )}
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>
