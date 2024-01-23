@@ -20,7 +20,7 @@ const Drone = () => {
       </div>
       <div className="flex flex-row justify-start">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-x-40 translate-y-[30rem]">
+          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] md:translate-x-40 translate-y-[30rem]">
             <Image
               src={drone_shore}
               alt="Circle Image"

@@ -9,13 +9,13 @@ export default function Store() {
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-20 overflow-hidden py-[4rem]">
       <ScrollUp />
-      <div className="z-10 flex flex-col gap-4 h-[25rem] w-[40rem] items-center justify-center rounded-xl bg-timber/75 px-4 py-2 text-xl shadow-neo dark:bg-smoke/75 dark:shadow-neodark">
+      <div className="z-10 flex flex-col gap-4 h-[25rem] md:w-[40rem] items-center justify-center rounded-xl bg-timber/75 px-4 py-2 text-xl shadow-neo dark:bg-smoke/75 dark:shadow-neodark">
         <h2 className="text-lg">Store coming soon!</h2>
-        <p className="text-sm">We have big plans to expand our services in the future, so stay tuned.</p>
+        <p className="text-sm text-center">We have big plans to expand our services in the future, so stay tuned.</p>
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] -translate-x-40 translate-y-[22rem]">
+          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[22rem]">
             <Image
               src={devils_slide}
               alt="Circle Image"

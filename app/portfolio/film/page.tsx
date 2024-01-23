@@ -30,7 +30,7 @@ const Film = () => {
   const landscapes = [devils_slide, chimney_cow, yosemite, bee];
 
   return (
-    <div className="flex w-screen flex-col gap-4">
+    <div className="flex w-screen flex-col gap-1 md:gap-4">
       <PortraitRow images={[beach_cliff, aspen, cow]} />
       <LandscapeRow images={[bee, devils_slide]} />
       <PortraitRow images={[la_jolla_seals, river, squirrel]} />

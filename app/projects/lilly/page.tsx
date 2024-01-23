@@ -22,21 +22,25 @@ const PuppyProjectIntro = [
 const LillyLegacy = () => {
   return (
     <div className="flex flex-col gap-12">
-      <h1 className="self-end px-20 pt-10 text-6xl uppercase">Puppy Project</h1>
-      <div className="flex flex-row justify-between">
+      <h1 className="self-end px-2 pt-10 text-3xl uppercase md:px-20 md:text-6xl">
+        Puppy Project
+      </h1>
+      <div className="flex flex-col justify-start md:flex-row md:justify-between">
         <div className="text-md flex max-w-[69rem] flex-col items-start justify-start gap-4 px-2 indent-6 md:px-12">
           {PuppyProjectIntro.map((section, i) => (
-            <p key={i}>{section}</p>
+            <p key={i} className="text-xs md:text-base">
+              {section}
+            </p>
           ))}
         </div>
-        <div className="flex h-[36rem] w-[36rem] flex-row justify-center">
-          <CircleImage src={ollie} alignment="self-end -mx-20" mini={true} />
-          <CircleImage src={wolfe} alignment="self-start -mx-20" mini={true} />
+        <div className="flex flex-col md:flex-row justify-center md:h-[36rem] md:w-[36rem]">
+          <CircleImage src={ollie} alignment="self-end -mx-20 -my-20" mini={true} />
+          <CircleImage src={wolfe} alignment="self-start -mx-20 -my-20" mini={true} />
         </div>
       </div>
-      <div className="-mt-20 flex flex-col gap-12">
+      <div className="md:-mt-20 flex flex-col gap-12">
         <div className="divider self-start" />
-        <div className="flex w-screen flex-col gap-4">
+        <div className="flex w-screen flex-col gap-1 md:gap-4">
           <PortraitRow
             images={[sunrise_portrait, reign_sniffing, blackie_portrait]}
           />

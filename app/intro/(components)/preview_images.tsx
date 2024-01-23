@@ -15,7 +15,7 @@ import squirrel from "../../../public/images/squirrel.jpg";
 const PreviewImages = () => {
   return (
     <div className="min-h-[60rem]">
-      <div className="my-10 flex min-h-[30rem] w-screen flex-row items-center justify-center">
+      <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row items-center justify-center">
         <CircleImage
           src={la_jolla_seals}
           alignment="justify-self-end self-end"
@@ -30,7 +30,7 @@ const PreviewImages = () => {
         </div>
         <CircleImage src={beach_cliff} alignment="self-center" />
       </div>
-      <div className="my-10 flex min-h-[30rem] w-screen flex-row flex-wrap items-center justify-center">
+      <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row flex-wrap items-center justify-center">
         <div className="relative h-[10rem] w-[10rem] self-start rounded-full">
           <Image
             src={chimney_cow}
@@ -40,7 +40,7 @@ const PreviewImages = () => {
           />
         </div>
         <CircleImage src={lifeguard_tower} alignment="self-start justify-self-center" />
-        <div className="relative h-[8rem] w-[8rem] self-center justify-self-center rounded-full">
+        <div className="relative h-[8rem] w-[8rem] self-start md:self-center md:justify-self-center rounded-full">
           <Image
             src={squirrel}
             fill={true}

@@ -12,9 +12,9 @@ const contact_text =
 const Socials = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-row items-center justify-between gap-12 py-10">
-      <Parallax speed={-15}>
-        <div className="relative h-[40rem] w-[40rem] -translate-x-20">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-12 py-10">
+      <Parallax speed={-5}>
+        <div className="z-0 relative h-[10rem] w-[10rem] md:h-[40rem] md:w-[40rem] -translate-x-20">
           <Image
             src={bee}
             alt="Circle Image"
@@ -23,10 +23,10 @@ const Socials = () => {
           />
         </div>
       </Parallax>
-      <div className="flex h-[40rem] flex-col justify-end gap-20">
+      <div className="flex md:h-[40rem] flex-col justify-end gap-6 md:gap-20 z-10">
         <div className="divider self-end" />
-        <div className="me-[10rem] flex h-auto w-[40rem] flex-col justify-start rounded-2xl px-4 py-6 shadow-neo dark:shadow-neodark">
-          <p className="text-md p-4 indent-6">{contact_text}</p>
+        <div className="md:me-[10rem] flex h-auto w-screen md:w-[40rem] flex-col justify-start rounded-2xl px-4 py-6 bg-timber/75 shadow-neo dark:shadow-neodark">
+          <p className="text-xs md:text-base p-4 indent-6">{contact_text}</p>
           <button
             onClick={() => router.push("contact")}
             className="neo m-4 max-w-[10rem] self-center rounded-2xl bg-ash/25 px-4 py-2"
@@ -34,7 +34,7 @@ const Socials = () => {
             <p>Let&apos;s chat</p>
           </button>
         </div>
-        <div className="me-[10rem] flex max-w-[26.2rem] flex-row gap-4 self-end py-10">
+        <div className="md:me-[10rem] flex md:max-w-[26.2rem] flex-col items-center md:flex-row gap-4 md:self-end md:py-10">
           <Link
             href={"https://www.instagram.com/kormylophotography/"}
             rel="noopener noreferrer"

@@ -9,7 +9,7 @@ type ImageProps = {
 
 const PortraitRow: React.FC<ImageProps> = ({ images }) => {
   return (
-    <div className="flex h-auto w-screen justify-center gap-4">
+    <div className="flex h-auto w-screen justify-center gap-1 md:gap-4">
       {images.map((image, i) => {
         return (
           <div key={i} className="relative aspect-[5/7] w-[30vw]">

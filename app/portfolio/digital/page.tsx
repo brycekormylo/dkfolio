@@ -19,7 +19,7 @@ const Digital = () => {
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] -translate-x-40 translate-y-[30rem]">
+          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[30rem]">
             <Image
               src={sca}
               alt="Circle Image"

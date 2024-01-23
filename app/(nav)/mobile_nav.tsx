@@ -4,7 +4,7 @@ import { LuHome, LuUser2, LuSquareStack, LuLink2 } from "react-icons/lu";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import ThemeButton from "./(components)/theme_button";
+import ThemeButton from "../(components)/theme_button";
 
 const NavbarItems = [
   {
@@ -34,7 +34,7 @@ const NavbarItems = [
   },
 ];
 
-export default function NavBar({
+export default function MobileNavBar({
   path = "intro",
 }: {
   path: string | undefined;
@@ -57,16 +57,16 @@ export default function NavBar({
   };
 
   return (
-    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between px-8">
-      <div className="flex flex-row items-center justify-start">
+    <div className="top-0 z-20 flex flex-col h-auto w-screen items-center justify-between px-8">
+      <div className="flex flex-row items-center justify-between w-screen p-2">
         <Link href={`/intro`}>
-          <div className="neo rounded-xl px-4 py-2 text-3xl uppercase">
+          <div className="neo rounded-xl px-4 py-2 text-md uppercase">
             <p>Kormylo Photography</p>
           </div>
         </Link>
         <ThemeButton />
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row flex-wrap justify-center items-center">
         {NavbarItems.map((item, index) => {
           return (
             <Link
@@ -81,7 +81,7 @@ export default function NavBar({
               href={`/${item.slug}`}
               scroll={false}
             >
-              <div className="text-md neo rounded-xl px-4 py-2">
+              <div className="text-xs neo rounded-xl px-2 py-1">
                 {item.slug == "contact" ? (
                   <div className="flex items-center justify-between gap-2">
                     <p className="truncate uppercase">{item.name}</p>

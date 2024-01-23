@@ -15,13 +15,12 @@ export default function Contact() {
         <ContactForm />
       </div>
       <div className="divider self-start mt-12 mb-4" />
-
       <div className="self-start px-10">
         <Links />
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-x-40 translate-y-[16rem]">
+          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] md:translate-x-40 translate-y-[16rem]">
             <Image
               src={la_jolla_seals}
               alt="Circle Image"

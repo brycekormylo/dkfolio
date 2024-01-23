@@ -14,9 +14,9 @@ const about_bryce = [
 
 const Bryce = () => {
   return (
-    <div className="flex h-screen items-center justify-evenly py-20">
+    <div className="flex flex-col md:flex-row h-screen items-center justify-start md:justify-evenly py-20 px-2">
       <Parallax speed={-15}>
-        <div className="relative z-0 h-[36rem] w-[36rem]">
+        <div className="relative z-0 h-[12rem] w-[12rem] md:h-[36rem] md:w-[36rem]">
           <Image
             src={bryce}
             alt="Circle Image"
@@ -26,10 +26,10 @@ const Bryce = () => {
         </div>
       </Parallax>
       <div className="flex flex-col justify-between gap-10 md:max-w-[42vw]">
-        <h1 className="self-end text-5xl uppercase">Hi, I&apos;m Bryce</h1>
+        <h1 className="self-end text-2xl md:text-5xl uppercase">Hi, I&apos;m Bryce</h1>
         <div className="flex flex-col justify-evenly gap-4">
           {about_bryce.map((section, i) => (
-            <p key={i} className="indent-6 text-sm">
+            <p key={i} className="indent-6 text-xs md:text-sm">
               {section}
             </p>
           ))}

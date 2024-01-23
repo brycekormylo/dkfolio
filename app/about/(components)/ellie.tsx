@@ -15,19 +15,19 @@ const about_ellie = [
 
 const Ellie = () => {
   return (
-    <div className="flex h-screen items-center justify-evenly py-20">
+    <div className="flex flex-col px-2 md:flex-row h-screen items-center justify-start md:justify-evenly py-20">
       <div className="flex flex-col justify-between gap-10 md:max-w-[42vw]">
-        <h1 className="self-end text-5xl uppercase">Hiya, I&apos;m Danielle </h1>
+        <h1 className="self-end text-2xl md:text-5xl uppercase">Hiya, I&apos;m Danielle </h1>
         <div className="flex flex-col justify-evenly gap-4">
           {about_ellie.map((section, i) => (
-            <p key={i} className="indent-6 text-sm">
+            <p key={i} className="indent-6 text-xs md:text-sm">
               {section}
             </p>
           ))}
         </div>
       </div>
       <Parallax speed={-15}>
-        <div className="relative z-0 h-[36rem] w-[36rem]">
+        <div className="relative z-0 h-[12rem] w-[12rem] md:h-[36rem] md:w-[36rem]">
           <Image
             src={ellie_overlook}
             alt="Circle Image"

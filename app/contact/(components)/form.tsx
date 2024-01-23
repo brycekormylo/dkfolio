@@ -75,7 +75,7 @@ function ContactForm() {
     <div className="flex flex-col items-center gap-6 rounded-2xl bg-timber/50 dark:bg-smoke/75 p-16 shadow-neo dark:shadow-neodark md:min-w-[42rem]">
       <h2 className="text-2xl">Let&apos;s have a chat!</h2>
       <form onSubmit={onSubmit} className="flex flex-col items-center gap-6">
-        <div className="flex justify-between gap-4">
+        <div className="flex flex-col md:flex-row justify-between gap-4">
           <input
             type="text"
             id="name"
@@ -99,14 +99,14 @@ function ContactForm() {
             }`}
           />
         </div>
-        <div className="flex justify-between gap-4 [&_*]:transition-all [&_*]:ease-linear">
+        <div className="flex flex-wrap justify-between gap-4 [&_*]:transition-all [&_*]:ease-linear">
           {Subjects.map((subject) => (
             <button
               key={subject}
               type="button"
               onClick={() => handleSubjectButtonClick(subject)}
               className={`w-auto rounded-xl px-4 py-2 ${
-                formData.subject === subject ? "bg-white dark:bg-black border-[1px] border-black/50 shadow-neo dark:shadow-neodark scale-[1.02]" : "neo bg-timber dark:bg-smoke"
+                formData.subject === subject ? "text-xs md:text-base bg-white dark:bg-black border-[1px] border-black/50 shadow-neo dark:shadow-neodark scale-[1.02]" : "neo bg-timber dark:bg-smoke"
               }`}
             >
               {subject}
@@ -120,7 +120,7 @@ function ContactForm() {
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
-          className={`min-w-[48rem] min-h-[10rem] bg-white dark:bg-black rounded-xl px-4 py-2 ${
+          className={`md:min-w-[48rem] md:min-h-[10rem] bg-white dark:bg-black rounded-xl md:px-4 md:py-2 ${
             emptyFields.includes("message") ? "border-[1px] border-crimson" : ""
           }`}
         />

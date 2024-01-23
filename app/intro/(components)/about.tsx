@@ -17,14 +17,14 @@ const About = () => {
     <div className="flex flex-col">
       <div className="translate absolute -translate-x-[-16rem] self-end">
         <Parallax rotate={[-135, -45]}>
-          <div className="translate h-[78vh] w-[78vh] -translate-y-[10rem] rounded-full bg-ash/25"></div>
+          <div className="translate h-[36rem] w-[36rem] -translate-y-[10rem] rounded-full bg-ash/25"></div>
         </Parallax>
       </div>
-      <div className="flex flex-row justify-between gap-8 p-10">
-        <div className="flex max-w-[60%] flex-col justify-center">
-          <div className="flex flex-col gap-8 indent-6 shadow-neo dark:shadow-neodark px-8 py-12 rounded-xl">
+      <div className="flex flex-row justify-between gap-8 md:p-10 px-2">
+        <div className="flex md:max-w-[60%] flex-col justify-center">
+          <div className="flex flex-col gap-8 indent-6 shadow-neo bg-timber/75 dark:shadow-neodark px-2 md:px-8 py-6 md:py-12 rounded-xl">
             {AboutMeIntro.map((section, i) => (
-              <p key={i}>{section}</p>
+              <p key={i} className="text-xs md:text-base">{section}</p>
             ))}
             <button
               onClick={() => router.push("about")}
@@ -37,7 +37,7 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div className="relative h-[72vh] w-[80vh] translate-x-40">
+        <div className="hidden md:block relative h-[20rem] w-[20rem] md:h-[32rem] md:w-[32rem] md:translate-x-40">
           <Image
             src={us_photo}
             alt="Circle Image"
