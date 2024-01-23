@@ -17,7 +17,7 @@ const Dogs = () => {
   return (
     <div className="flex flex-col md:flex-row h-screen items-center justify-start md:justify-evenly mt-[10rem] md:-mt-[10rem] px-2">
       <div className="flex flex-col justify-between gap-10 md:max-w-[48rem]">
-        <h1 className="self-end text-5xl uppercase">Hi, we&apos;re Charlie and Millie</h1>
+        <h1 className="self-end text-2xl md:text-5xl uppercase">Hi, we&apos;re Charlie and Millie</h1>
         <div className="flex flex-col justify-evenly gap-4">
           {about_dogs.map((section, i) => (
             <p key={i} className="indent-6 text-xs md:text-sm">

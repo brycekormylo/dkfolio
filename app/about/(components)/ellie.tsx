@@ -15,9 +15,11 @@ const about_ellie = [
 
 const Ellie = () => {
   return (
-    <div className="flex flex-col px-2 md:flex-row h-screen items-center justify-start md:justify-evenly py-20">
-      <div className="flex flex-col justify-between gap-10 md:max-w-[42vw]">
-        <h1 className="self-end text-2xl md:text-5xl uppercase">Hiya, I&apos;m Danielle </h1>
+    <div className="flex h-screen flex-col items-center justify-start px-2 py-20 md:flex-row md:justify-evenly">
+      <div className="z-10 flex flex-col justify-between gap-10 bg-timber/75 dark:bg-smoke/75 md:max-w-[42vw]">
+        <h1 className="self-end text-2xl uppercase md:text-5xl">
+          Hiya, I&apos;m Danielle{" "}
+        </h1>
         <div className="flex flex-col justify-evenly gap-4">
           {about_ellie.map((section, i) => (
             <p key={i} className="indent-6 text-xs md:text-sm">
