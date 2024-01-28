@@ -11,7 +11,7 @@ const Title = () => {
     src: "camera.riv",
     artboard: "main",
     autoplay: true,
-    animations: "draw",
+    animations: theme === "dark" ? "drawdark" : "drawlight",
     layout: new Layout({
       fit: Fit.Contain,
       alignment: Alignment.Center,
