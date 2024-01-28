@@ -26,7 +26,7 @@ const CircleItems = [
 const Circles = () => {
 
   return (
-    <div className="flex flex-row py-4 md:py-10 justify-evenly gap-2 md:gap-4">
+    <div className="flex flex-row py-4 md:py-10 justify-evenly gap-2 md:gap-4 [&_*]:transition-all [&_*]:ease-linear">
       {CircleItems.map((item, i) => (
         <Link
           key={i}

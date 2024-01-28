@@ -21,7 +21,7 @@ const About = () => {
         </Parallax>
       </div>
       <div className="flex flex-row justify-between gap-8 md:p-10 px-2">
-        <div className="flex md:max-w-[60%] flex-col justify-center">
+        <div className="flex md:max-w-[60%] flex-col justify-center [&_*]:transition-all [&_*]:ease-linear">
           <div className="flex flex-col gap-8 indent-6 shadow-neo bg-timber/75 dark:bg-smoke/75 dark:shadow-neodark px-2 md:px-8 py-6 md:py-12 rounded-xl">
             {AboutMeIntro.map((section, i) => (
               <p key={i} className="text-xs md:text-base">{section}</p>

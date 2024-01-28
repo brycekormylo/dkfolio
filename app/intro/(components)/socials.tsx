@@ -22,7 +22,7 @@ const Socials = () => {
           />
         </div>
       </Parallax>
-      <div className="flex md:h-[40rem] flex-col justify-end gap-6 md:gap-20 z-10">
+      <div className="flex md:h-[40rem] flex-col justify-end gap-6 md:gap-20 z-10 [&_*]:transition-all [&_*]:ease-linear ">
         <div className="divider self-end" />
         <div className="md:me-[10rem] flex h-auto w-screen md:w-[40rem] flex-col justify-start rounded-2xl px-4 py-6 bg-timber/75 dark:bg-smoke/75 shadow-neo dark:shadow-neodark">
           <p className="text-xs md:text-base p-4 indent-6">{contact_text}</p>
