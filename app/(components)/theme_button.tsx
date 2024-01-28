@@ -58,7 +58,7 @@ const ThemeButton = () => {
       onMouseLeave={() => handleHover(false)}
       className="bg-gray-800 neo ml-2 flex h-10 w-10 items-center justify-center rounded-full md:h-12 md:w-12"
     >
-      <RiveComponent className="h-8 w-8" onClick={handleThemeToggle} />
+      <RiveComponent className="w-6 h-6 md:h-8 md:w-8" onClick={handleThemeToggle} />
     </div>
   );
 };

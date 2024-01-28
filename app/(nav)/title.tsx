@@ -25,7 +25,6 @@ const Title = () => {
 
   useEffect(() => {
     if (rive) {
-      ``;
       rive.play(theme === "dark" ? "dark" : "light");
     }
   }, [rive, theme]);
@@ -34,11 +33,11 @@ const Title = () => {
     <div
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
-      className="neo flex items-center justify-center rounded-xl px-4 py-2 "
+      className="neo flex flex-wrap items-center justify-start rounded-xl px-2 py-1 md:px-4 md:py-2 text-lg md:text-3xl uppercase"
     >
-      <p className="-me-0 text-3xl uppercase">Kormylo Phot</p>
-      <RiveComponent className="h-12 w-12" />
-      <p className="-ms-0 text-3xl uppercase">graphy</p>
+      <p className="-me-0">Kormylo Phot</p>
+      <RiveComponent className="h-8 w-8 md:h-12 md:w-12" />
+      <p className="-ms-0">graphy</p>
     </div>
   );
 };

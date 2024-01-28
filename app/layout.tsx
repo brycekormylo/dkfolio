@@ -8,6 +8,9 @@ import "../public/styles/globals.css";
 export const metadata: Metadata = {
   title: "Danielle Kormylo // Film Photographer",
   description: "Portfolio website",
+  // icons: {
+  //   icon: ""
+  // }
 };
 
 export default function RootLayout({

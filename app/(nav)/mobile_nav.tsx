@@ -1,10 +1,17 @@
 "use client";
 
-import { LuHome, LuUser2, LuSquareStack, LuLink2 } from "react-icons/lu";
+import {
+  LuHome,
+  LuUser2,
+  LuSquareStack,
+  LuLink2,
+  LuMenu,
+} from "react-icons/lu";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import ThemeButton from "../(components)/theme_button";
+import { motion } from "framer-motion";
+import Title from "./title";
 
 const NavbarItems = [
   {
@@ -39,7 +46,6 @@ export default function MobileNavBar({
 }: {
   path: string | undefined;
 }) {
-  const router = useRouter();
   const [tooltipVisibility, setTooltipVisibility] = useState([
     false,
     false,
@@ -47,6 +53,7 @@ export default function MobileNavBar({
     false,
   ]);
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [isVisible, setVisible] = useState<Boolean>(false);
 
   const handleTooltipVisibility = (index: number, isVisible: boolean) => {
     setTooltipVisibility((prev) => {
@@ -57,16 +64,29 @@ export default function MobileNavBar({
   };
 
   return (
-    <div className="top-0 z-20 flex flex-col h-auto w-screen items-center justify-between px-8">
-      <div className="flex flex-row items-center justify-between w-screen p-2">
+    <div className="top-0 flex h-auto w-screen flex-col items-center px-8">
+      <div className="z-20 flex w-screen flex-row flex-wrap items-center justify-center py-4 px-2">
         <Link href={`/intro`}>
-          <div className="neo rounded-xl px-4 py-2 text-md uppercase">
-            <p>Kormylo Photography</p>
-          </div>
+          <Title />
         </Link>
-        <ThemeButton />
+        <div className="flex flex-row w-screen justify-between items-center px-2">
+          <ThemeButton />
+          <button
+            onClick={() => {
+              isVisible ? setVisible(false) : setVisible(true);
+            }}
+            className="neo z-20 rounded-full flex justify-center items-center h-10 w-10 aspect-square"
+          >
+            <LuMenu className="h-5 w-5" />
+          </button>
+        </div>
       </div>
-      <div className="flex flex-row flex-wrap justify-center items-center">
+      <motion.div
+        initial={{ translateX: 200}}
+        animate={{translateX: isVisible ? 0 : 200}}
+        transition={{type: "spring", stiffness: 100, damping: 16}}
+        className={`absolute right-0 top-0 z-50 me-2 mt-[6rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 dark:bg-smoke shadow-neo dark:shadow-neodark`}
+      >
         {NavbarItems.map((item, index) => {
           return (
             <Link
@@ -78,10 +98,11 @@ export default function MobileNavBar({
               }`}
               onMouseLeave={() => handleTooltipVisibility(index, false)}
               onMouseEnter={() => handleTooltipVisibility(index, true)}
+              onClick={() => setVisible(false)}
               href={`/${item.slug}`}
               scroll={false}
             >
-              <div className="text-xs neo rounded-xl px-2 py-1">
+              <div className="neo rounded-xl px-3 py-2 text-sm">
                 {item.slug == "contact" ? (
                   <div className="flex items-center justify-between gap-2">
                     <p className="truncate uppercase">{item.name}</p>
@@ -94,7 +115,7 @@ export default function MobileNavBar({
             </Link>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }
