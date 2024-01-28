@@ -1,5 +1,4 @@
 import { LuInstagram } from "react-icons/lu";
-import { HiOutlineMail } from "react-icons/hi";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
