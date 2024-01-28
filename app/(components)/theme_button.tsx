@@ -8,7 +8,6 @@ import Rive, {
   Fit,
   Alignment,
 } from "@rive-app/react-canvas";
-import { LuSun, LuMoon } from "react-icons/lu";
 import { useTheme } from "next-themes";
 
 const delay = (ms: number | undefined) =>
@@ -65,20 +64,3 @@ const ThemeButton = () => {
 };
 
 export default ThemeButton;
-
-{
-  /* <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-<div className="bg-gray-800 neo ml-2 flex h-10 w-10 items-center justify-center rounded-full md:h-12 md:w-12">
-  {theme === "dark" ? (
-    <div className="flex">
-      <LuSun className="md:h-5 md:w-5" />
-    </div>
-  ) : (
-    <div className="flex">
-      <LuMoon className="md:h-5 md:w-5" />
-    </div>
-    
-  )}
-</div>
-</button> */
-}

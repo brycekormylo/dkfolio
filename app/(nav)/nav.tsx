@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import ThemeButton from "../(components)/theme_button";
+import Title from "./title";
 
 const NavbarItems = [
   {
@@ -60,12 +61,10 @@ export default function NavBar({
     <div className="top-0 z-20 flex h-24 w-screen items-center justify-between px-8">
       <div className="flex flex-row items-center justify-start">
         <Link href={`/intro`}>
-          <div className="neo rounded-xl px-4 py-2 text-3xl uppercase">
-            <p>Kormylo Photography</p>
-          </div>
+          <Title />
         </Link>
-        <ThemeButton />
       </div>
+      <ThemeButton />
       <div className="flex flex-row items-center">
         {NavbarItems.map((item, index) => {
           return (
