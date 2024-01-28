@@ -19,7 +19,6 @@ const ThemeButton = () => {
   const { rive, RiveComponent } = useRive({
     src: "themeicon.riv",
     artboard: "main",
-    // animations: theme === "dark" ? "sunset" : "sunrise",
     autoplay: false,
     layout: new Layout({
       fit: Fit.Cover,
