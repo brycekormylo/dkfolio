@@ -1,9 +1,8 @@
 "use client";
 
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 import { useTheme } from "next-themes";
-
 
 const Title = () => {
   const { theme, setTheme } = useTheme();
@@ -25,19 +24,20 @@ const Title = () => {
   };
 
   useEffect(() => {
-    if (rive) {``
+    if (rive) {
+      ``;
       rive.play(theme === "dark" ? "dark" : "light");
     }
   }, [rive, theme]);
-  
+
   return (
-    <div className="neo flex items-center justify-center rounded-xl px-4 py-2 ">
+    <div
+      onMouseEnter={() => handleHover(true)}
+      onMouseLeave={() => handleHover(false)}
+      className="neo flex items-center justify-center rounded-xl px-4 py-2 "
+    >
       <p className="-me-0 text-3xl uppercase">Kormylo Phot</p>
-      <RiveComponent
-        className="h-12 w-12"
-        onMouseEnter={() => handleHover(true)}
-        onMouseLeave={() => handleHover(false)}
-      />
+      <RiveComponent className="h-12 w-12" />
       <p className="-ms-0 text-3xl uppercase">graphy</p>
     </div>
   );
