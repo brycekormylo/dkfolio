@@ -58,7 +58,7 @@ export default function NavBar({
   };
 
   return (
-    <div className="top-0 z-20 flex h-24 w-screen items-center justify-between px-8">
+    <div className="[&_*]:transition-all [&_*]:ease-linear top-0 z-20 flex h-24 w-screen items-center justify-between px-8">
       <div className="flex flex-row items-center justify-start">
         <Link href={`/intro`}>
           <Title />
