@@ -1,6 +1,8 @@
 import Image from "next/image";
 import ModalImage from "@/app/(components)/modal_image";
 import CircleImage from "@/app/(components)/circle_image";
+import ParallaxCircleImage from "@/app/(components)/parallax_circle_image";
+
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import beach_cliff from "../../../public/images/beach_cliff.jpg";
 import river from "../../../public/images/river.jpg";
@@ -16,7 +18,7 @@ const PreviewImages = () => {
   return (
     <div className="min-h-[60rem]">
       <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row items-center justify-center">
-        <CircleImage
+        <ParallaxCircleImage
           src={la_jolla_seals}
           alignment="justify-self-end self-center md:self-end"
         />
@@ -28,7 +30,7 @@ const PreviewImages = () => {
             className="object-cover rounded-full"
           />
         </div>
-        <CircleImage src={beach_cliff} alignment="self-center" />
+        <ParallaxCircleImage src={beach_cliff} alignment="self-center" />
       </div>
       <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row flex-wrap items-center justify-center">
         <div className="relative h-[10rem] w-[10rem] self-start rounded-full">
@@ -39,7 +41,7 @@ const PreviewImages = () => {
             className="object-cover rounded-full"
           />
         </div>
-        <CircleImage src={lifeguard_tower} alignment="self-center md:self-start justify-self-center" />
+        <ParallaxCircleImage src={lifeguard_tower} alignment="self-center md:self-start justify-self-center" />
         <div className="relative h-[8rem] w-[8rem] self-start md:self-center md:justify-self-center rounded-full">
           <Image
             src={squirrel}

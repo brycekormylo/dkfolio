@@ -11,28 +11,27 @@ import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 const NavbarItems = [
   {
     name: "About Us",
-    slug: "about"
+    slug: "about",
   },
   {
     name: "Portfolio",
-    slug: "portfolio/film"
+    slug: "portfolio/film",
   },
   {
     name: "Projects",
-    slug: "projects/lilly"
+    slug: "projects/lilly",
   },
   {
     name: "Store",
-    slug: "store"
+    slug: "store",
   },
   {
     name: "Contact Us",
-    slug: "contact"
+    slug: "contact",
   },
 ];
 
 export default function MobileNavBar() {
-
   const [isExtended, setExtended] = useState<Boolean>(false);
   const [animation, setAnimation] = useState("");
   const { theme } = useTheme();
@@ -49,7 +48,7 @@ export default function MobileNavBar() {
 
   useEffect(() => {
     setAnimation(theme === "dark" ? "xmenudark" : "xmenu");
-   }, [theme]);
+  }, [theme]);
 
   useEffect(() => {
     if (rive) {
@@ -89,7 +88,9 @@ export default function MobileNavBar() {
         initial={{ height: 0 }}
         animate={{ height: isExtended ? 200 : 0, opacity: isExtended ? 1 : 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 16 }}
-        className={`${isExtended ? "block" : "hidden"} absolute right-0 top-0 z-50 me-2 mt-[7rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 shadow-neo dark:bg-smoke dark:shadow-neodark`}
+        className={`${
+          isExtended ? "block" : "hidden"
+        } absolute right-0 top-0 z-50 me-2 mt-[7rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 shadow-neo dark:bg-smoke dark:shadow-neodark`}
       >
         {NavbarItems.map((item, index) => {
           return (
@@ -100,14 +101,16 @@ export default function MobileNavBar() {
               scroll={false}
             >
               <div className="neo rounded-xl px-3 py-2 text-sm">
-                {item.slug == "contact" ? (
-                  <div className="flex items-center justify-between gap-2">
-                    <p className="truncate uppercase">{item.name}</p>
-                    <p className="wave">👋🏼</p>
-                  </div>
-                ) : (
+                <div className="flex gap-2">
                   <p className="truncate uppercase">{item.name}</p>
-                )}
+                  <p
+                    className={`wave ${
+                      item.slug === "contact" ? "block" : "hidden"
+                    }`}
+                  >
+                    👋🏼
+                  </p>
+                </div>
               </div>
             </Link>
           );
