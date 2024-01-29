@@ -1,5 +1,6 @@
 "use client";
 
+import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 import { LuHome, LuUser2, LuSquareStack, LuLink2 } from "react-icons/lu";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";

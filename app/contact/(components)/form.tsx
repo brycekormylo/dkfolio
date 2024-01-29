@@ -72,9 +72,9 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-6 rounded-2xl bg-timber/50 dark:bg-smoke/75 p-16 shadow-neo dark:shadow-neodark md:min-w-[42rem]">
-      <h2 className="text-2xl">Let&apos;s have a chat!</h2>
-      <form onSubmit={onSubmit} className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-4 md:gap-6 rounded-2xl bg-timber/50 dark:bg-smoke/75 py-8 shadow-neo dark:shadow-neodark md:min-w-[42rem]">
+      <h2 className="text-xl md:text-2xl">Let&apos;s have a chat!</h2>
+      <form onSubmit={onSubmit} className="flex flex-col items-center gap-2 md:gap-6 text-sm md:text-base px-2 md:px-4">
         <div className="flex flex-col md:flex-row justify-between gap-4">
           <input
             type="text"
@@ -83,7 +83,7 @@ function ContactForm() {
             placeholder="Name or Company"
             value={formData.name}
             onChange={handleChange}
-            className={`w-[20rem] bg-white dark:bg-black rounded-xl px-4 py-2 ${
+            className={`w-full md:w-[20rem] bg-white dark:bg-black rounded-xl px-4 py-2 ${
               emptyFields.includes("name") ? "border-[1px] border-crimson" : ""
             }`}
           />
@@ -94,19 +94,19 @@ function ContactForm() {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className={`w-[20rem] bg-white dark:bg-black rounded-xl px-4 py-2 ${
+            className={`w-full md:w-[20rem] bg-white dark:bg-black rounded-xl px-4 py-2 ${
               emptyFields.includes("email") ? "border-[1px] border-crimson" : ""
             }`}
           />
         </div>
-        <div className="flex flex-wrap justify-between gap-4 [&_*]:transition-all [&_*]:ease-linear">
+        <div className="flex flex-wrap justify-center px-2 gap-1 [&_*]:transition-all [&_*]:ease-linear">
           {Subjects.map((subject) => (
             <button
               key={subject}
               type="button"
               onClick={() => handleSubjectButtonClick(subject)}
-              className={`w-auto rounded-xl px-4 py-2 ${
-                formData.subject === subject ? "text-xs md:text-base bg-white dark:bg-black border-[1px] border-black/50 shadow-neo dark:shadow-neodark scale-[1.02]" : "neo bg-timber dark:bg-smoke"
+              className={`w-auto rounded-xl px-3 py-2 md:px-4 md:py-2 text-xs md:text-base ${
+                formData.subject === subject ? " bg-white dark:bg-black shadow-neo dark:shadow-neodark scale-[1.02]" : "neo bg-timber dark:bg-smoke"
               }`}
             >
               {subject}
@@ -120,7 +120,7 @@ function ContactForm() {
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
-          className={`md:min-w-[48rem] md:min-h-[10rem] bg-white dark:bg-black rounded-xl md:px-4 md:py-2 ${
+          className={`w-full md:min-w-[48rem] min-h-[10rem] bg-white dark:bg-black rounded-xl md:px-4 md:py-2 ${
             emptyFields.includes("message") ? "border-[1px] border-crimson" : ""
           }`}
         />
@@ -132,7 +132,7 @@ function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="neo rounded-xl bg-white dark:bg-black border-[1px] border-black/50 px-4 py-2 text-xl"
+          className="neo rounded-xl bg-white dark:bg-black border-[1px] border-black/50 px-4 py-2 text-base md:text-xl"
         >
           {state.submitting ? "Submitting..." : "Submit 🥂"}
         </button>

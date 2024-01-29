@@ -30,7 +30,6 @@ const ThemeButton = () => {
       rive.play(theme === "dark" ? "sunset" : "sunrise");
     }
   }, [rive, theme]);
-  
 
   const handleHover = (entered: Boolean) => {
     if (rive) {
@@ -56,9 +55,10 @@ const ThemeButton = () => {
     <div
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
+      onClick={handleThemeToggle}
       className="bg-gray-800 neo ml-2 flex h-10 w-10 items-center justify-center rounded-full md:h-12 md:w-12"
     >
-      <RiveComponent className="w-6 h-6 md:h-8 md:w-8" onClick={handleThemeToggle} />
+      <RiveComponent className="h-6 w-6 md:h-8 md:w-8" />
     </div>
   );
 };

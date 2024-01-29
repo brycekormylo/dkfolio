@@ -18,7 +18,7 @@ const PreviewImages = () => {
       <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row items-center justify-center">
         <CircleImage
           src={la_jolla_seals}
-          alignment="justify-self-end self-end"
+          alignment="justify-self-end self-center md:self-end"
         />
         <div className="relative h-[12rem] w-[12rem] self-end justify-self-center rounded-full">
           <Image
@@ -39,7 +39,7 @@ const PreviewImages = () => {
             className="object-cover rounded-full"
           />
         </div>
-        <CircleImage src={lifeguard_tower} alignment="self-start justify-self-center" />
+        <CircleImage src={lifeguard_tower} alignment="self-center md:self-start justify-self-center" />
         <div className="relative h-[8rem] w-[8rem] self-start md:self-center md:justify-self-center rounded-full">
           <Image
             src={squirrel}

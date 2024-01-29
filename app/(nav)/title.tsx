@@ -5,7 +5,7 @@ import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 import { useTheme } from "next-themes";
 
 const Title = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const { rive, RiveComponent } = useRive({
     src: "camera.riv",
     artboard: "main",

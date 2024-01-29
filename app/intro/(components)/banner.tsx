@@ -1,6 +1,6 @@
 import Image from "next/image";
 import chimney_lg from "../../../public/chimney/chimney_lg.jpg";
-import chimney_sm from "../../../public/chimney/chimney_sm.jpg";
+import chimney_lg_cropped from "../../../public/chimney/chimney_lg_cropped.jpg";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 
 const Banner = () => {
@@ -19,7 +19,7 @@ const Banner = () => {
         <div className="block md:hidden w-screen shadow-inner">
           <Image
             priority
-            src={chimney_sm}
+            src={chimney_lg_cropped}
             fill={true}
             className="object-contain"
             alt="Banner Image"

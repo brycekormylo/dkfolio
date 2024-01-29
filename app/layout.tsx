@@ -29,7 +29,7 @@ export default function RootLayout({
               <NavBar path="intro" />
             </div>
             <div className="block md:hidden">
-              <MobileNavBar path="intro" />
+              <MobileNavBar />
             </div>
             {children}
           </main>

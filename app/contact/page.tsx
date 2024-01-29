@@ -15,7 +15,7 @@ export default function Contact() {
         <ContactForm />
       </div>
       <div className="divider self-start mt-12 mb-4" />
-      <div className="self-start px-10">
+      <div className="self-start px-10 z-10">
         <Links />
       </div>
       <div className="flex flex-row justify-end">

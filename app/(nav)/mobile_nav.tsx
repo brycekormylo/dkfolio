@@ -1,104 +1,101 @@
 "use client";
 
-import {
-  LuHome,
-  LuUser2,
-  LuSquareStack,
-  LuLink2,
-  LuMenu,
-} from "react-icons/lu";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import ThemeButton from "../(components)/theme_button";
 import { motion } from "framer-motion";
 import Title from "./title";
+import { useTheme } from "next-themes";
+import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 
 const NavbarItems = [
   {
     name: "About Us",
-    slug: "about",
-    icon: LuHome,
+    slug: "about"
   },
   {
     name: "Portfolio",
-    slug: "portfolio/film",
-    icon: LuUser2,
+    slug: "portfolio/film"
   },
   {
     name: "Projects",
-    slug: "projects/lilly",
-    icon: LuSquareStack,
+    slug: "projects/lilly"
   },
   {
     name: "Store",
-    slug: "store",
-    icon: LuLink2,
+    slug: "store"
   },
   {
     name: "Contact Us",
-    slug: "contact",
-    icon: LuLink2,
+    slug: "contact"
   },
 ];
 
-export default function MobileNavBar({
-  path = "intro",
-}: {
-  path: string | undefined;
-}) {
-  const [tooltipVisibility, setTooltipVisibility] = useState([
-    false,
-    false,
-    false,
-    false,
-  ]);
-  const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [isVisible, setVisible] = useState<Boolean>(false);
+export default function MobileNavBar() {
 
-  const handleTooltipVisibility = (index: number, isVisible: boolean) => {
-    setTooltipVisibility((prev) => {
-      const temp = [...prev];
-      temp[index] = isVisible;
-      return temp;
-    });
+  const [isExtended, setExtended] = useState<Boolean>(false);
+  const [animation, setAnimation] = useState("");
+  const { theme } = useTheme();
+  const { rive, RiveComponent } = useRive({
+    src: "menuicon.riv",
+    artboard: "main",
+    autoplay: true,
+    animations: animation,
+    layout: new Layout({
+      fit: Fit.Contain,
+      alignment: Alignment.Center,
+    }),
+  });
+
+  useEffect(() => {
+    setAnimation(theme === "dark" ? "xmenudark" : "xmenu");
+   }, [theme]);
+
+  useEffect(() => {
+    if (rive) {
+      rive.play(
+        isExtended
+          ? theme === "dark"
+            ? "menuxdark"
+            : "menux"
+          : theme === "dark"
+          ? "xmenudark"
+          : "xmenu"
+      );
+    }
+  }, [rive, theme, isExtended]);
+
+  const handleClick = () => {
+    setExtended(!isExtended);
   };
 
   return (
-    <div className="top-0 flex h-auto w-screen flex-col items-center px-8">
-      <div className="z-20 flex w-screen flex-row flex-wrap items-center justify-center py-4 px-2">
+    <div className="flex h-auto w-screen flex-col items-center overflow-hidden px-8">
+      <div className="z-20 flex flex-col items-center justify-start px-2 py-4">
         <Link href={`/intro`}>
           <Title />
         </Link>
-        <div className="flex flex-row w-screen justify-between items-center px-2">
+        <div className="flex w-screen flex-row items-start justify-between px-2">
           <ThemeButton />
-          <button
-            onClick={() => {
-              isVisible ? setVisible(false) : setVisible(true);
-            }}
-            className="neo z-20 rounded-full flex justify-center items-center h-10 w-10 aspect-square"
+          <div
+            onClick={handleClick}
+            className="neo z-20 flex aspect-square min-h-10 min-w-10 items-center justify-center rounded-full"
           >
-            <LuMenu className="h-5 w-5" />
-          </button>
+            <RiveComponent className="h-6 w-6 md:h-8 md:w-8" />
+          </div>
         </div>
       </div>
       <motion.div
-        initial={{ translateX: 200}}
-        animate={{translateX: isVisible ? 0 : 200}}
-        transition={{type: "spring", stiffness: 100, damping: 16}}
-        className={`absolute right-0 top-0 z-50 me-2 mt-[6rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 dark:bg-smoke shadow-neo dark:shadow-neodark`}
+        initial={{ height: 0 }}
+        animate={{ height: isExtended ? 200 : 0, opacity: isExtended ? 1 : 0 }}
+        transition={{ type: "spring", stiffness: 100, damping: 16 }}
+        className={`${isExtended ? "block" : "hidden"} absolute right-0 top-0 z-50 me-2 mt-[7rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 shadow-neo dark:bg-smoke dark:shadow-neodark`}
       >
         {NavbarItems.map((item, index) => {
           return (
             <Link
               key={index}
-              className={`${
-                activeSection === item.slug
-                  ? "border-myrtle bg-space-gray"
-                  : "border-transparent"
-              }`}
-              onMouseLeave={() => handleTooltipVisibility(index, false)}
-              onMouseEnter={() => handleTooltipVisibility(index, true)}
-              onClick={() => setVisible(false)}
+              onClick={() => setExtended(false)}
               href={`/${item.slug}`}
               scroll={false}
             >
