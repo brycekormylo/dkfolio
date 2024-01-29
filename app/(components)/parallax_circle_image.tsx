@@ -36,7 +36,7 @@ const ParallaxCircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
             transition: "all 0.3s",
           }}
           className={`${alignment} relative aspect-[3/5] ${
-            isHovered ? "h-[36rem]" : "h-[28rem]"
+            isHovered ? "h-[40rem]" : "h-[28rem]"
           }`}
         >
           <Image
