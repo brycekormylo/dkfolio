@@ -34,8 +34,8 @@ const LillyLegacy = () => {
           ))}
         </div>
         <div className="flex flex-col md:flex-row justify-center md:h-[36rem] md:w-[36rem]">
-          <CircleImage src={ollie} alignment="self-end -mx-20 -my-20" mini={true} />
-          <CircleImage src={wolfe} alignment="self-start -mx-20 -my-20" mini={true} />
+          <CircleImage src={ollie} alignment="self-end -mx-20 -my-20" />
+          <CircleImage src={wolfe} alignment="self-start -mx-20 -my-20" />
         </div>
       </div>
       <div className="md:-mt-20 flex flex-col gap-12">
