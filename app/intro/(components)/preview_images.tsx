@@ -1,13 +1,11 @@
-import Image from "next/image";
-import ModalImage from "@/app/(components)/modal_image";
-import CircleImage from "@/app/(components)/circle_image";
 import ParallaxCircleImage from "@/app/(components)/parallax_circle_image";
+import { Parallax } from "react-scroll-parallax";
 
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import beach_cliff from "../../../public/images/beach_cliff.jpg";
 import river from "../../../public/images/river.jpg";
 import la_jolla_seals from "../../../public/images/la_jolla_seals.jpg";
-import yosemite from "../../../public/images/yosemite.jpg";
+import aspen from "../../../public/images/aspen.jpg";
 import devils_slide from "../../../public/images/devils_slide.jpg";
 import paraglider from "../../../public/images/paraglider.jpg";
 import drone_shore from "../../../public/images/drone_shore.jpg";
@@ -16,40 +14,51 @@ import squirrel from "../../../public/images/squirrel.jpg";
 
 const PreviewImages = () => {
   return (
-    <div className="min-h-[60rem]">
-      <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row items-center justify-center">
-        <ParallaxCircleImage
-          src={la_jolla_seals}
-          alignment="justify-self-end self-center md:self-end"
-        />
-        <div className="relative h-[12rem] w-[12rem] self-end justify-self-center rounded-full">
-          <Image
+    <div className="flex flex-col md:mt-[15rem]">
+      <div className="flex w-screen flex-col items-center justify-center gap-4 md:flex-row">
+        <ParallaxCircleImage src={beach_cliff} speed={-20} />
+        <Parallax speed={-10}>
+          <ParallaxCircleImage
             src={river}
-            fill={true}
-            alt="Seals"
-            className="object-cover rounded-full"
+            speed={-5}
+            disabled={true}
+            height={12}
           />
+        </Parallax>
+        <div className="md:-translate-y-60">
+          <ParallaxCircleImage src={la_jolla_seals} speed={-20} />
         </div>
-        <ParallaxCircleImage src={beach_cliff} alignment="self-center" />
-      </div>
-      <div className="my-10 flex min-h-[30rem] w-screen flex-col md:flex-row flex-wrap items-center justify-center">
-        <div className="relative h-[10rem] w-[10rem] self-start rounded-full">
-          <Image
-            src={chimney_cow}
-            fill={true}
-            alt="Seals"
-            className="object-cover rounded-full"
-          />
-        </div>
-        <ParallaxCircleImage src={lifeguard_tower} alignment="self-center md:self-start justify-self-center" />
-        <div className="relative h-[8rem] w-[8rem] self-start md:self-center md:justify-self-center rounded-full">
-          <Image
+        <Parallax speed={-4}>
+          <ParallaxCircleImage
             src={squirrel}
-            fill={true}
-            alt="Seals"
-            className="object-cover rounded-full"
+            speed={-10}
+            disabled={true}
+            height={20}
           />
+        </Parallax>
+        <div className="translate-x-20 md:translate-x-0 md:-translate-y-20">
+          <Parallax speed={-10}>
+            <ParallaxCircleImage
+              src={drone_shore}
+              speed={-5}
+              disabled={true}
+              height={12}
+            />
+          </Parallax>
         </div>
+      </div>
+      <div className="md:mt-[-12rem] flex w-screen flex-col flex-wrap items-center justify-center md:gap-[20rem] md:flex-row">
+        <div className="-translate-x-10 md:translate-x-0">
+          <Parallax speed={8}>
+            <ParallaxCircleImage
+              src={aspen}
+              speed={-5}
+              disabled={true}
+              height={12}
+            />
+          </Parallax>
+        </div>
+        <ParallaxCircleImage src={lifeguard_tower} speed={-15} />
       </div>
     </div>
   );

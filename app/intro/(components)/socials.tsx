@@ -11,21 +11,25 @@ const contact_text =
 const Socials = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-12 py-10">
-      <Parallax speed={-5}>
-        <div className="z-0 relative h-[10rem] w-[10rem] md:h-[40rem] md:w-[40rem] -translate-x-20">
-          <Image
-            src={bee}
-            alt="Circle Image"
-            fill={true}
-            className="rounded-full object-cover"
-          />
-        </div>
-      </Parallax>
-      <div className="flex md:h-[40rem] flex-col justify-end gap-6 md:gap-20 z-10 [&_*]:transition-all [&_*]:ease-linear ">
-        <div className="divider self-end" />
-        <div className="md:me-[10rem] flex h-auto w-screen md:w-[40rem] flex-col justify-start rounded-2xl px-4 py-6 bg-timber/75 dark:bg-smoke/75 shadow-neo dark:shadow-neodark">
-          <p className="text-xs md:text-base p-2 md:p-4 indent-6">{contact_text}</p>
+    <div className="grid grid-cols-1 grid-rows-1 w-screen h-screen">
+      <div className="col-start-1 row-start-1 self-start justify-self-start">
+        <Parallax speed={-15}>
+          <div className="relative z-0 h-[30rem] w-[30rem] translate-x-[-16rem] md:h-[45rem] md:w-[45rem] md:translate-x-[-20rem]">
+            <Image
+              src={bee}
+              alt="Circle Image"
+              fill={true}
+              className="z-0 rounded-full object-cover blur-md"
+            />
+          </div>
+        </Parallax>
+      </div>
+      <div className="col-start-1 row-start-1 z-20 divider self-start justify-self-end" />
+      <div className="col-start-1 row-start-1 z-10 flex flex-col justify-center gap-6 self-center md:h-[40rem] md:gap-20">
+        <div className="self-center flex h-auto mx-2 flex-col rounded-2xl bg-timber/75 px-4 py-6 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:max-w-[40rem]">
+          <p className="p-2 indent-6 text-xs md:p-4 md:text-base">
+            {contact_text}
+          </p>
           <button
             onClick={() => router.push("contact")}
             className="neo m-4 max-w-[10rem] self-center rounded-2xl bg-ash/25 px-4 py-2"
@@ -33,7 +37,7 @@ const Socials = () => {
             <p>Let&apos;s chat</p>
           </button>
         </div>
-        <div className="md:me-[10rem] flex md:max-w-[26.2rem] flex-col items-center md:flex-row gap-4 md:self-end md:py-10 text-sm md:text-base">
+        <div className="max-w-screen flex flex-col items-center justify-start gap-4 text-sm md:flex-row md:self-end md:p-10 md:text-base">
           <Link
             href={"https://www.instagram.com/kormylophotography/"}
             rel="noopener noreferrer"

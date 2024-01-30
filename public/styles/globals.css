@@ -4,7 +4,7 @@
 
 :root {
   scrollbar-width: thin;
-  scrollbar-color: #a3a996 rgba(255, 255, 255, 0);
+  scrollbar-color: #f1eee4 rgba(255, 255, 255, 0);
 }
 
 html {
@@ -22,11 +22,16 @@ a {
 }
 
 .stack {
-  grid-template-areas: stack;
+  display: grid;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "stack";
 }
 
 .stack > * {
-  grid-area: stack
+  grid-area: "stack"
 }
 
 .parallax {
