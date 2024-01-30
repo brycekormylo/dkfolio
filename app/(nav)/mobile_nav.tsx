@@ -74,7 +74,7 @@ export default function MobileNavBar() {
         <Link href={`/intro`}>
           <Title />
         </Link>
-        <div className="flex w-screen flex-row items-start justify-between px-2">
+        <div className="flex w-screen flex-row items-start justify-between px-4 pt-4">
           <ThemeButton />
           <div
             onClick={handleClick}
@@ -101,16 +101,14 @@ export default function MobileNavBar() {
               scroll={false}
             >
               <div className="neo rounded-xl px-3 py-2 text-sm">
-                <div className="flex gap-2">
+                {item.slug == "contact" ? (
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="truncate uppercase">{item.name}</p>
+                    <p className="wave">👋🏼</p>
+                  </div>
+                ) : (
                   <p className="truncate uppercase">{item.name}</p>
-                  <p
-                    className={`wave ${
-                      item.slug === "contact" ? "block" : "hidden"
-                    }`}
-                  >
-                    👋🏼
-                  </p>
-                </div>
+                )}
               </div>
             </Link>
           );
