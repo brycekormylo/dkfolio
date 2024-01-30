@@ -6,7 +6,7 @@ import ThemeButton from "../(components)/theme_button";
 import { motion } from "framer-motion";
 import Title from "./title";
 import { useTheme } from "next-themes";
-import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
+import { useRive, Layout, Fit, Alignment, useStateMachineInput } from "@rive-app/react-canvas";
 
 const NavbarItems = [
   {
@@ -32,41 +32,33 @@ const NavbarItems = [
 ];
 
 export default function MobileNavBar() {
-  const [isExtended, setExtended] = useState<Boolean>(false);
-  const [animation, setAnimation] = useState("");
-  const { theme } = useTheme();
+  const [isExtended, setExtended] = useState<boolean>(false);
+  const { theme, setTheme } = useTheme();
   const { rive, RiveComponent } = useRive({
     src: "menuicon.riv",
-    artboard: "main",
+    stateMachines: "default",
     autoplay: true,
-    animations: animation,
     layout: new Layout({
       fit: Fit.Contain,
       alignment: Alignment.Center,
     }),
   });
 
-  useEffect(() => {
-    setAnimation(theme === "dark" ? "xmenudark" : "xmenu");
-  }, [theme]);
-
-  useEffect(() => {
-    if (rive) {
-      rive.play(
-        isExtended
-          ? theme === "dark"
-            ? "menuxdark"
-            : "menux"
-          : theme === "dark"
-          ? "xmenudark"
-          : "xmenu"
-      );
-    }
-  }, [rive, theme, isExtended]);
+  const extendInput = useStateMachineInput(rive, "default", "extend", false)
+  const themeInput = useStateMachineInput(rive, "default", "dark", theme === "dark")
 
   const handleClick = () => {
     setExtended(!isExtended);
+    if (extendInput) {
+      extendInput.value = !isExtended
+    }
   };
+
+  useEffect(() => {
+    if (themeInput) {
+      themeInput.value = theme === "dark"
+    }
+ }, [theme, themeInput]);
 
   return (
     <div className="flex h-auto w-screen flex-col items-center overflow-hidden px-8">
