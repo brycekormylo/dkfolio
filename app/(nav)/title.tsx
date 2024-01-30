@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
+import { useRive, Layout, Fit, Alignment, useStateMachineInput } from "@rive-app/react-canvas";
 import { useTheme } from "next-themes";
 
 const Title = () => {
@@ -10,24 +10,32 @@ const Title = () => {
     src: "camera.riv",
     artboard: "main",
     autoplay: true,
-    animations: theme === "dark" ? "drawdark" : "drawlight",
+    stateMachines: "default",
     layout: new Layout({
       fit: Fit.Contain,
       alignment: Alignment.Center,
     }),
   });
 
-  const handleHover = (entered: Boolean) => {
-    if (rive) {
-      entered ? rive.play("idle") : rive.pause("idle");
+  const isHovered = useStateMachineInput(rive, "default", "hover", false);
+  const themeInput = useStateMachineInput(
+    rive,
+    "default",
+    "dark",
+    theme === "dark"
+  );
+
+  const handleHover = (entered: boolean) => {
+    if (rive && isHovered) {
+      isHovered.value = entered;
     }
   };
 
   useEffect(() => {
-    if (rive) {
-      rive.play(theme === "dark" ? "dark" : "light");
+    if (themeInput) {
+      themeInput.value = theme === "dark"
     }
-  }, [rive, theme]);
+ }, [theme, themeInput]);
 
   return (
     <div
