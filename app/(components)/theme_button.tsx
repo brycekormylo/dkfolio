@@ -18,36 +18,42 @@ const ThemeButton = () => {
   const { rive, RiveComponent } = useRive({
     src: "themeicon.riv",
     artboard: "main",
-    autoplay: false,
+    stateMachines: "default",
+    autoplay: true,
     layout: new Layout({
-      fit: Fit.Cover,
+      fit: Fit.Contain,
       alignment: Alignment.Center,
     }),
   });
 
-  useEffect(() => {
-    if (rive) {
-      rive.play(theme === "dark" ? "sunset" : "sunrise");
-    }
-  }, [rive, theme]);
+  const iconStrokeIsDark = useStateMachineInput(
+    rive,
+    "default",
+    "darklines",
+    theme !== "dark"
+  );
+  const isHovered = useStateMachineInput(rive, "default", "hover", false);
+  const themeIsDark = useStateMachineInput(
+    rive,
+    "default",
+    "dark",
+    theme === "dark"
+  );
 
-  const handleHover = (entered: Boolean) => {
-    if (rive) {
-      entered
-        ? rive.play(theme === "dark" ? "nightidle" : "dayidle")
-        : rive.pause(theme === "dark" ? "nightidle" : "dayidle");
+  const handleHover = (entered: boolean) => {
+    if (rive && isHovered) {
+      isHovered.value = entered;
     }
   };
 
   const handleThemeToggle = async () => {
-    if (rive) {
-      if (theme === "dark") {
-        rive.play("sunrise");
-      } else {
-        rive.play("sunset");
-      }
+    if (themeIsDark) {
+      themeIsDark.value = !themeIsDark.value;
     }
     await delay(800);
+    if (iconStrokeIsDark) {
+      iconStrokeIsDark.value = !iconStrokeIsDark.value;
+    }
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
