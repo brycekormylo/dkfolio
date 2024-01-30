@@ -12,9 +12,9 @@ const Socials = () => {
   const router = useRouter();
   return (
     <div className="grid grid-cols-1 grid-rows-1 w-screen h-screen">
-      <div className="col-start-1 row-start-1 self-center justify-self-center">
+      <div className="col-start-1 row-start-1 self-start justify-self-start">
         <Parallax speed={-15}>
-          <div className="relative z-0 h-[30rem] w-[30rem] ms-[-16rem] md:h-[45rem] md:w-[45rem] md:ms-[-40rem]">
+          <div className="relative z-0 h-[30rem] w-[30rem] ms-[-16rem] md:ms-0 md:h-[45rem] md:w-[45rem]">
             <Image
               src={bee}
               alt="Circle Image"
