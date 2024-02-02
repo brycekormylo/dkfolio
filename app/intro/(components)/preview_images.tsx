@@ -36,7 +36,7 @@ const PreviewImages = () => {
             height={20}
           />
         </Parallax>
-        <div className="translate-x-20 md:translate-x-0 md:-translate-y-20">
+        <div className="translate-x-20 md:-translate-y-20 md:translate-x-0">
           <Parallax speed={-10}>
             <ParallaxCircleImage
               src={drone_shore}
@@ -47,7 +47,7 @@ const PreviewImages = () => {
           </Parallax>
         </div>
       </div>
-      <div className="md:mt-[-12rem] flex w-screen flex-col flex-wrap items-center justify-center md:gap-[20rem] md:flex-row">
+      <div className="flex w-screen flex-col flex-wrap items-center justify-center md:mt-[-12rem] md:flex-row md:gap-[20rem]">
         <div className="-translate-x-10 md:translate-x-0">
           <Parallax speed={8}>
             <ParallaxCircleImage
@@ -58,7 +58,9 @@ const PreviewImages = () => {
             />
           </Parallax>
         </div>
-        <ParallaxCircleImage src={lifeguard_tower} speed={-15} />
+        <div className="md:translate-y-10">
+          <ParallaxCircleImage src={lifeguard_tower} speed={-15} />
+        </div>
       </div>
     </div>
   );

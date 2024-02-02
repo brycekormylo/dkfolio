@@ -30,10 +30,10 @@ const BlackAndWhite = () => {
       <div className="flex flex-col gap-6 self-end">
         <div className="divider" />
         <div className="self-end px-10">
-          <Link href={"https://www.instagram.com/digikorm/"}>
+          <Link href={"https://www.instagram.com/kormylophotography/"}>
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
-              <p>@monokorm</p>
+              <p>kormylophotography</p>
             </div>
           </Link>
         </div>

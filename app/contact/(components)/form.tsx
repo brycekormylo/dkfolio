@@ -19,7 +19,7 @@ interface FormData {
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("contactForm");
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const [formData, setFormData] = React.useState<FormData>({
     name: "",
     subject: "",
