@@ -9,7 +9,7 @@ import { LuInstagram } from "react-icons/lu";
 import sca from "../../../public/images/sca_foggy_sunset.jpg";
 
 
-const Digital = () => {
+const BlackAndWhite = () => {
 
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-20 overflow-hidden py-[4rem]">
@@ -19,7 +19,7 @@ const Digital = () => {
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[30rem]">
+          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[22rem]">
             <Image
               src={sca}
               alt="Circle Image"
@@ -35,7 +35,7 @@ const Digital = () => {
           <Link href={"https://www.instagram.com/digikorm/"}>
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
-              <p>digikorm</p>
+              <p>@monokorm</p>
             </div>
           </Link>
         </div>
@@ -44,4 +44,4 @@ const Digital = () => {
   );
 };
 
-export default Digital;
+export default BlackAndWhite;

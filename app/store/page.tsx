@@ -1,7 +1,7 @@
 "use client";
 
 import { Parallax } from "react-scroll-parallax";
-import devils_slide from "../../public/images/devils_slide.jpg";
+import devils_slide from "../../public/images/devils_slide_sm.jpg";
 import Image from "next/image";
 import ScrollUp from "../(components)/scroll_up";
 

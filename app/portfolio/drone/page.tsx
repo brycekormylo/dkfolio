@@ -36,7 +36,7 @@ const Drone = () => {
           <Link href={"https://www.instagram.com/drone.ylo/"}>
             <div className="neo flex justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
-              <p>@drone.ylo</p>
+              <p>drone.ylo</p>
             </div>
           </Link>
         </div>

@@ -45,7 +45,7 @@ const Socials = () => {
           >
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
-              <p>@kormylophotography</p>
+              <p>kormylophotography</p>
             </div>
           </Link>
           <Link
@@ -55,7 +55,7 @@ const Socials = () => {
           >
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
-              <p>@kormylopuppyproject</p>
+              <p>kormylopuppyproject</p>
             </div>
           </Link>
         </div>

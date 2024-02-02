@@ -38,23 +38,6 @@ a {
   grid-area: "stack"
 }
 
-.parallax {
-  position: relative;
-  z-index: 0;
-  display: grid;
-  grid-template-areas: "stack";
-}
-.parallax > * {
-  grid-area: stack;
-  animation: parallax linear;
-  animation-timeline: scroll();
-}
-
-@keyframes parallax {
-  to {
-    transform: translateY(calc(var(--parallax-speed)*200px));
-  }
-}
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */

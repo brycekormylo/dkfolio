@@ -9,10 +9,7 @@ type ImageProps = {
   alignment: string;
 };
 
-const CircleImage: React.FC<ImageProps> = ({
-  src,
-  alignment,
-}) => {
+const CircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -27,22 +24,20 @@ const CircleImage: React.FC<ImageProps> = ({
     <div
       style={{
         transition: "all 0.3s",
-        clipPath: `circle(${isHovered ? "33%" : "30%"} at 50%)`
+        clipPath: `circle(${isHovered ? "33%" : "30%"} at 50%)`,
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${alignment} relative aspect-[1/1] rounded-md ${
-        isHovered ? "h-[40rem]" : "h-[28rem]"
+      className={`${alignment} relative aspect-[1/1] ${
+        isHovered ? "h-[40rem] w-[40rem]" : "h-[28rem] w-[28rem]"
       }`}
     >
-      <div>
-        <Image
-          src={src}
-          fill={true}
-          className={`rounded-md object-contain`}
-          alt="Portfolio Image"
-        />
-      </div>
+      <Image
+        src={src}
+        fill={true}
+        className={`object-contain`}
+        alt="Portfolio Image"
+      />
     </div>
   );
 };
