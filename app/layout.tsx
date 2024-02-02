@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Portfolio website",
   keywords: ["Danielle", "Kormylo", "Photography", "photographer", "film"],
   openGraph: {
-    images: 'https://i.ibb.co/7j0GX4d/opengraph-image.jpg'
+    images: 'https://i.ibb.co/2s0r1xv/opengraph-image.jpg'
   }
 };
 
