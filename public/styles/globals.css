@@ -7,6 +7,10 @@
   scrollbar-color: #f1eee4 rgba(255, 255, 255, 0);
 }
 
+* {
+  min-width: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
