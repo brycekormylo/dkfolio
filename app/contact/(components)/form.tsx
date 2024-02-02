@@ -74,13 +74,13 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex rounded-2xl bg-timber/50 py-8 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:min-h-[24rem] md:w-[42rem]">
-      <div className="flex h-full w-full flex-col items-center  justify-center gap-4">
-        <h2
-          className={`${
-            success ? "block" : "hidden"
-          }  text-md px-4 text-center md:text-lg`}
-        >
+    <div className="flex rounded-2xl bg-timber/50 py-8 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:min-h-[24rem] md:min-w-[42rem]">
+      <div
+        className={`${
+          success ? "block" : "hidden"
+        } flex h-full w-full flex-col items-center justify-center gap-4`}
+      >
+        <h2 className={`text-md px-4 text-center md:text-lg`}>
           Thanks for hitting submit, we&apos;re excited to chat with you soon!
         </h2>
         <p className="px-10 text-center text-xs opacity-80 md:text-sm">
