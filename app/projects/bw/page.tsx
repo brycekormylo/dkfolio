@@ -8,9 +8,7 @@ import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 import sca from "../../../public/images/sca_foggy_sunset.jpg";
 
-
 const BlackAndWhite = () => {
-
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-20 overflow-hidden py-[4rem]">
       <ScrollUp />
@@ -19,7 +17,7 @@ const BlackAndWhite = () => {
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[22rem]">
+          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] translate-y-[30rem] md:-translate-x-40">
             <Image
               src={sca}
               alt="Circle Image"
@@ -29,7 +27,7 @@ const BlackAndWhite = () => {
           </div>
         </Parallax>
       </div>
-      <div className="flex flex-col self-end gap-6">
+      <div className="flex flex-col gap-6 self-end">
         <div className="divider" />
         <div className="self-end px-10">
           <Link href={"https://www.instagram.com/digikorm/"}>

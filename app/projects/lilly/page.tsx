@@ -84,14 +84,16 @@ const LillyLegacy = () => {
           />
           <LandscapeRow images={[blackie_laid_down, reign_butt_scratches]} />
         </div>
-        <div className="divider mt-10 self-end" />
-        <div className="mb-10 flex flex-col items-end justify-center gap-4 text-sm md:pe-[10rem] md:text-base">
-          <Link href={"www.instagram.com/kormylopuppyproject/"}>
-            <div className="neo flex items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
-              <LuInstagram size={24} />
-              <p>kormylopuppyproject</p>
-            </div>
-          </Link>
+        <div className="my-10 flex flex-col gap-6 self-end">
+          <div className="divider" />
+          <div className="flex flex-row self-end gap-4 text-sm md:pe-10 md:text-base">
+            <Link href={"www.instagram.com/kormylopuppyproject/"}>
+              <div className="neo flex items-center justify-end gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
+                <LuInstagram size={24} />
+                <p>kormylopuppyproject</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

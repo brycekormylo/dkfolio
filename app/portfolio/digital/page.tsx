@@ -8,18 +8,16 @@ import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 import sca from "../../../public/images/sca_foggy_sunset.jpg";
 
-
 const Digital = () => {
-
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-20 overflow-hidden py-[4rem]">
       <ScrollUp />
       <div className="z-10 flex h-[25rem] w-[40rem] flex-col items-center justify-center gap-4 rounded-xl bg-timber/75 px-4 py-2 text-xl shadow-neo dark:bg-smoke/75 dark:shadow-neodark">
         <h2 className="text-lg">More images coming soon!</h2>
       </div>
-      <div className="flex flex-row justify-end">
+      <div className="flex flex-row justify-self-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[30rem]">
+          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-x-20 translate-y-[30rem]">
             <Image
               src={sca}
               alt="Circle Image"
@@ -29,9 +27,9 @@ const Digital = () => {
           </div>
         </Parallax>
       </div>
-      <div className="flex flex-col self-end gap-6">
+      <div className="flex flex-col gap-6 self-start">
         <div className="divider" />
-        <div className="self-end px-10">
+        <div className="self-start px-10">
           <Link href={"https://www.instagram.com/digikorm/"}>
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />

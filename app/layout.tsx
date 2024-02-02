@@ -6,11 +6,12 @@ import { Providers } from "./providers";
 import "../public/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Danielle Kormylo // Film Photographer",
+  title: "Danielle Kormylo || Film Landscape and Wildlife Photographer",
   description: "Portfolio website",
-  // icons: {
-  //   icon: ""
-  // }
+  keywords: ["Danielle", "Kormylo", "Photography", "photographer", "film"],
+  openGraph: {
+    images: 'opengraph-image.jpg'
+  }
 };
 
 export default function RootLayout({
