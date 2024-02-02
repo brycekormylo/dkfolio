@@ -20,7 +20,7 @@ export default function Contact() {
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-y-[22rem] md:translate-x-40">
+          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-y-[22rem] p-4 md:translate-x-40">
             <Image
               src={la_jolla_seals}
               alt="Circle Image"

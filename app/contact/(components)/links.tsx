@@ -10,7 +10,11 @@ const Links = () => {
           <p>kormylophotography</p>
         </div>
       </Link>
-      <Link href={"https://www.instagram.com/kormylopuppyproject"}>
+      <Link
+        href={"https://www.instagram.com/kormylopuppyproject"}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <div className="neo flex items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
           <LuInstagram size={24} />
           <p>kormylopuppyproject</p>

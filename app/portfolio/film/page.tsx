@@ -15,6 +15,8 @@ import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
 import LandscapeRow from "../../(components)/landscape_row";
 import PortraitRow from "../../(components)/portrait_row";
+import Link from "next/link";
+import { LuInstagram } from "react-icons/lu";
 
 const Film = () => {
   const portraits = [
@@ -35,7 +37,21 @@ const Film = () => {
       <LandscapeRow images={[bee, devils_slide]} />
       <PortraitRow images={[la_jolla_seals, river, squirrel]} />
       <LandscapeRow images={[yosemite, chimney_cow]} />
-      <div className="divider mb-12 mt-20 self-end" />
+      <div className="flex flex-col gap-6 self-end pb-6">
+        <div className="divider" />
+        <div className="self-end px-10">
+          <Link
+            href={"https://www.instagram.com/kormylophotography/"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
+              <LuInstagram size={24} />
+              <p>kormylophotography</p>
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

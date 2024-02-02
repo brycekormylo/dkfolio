@@ -19,7 +19,7 @@ const Drone = () => {
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] translate-y-[30rem] md:-translate-x-40">
+          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] translate-y-[30rem] p-4 md:-translate-x-40">
             <Image
               src={drone_shore}
               alt="Circle Image"
@@ -32,7 +32,11 @@ const Drone = () => {
       <div className="flex flex-col gap-6 self-end">
         <div className="divider" />
         <div className="self-end px-10">
-          <Link href={"https://www.instagram.com/drone.ylo/"}>
+          <Link
+            href={"https://www.instagram.com/drone.ylo/"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
               <p>drone.ylo</p>

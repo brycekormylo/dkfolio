@@ -15,7 +15,7 @@ export default function Store() {
       </div>
       <div className="flex flex-row justify-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[22rem]">
+          <div className="translate fixed bottom-0 right-0 z-0 h-[45rem] w-[45rem] md:-translate-x-40 translate-y-[22rem] p-4">
             <Image
               src={devils_slide}
               alt="Circle Image"

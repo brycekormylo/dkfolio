@@ -64,12 +64,20 @@ const LillyLegacy = () => {
               ))}
             </div>
             <div className="flex flex-col items-center justify-center gap-4 text-sm md:pe-[10rem] md:text-base">
-              <Link href={"www.lilyslegacy.org"}>
-                <div className="neo flex items-center justify-start gap-2 rounded-xl bg-ash/25 p-2 dark:bg-smoke">
+              <Link
+                href={"www.lilyslegacy.org"}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div className="neo flex items-center justify-start gap-2 rounded-xl bg-ash/25 p-2">
                   <p>Lily&apos;s Legacy Website</p>
                 </div>
               </Link>
-              <Link href={"www.instagram.com/lilyslegacyseniordogs/"}>
+              <Link
+                href={"www.instagram.com/lilyslegacyseniordogs/"}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <div className="neo flex items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
                   <LuInstagram size={24} />
                   <p>lilyslegacyseniordogs</p>
@@ -86,8 +94,12 @@ const LillyLegacy = () => {
         </div>
         <div className="my-10 flex flex-col gap-6 self-end">
           <div className="divider" />
-          <div className="flex flex-row self-end gap-4 text-sm md:pe-10 md:text-base">
-            <Link href={"www.instagram.com/kormylopuppyproject/"}>
+          <div className="flex flex-row gap-4 self-end text-sm md:pe-10 md:text-base">
+            <Link
+              href={"www.instagram.com/kormylopuppyproject/"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <div className="neo flex items-center justify-end gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
                 <LuInstagram size={24} />
                 <p>kormylopuppyproject</p>

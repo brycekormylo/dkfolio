@@ -17,7 +17,7 @@ const Digital = () => {
       </div>
       <div className="flex flex-row justify-self-end">
         <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-x-20 translate-y-[30rem]">
+          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-x-20 translate-y-[30rem] p-4">
             <Image
               src={sca}
               alt="Circle Image"
@@ -30,7 +30,11 @@ const Digital = () => {
       <div className="flex flex-col gap-6 self-start">
         <div className="divider" />
         <div className="self-start px-10">
-          <Link href={"https://www.instagram.com/digikorm/"}>
+          <Link
+            href={"https://www.instagram.com/digikorm/"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
               <p>digikorm</p>
