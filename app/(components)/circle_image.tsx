@@ -2,7 +2,6 @@
 
 import Image, { StaticImageData } from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { Parallax } from "react-scroll-parallax";
 
 type ImageProps = {
   src: StaticImageData;
@@ -28,8 +27,10 @@ const CircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${alignment} relative aspect-[1/1] ${
-        isHovered ? "h-[40rem] w-[40rem]" : "h-[28rem] w-[28rem]"
+      className={`${alignment} aspect-[1/1] shadow-dark ${
+        isHovered
+          ? "h-[32rem] w-[32rem] md:h-[40rem] md:w-[40rem]"
+          : "h-[24rem] w-[24rem] md:h-[28rem] md:w-[28rem]"
       }`}
     >
       <Image

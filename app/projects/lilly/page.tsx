@@ -33,19 +33,17 @@ const LillyLegacy = () => {
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
         Puppy Project
       </h1>
-      <div className="-my-20 flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:px-10 md:pb-10">
-        <Parallax speed={-10}>
-          <div className="max-w-screen z-0 flex flex-col">
-            <div className="flex h-[44rem] w-[36rem] translate-x-[-8rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0">
-              <CircleImage
-                src={ollie}
-                alignment="self-end translate-x-8 md:translate-x-0 -translate-y-4 md:translate-y-0"
-              />
-              <CircleImage
-                src={wolfe}
-                alignment="self-start -translate-x-8 md:translate-x-0 translate-y-4 md:translate-y-0"
-              />
-            </div>
+      <div className="-my-[6rem] flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:px-10 md:pb-10">
+        <Parallax speed={-6}>
+          <div className="flex h-[48rem] w-screen flex-col justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0 md:flex-row">
+            <CircleImage
+              src={ollie}
+              alignment="self-center translate-x-8 md:translate-x-0 md:self-end translate-y-16 md:translate-y-0"
+            />
+            <CircleImage
+              src={wolfe}
+              alignment="self-center -translate-x-8 md:translate-x-0 md:self-start -translate-y-16 md:translate-y-0"
+            />
           </div>
         </Parallax>
         <div className="z-10 -my-[7.5rem] flex flex-col justify-start gap-6 rounded-xl bg-timber/50 p-2 indent-6 dark:bg-smoke/50 md:my-0 md:ms-20 md:max-w-[48rem]">
