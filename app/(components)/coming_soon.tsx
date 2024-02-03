@@ -40,13 +40,15 @@ const ComingSoon: React.FC<Props> = ({
           <div
             className={`translate fixed bottom-0 z-0 h-[45rem] w-[45rem] ${
               reverse ? "right-0 -translate-x-12" : "left-0 translate-x-12"
-            } translate-y-[30rem] p-4`}
+            } translate-y-[22rem] p-4`}
           >
             <Image
+              priority
               src={image}
               alt="Circle Image"
               fill={true}
-              className="z-0 rounded-full object-cover blur-md"
+              className="z-0 rounded-full object-cover p-4 blur-md"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </Parallax>
