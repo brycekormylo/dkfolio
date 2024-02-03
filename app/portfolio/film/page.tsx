@@ -37,9 +37,9 @@ const Film = () => {
       <LandscapeRow images={[bee, devils_slide]} />
       <PortraitRow images={[la_jolla_seals, river, squirrel]} />
       <LandscapeRow images={[yosemite, chimney_cow]} />
-      <div className="flex flex-col gap-6 self-end pb-6">
+      <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
         <div className="divider" />
-        <div className="self-end px-10">
+        <div className="self-end px-2 md:px-10">
           <Link
             href={"https://www.instagram.com/kormylophotography/"}
             rel="noopener noreferrer"
