@@ -88,7 +88,7 @@ export default function MobileNavBar() {
           return (
             <Link
               key={index}
-              onClick={() => setExtended(false)}
+              onClick={handleClick}
               href={`/${item.slug}`}
               scroll={false}
             >
