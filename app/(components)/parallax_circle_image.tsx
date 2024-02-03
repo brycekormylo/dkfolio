@@ -35,7 +35,7 @@ const ParallaxCircleImage: React.FC<ImageProps> = ({
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="shadow-inner"
+      className="shadow-inner relative"
     >
       <Parallax speed={speed}>
         <div
@@ -48,6 +48,7 @@ const ParallaxCircleImage: React.FC<ImageProps> = ({
             fill={true}
             alt="circle image"
             className={`object-fill`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </Parallax>

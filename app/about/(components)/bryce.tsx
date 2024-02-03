@@ -19,10 +19,12 @@ const Bryce = () => {
         <div className="max-w-screen flex flex-col gap-6">
           <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
             <Image
+              priority
               src={bryce}
               alt="Circle Image"
               fill={true}
               className="rounded-full object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>

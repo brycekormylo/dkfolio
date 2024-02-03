@@ -12,8 +12,8 @@ const LandscapeRow: React.FC<ImageProps> = ({ images }) => {
     <div className="flex justify-center h-auto w-screen gap-1 md:gap-4">
       {images.map((image, i) => {
         return (
-          <div key={i} className="relative aspect-[7/5] w-[45.5vw]">
-            <ModalImage src={image} />
+          <div key={i}>
+            <ModalImage src={image} className="relative aspect-[7/5] w-[45.5vw]" />
           </div>
         );
       })}

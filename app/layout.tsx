@@ -6,13 +6,13 @@ import { Providers } from "./providers";
 import "../public/styles/globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.kormylophotography.com'),
+  metadataBase: new URL("https://www.kormylophotography.com"),
   title: "Danielle Kormylo || Film Landscape and Wildlife Photographer",
   description: "Portfolio website",
   keywords: ["Danielle", "Kormylo", "Photography", "photographer", "film"],
   openGraph: {
-    images: 'https://i.ibb.co/2s0r1xv/opengraph-image.jpg'
-  }
+    images: "https://i.ibb.co/2s0r1xv/opengraph-image.jpg",
+  },
 };
 
 export default function RootLayout({

@@ -5,9 +5,10 @@ import { useState } from "react";
 
 type ImageProps = {
   src: StaticImageData;
+  className: string;
 };
 
-const ModalImage: React.FC<ImageProps> = ({ src }) => {
+const ModalImage: React.FC<ImageProps> = ({ src, className }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -15,19 +16,18 @@ const ModalImage: React.FC<ImageProps> = ({ src }) => {
   };
 
   return (
-    <button
-      onClick={toggleModal}
-    >
+    <button onClick={toggleModal} className={`relative ${className}`}>
       <Image
         src={src}
         fill={true}
         className="object-fill"
         alt="Portfolio Image"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       {isModalVisible && (
         <div
           onClick={toggleModal}
-          className="fixed top-0 left-0 z-50 w-full h-full bg-timber/85 dark:bg-smoke/85 backdrop-blur-lg"
+          className="fixed left-0 top-0 z-50 h-full w-full bg-timber/85 backdrop-blur-lg dark:bg-smoke/85"
         >
           <Image
             src={src}
@@ -35,6 +35,7 @@ const ModalImage: React.FC<ImageProps> = ({ src }) => {
             objectFit="contain"
             alt="Fullscreen Image"
             className="p-4"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       )}

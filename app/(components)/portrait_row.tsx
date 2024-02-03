@@ -12,8 +12,8 @@ const PortraitRow: React.FC<ImageProps> = ({ images }) => {
     <div className="flex h-auto w-screen justify-center gap-1 md:gap-4">
       {images.map((image, i) => {
         return (
-          <div key={i} className="relative aspect-[5/7] w-[30vw]">
-            <ModalImage src={image} />
+          <div key={i} >
+            <ModalImage src={image} className="relative aspect-[5/7] w-[30vw]" />
           </div>
         );
       })}

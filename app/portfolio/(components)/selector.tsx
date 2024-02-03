@@ -39,10 +39,12 @@ const Selector = () => {
         >
           <div className="relative flex h-[5rem] w-[5rem] md:h-[18rem] md:w-[18rem]">
             <Image
+              priority
               src={item.img}
               alt="Circle Image"
               fill={true}
               className="rounded-full object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="flex justify-center rounded-full md:h-10 md:w-40">

@@ -15,14 +15,16 @@ const about_ellie = [
 
 const Ellie = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-start px-2 md:py-20 md:flex-row-reverse md:justify-evenly">
+    <div className="flex min-h-screen flex-col items-center justify-start px-2 md:flex-row-reverse md:justify-evenly md:py-20">
       <Parallax speed={-10}>
         <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
           <Image
+            priority
             src={ellie_overlook}
             alt="Circle Image"
             fill={true}
             className="rounded-full object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </Parallax>
