@@ -10,7 +10,7 @@ import LandscapeRow from "../../(components)/landscape_row";
 import PortraitRow from "../../(components)/portrait_row";
 import CircleImage from "@/app/(components)/circle_image";
 import ollie from "../../../public/images/o2.jpg";
-import wolfe from "../../../public/images/wolfe.jpg";
+import wolfe from "../../../public/images/wolfe_pt.jpg";
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 import { Parallax } from "react-scroll-parallax";
@@ -36,7 +36,7 @@ const LillyLegacy = () => {
       <div className="flex flex-col justify-start px-2 md:flex-row md:justify-between md:px-10 md:pb-10">
         <Parallax speed={-10}>
           <div className="max-w-screen flex flex-col">
-            <div className="flex  h-[44rem] w-[36rem] translate-x-[-8rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0">
+            <div className="flex h-[44rem] w-[36rem] translate-x-[-8rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0">
               <CircleImage
                 src={ollie}
                 alignment="self-end translate-x-8 md:translate-x-0 -translate-y-4 md:translate-y-0"
