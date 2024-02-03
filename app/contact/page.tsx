@@ -25,7 +25,7 @@ export default function Contact() {
               src={la_jolla_seals}
               alt="Circle Image"
               fill={true}
-              className="z-0 rounded-full object-cover blur-md"
+              className="z-0 rounded-full object-cover blur-sm"
             />
           </div>
         </Parallax>
