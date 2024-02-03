@@ -67,7 +67,7 @@ const ComingSoon: React.FC<Props> = ({
         />
         <div className="pe-4 md:pe-10">
           <Link href={href} rel="noopener noreferrer" target="_blank">
-            <div className="neo flex items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
+            <div className="neo flex min-w-0 items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
               <LuInstagram size={24} />
               <p>{insta}</p>
             </div>

@@ -93,7 +93,7 @@ export default function MobileNavBar() {
         transition={{ type: "spring", stiffness: 100, damping: 16 }}
         className={`${
           isExtended ? "block" : "hidden"
-        } absolute right-0 top-0 z-50 me-2 mt-[7rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 pt-6 shadow-neo dark:bg-smoke dark:shadow-neodark`}
+        } absolute right-0 top-0 z-50 me-2 mt-[9rem] flex flex-col items-end justify-start rounded-xl bg-timber p-2 shadow-neo dark:bg-smoke dark:shadow-neodark`}
       >
         {NavbarItems.map((item, index) => {
           return (
