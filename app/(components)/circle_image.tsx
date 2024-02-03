@@ -23,13 +23,13 @@ const CircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
     <div
       style={{
         transition: "all 0.3s",
-        clipPath: `circle(${isHovered ? "33%" : "30%"} at 50%)`,
+        clipPath: `circle(${isHovered ? "32%" : "28%"} at 50%)`,
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`${alignment} relative aspect-[1/1] shadow-dark ${
         isHovered
-          ? "h-[32rem] w-[32rem] md:h-[40rem] md:w-[40rem]"
+          ? "h-[30rem] w-[30rem] md:h-[40rem] md:w-[40rem]"
           : "h-[24rem] w-[24rem] md:h-[28rem] md:w-[28rem]"
       }`}
     >
