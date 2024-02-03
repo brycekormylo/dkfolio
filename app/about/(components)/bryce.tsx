@@ -14,19 +14,24 @@ const about_bryce = [
 
 const Bryce = () => {
   return (
-    <div className="flex flex-col md:flex-row h-screen items-center justify-start md:justify-evenly py-20 px-2">
-      <Parallax speed={-15}>
-        <div className="relative z-0 h-[12rem] w-[12rem] md:h-[36rem] md:w-[36rem]">
-          <Image
-            src={bryce}
-            alt="Circle Image"
-            fill={true}
-            className="rounded-full object-cover"
-          />
+    <div className="flex h-screen flex-col items-center justify-start px-2 py-20 md:flex-row md:justify-evenly">
+      <Parallax speed={-10}>
+        <div className="max-w-screen flex flex-col gap-6">
+          <div className="md:hidden divider -me-10 self-end w-[6rem]" />
+          <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
+            <Image
+              src={bryce}
+              alt="Circle Image"
+              fill={true}
+              className="rounded-full object-cover"
+            />
+          </div>
         </div>
       </Parallax>
-      <div className="z-10 rounded-xl p-2 bg-timber/75 dark:bg-smoke/75 flex flex-col justify-between gap-10 md:max-w-[42vw]">
-        <h1 className="self-end text-2xl md:text-5xl uppercase">Hi, I&apos;m Bryce</h1>
+      <div className="z-10 flex flex-col justify-between gap-10 rounded-xl bg-timber/75 p-2 dark:bg-smoke/75 md:max-w-[42vw]">
+        <h1 className="self-end text-2xl uppercase md:text-5xl">
+          Hi, I&apos;m Bryce
+        </h1>
         <div className="flex flex-col justify-evenly gap-4">
           {about_bryce.map((section, i) => (
             <p key={i} className="indent-6 text-xs md:text-sm">

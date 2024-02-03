@@ -17,7 +17,7 @@ const Ellie = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-start px-2 py-20 md:flex-row-reverse md:justify-evenly">
       <Parallax speed={-10}>
-        <div className="relative z-0 h-[12rem] w-[12rem] md:h-[36rem] md:w-[36rem]">
+        <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
           <Image
             src={ellie_overlook}
             alt="Circle Image"

@@ -14,14 +14,23 @@ const about_dogs = [
 
 const Dogs = () => {
   return (
-    <div className="mt-[10rem] flex h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row-reverse md:justify-evenly">
+    <div className="mt-[8rem] flex min-h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row-reverse md:justify-evenly">
       <Parallax speed={-10}>
-        <div className="flex h-[30rem] w-[30rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem]">
-          <CircleImage src={millie} alignment="self-end" />
-          <CircleImage src={charlie} alignment="self-start" />
+        <div className="max-w-screen flex flex-col">
+          <div className="divider w-[14rem] self-start md:hidden" />
+          <div className="flex h-[44rem] w-[36rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem]">
+            <CircleImage
+              src={millie}
+              alignment="self-end translate-x-8 md:translate-x-0 -translate-y-4 md:translate-y-0"
+            />
+            <CircleImage
+              src={charlie}
+              alignment="self-start -translate-x-8 md:translate-x-0 translate-y-4 md:translate-y-0"
+            />
+          </div>
         </div>
       </Parallax>
-      <div className="flex flex-col justify-between gap-10 rounded-xl bg-timber/25 p-2 dark:bg-smoke/25 md:max-w-[48rem]">
+      <div className="-mt-10 flex flex-col justify-between gap-10 rounded-xl bg-timber/25 p-2 dark:bg-smoke/25 md:mt-0 md:max-w-[48rem]">
         <h1 className="self-end text-2xl uppercase md:text-5xl">
           Hi, we&apos;re Charlie and Millie
         </h1>

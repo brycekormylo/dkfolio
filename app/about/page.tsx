@@ -4,7 +4,7 @@ import Dogs from "./(components)/dogs";
 
 export default function About() {
   return (
-    <div className="flex w-screen flex-col gap-[8rem] overflow-hidden pb-[32rem] md:pb-0">
+    <div className="flex w-screen flex-col gap-[16rem] overflow-hidden pb-4 md:gap-[8rem] md:pt-10">
       <Ellie />
       <div className="divider my-[12rem] self-end" />
       <Bryce />
