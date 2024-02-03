@@ -20,11 +20,11 @@ const Dogs = () => {
           <div className="flex h-[44rem] w-[36rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem]">
             <CircleImage
               src={millie}
-              alignment="self-end translate-x-8 md:translate-x-0 -translate-y-4 md:translate-y-0"
+              alignment="self-end translate-x-12 md:translate-x-0 -translate-y-12 md:translate-y-0"
             />
             <CircleImage
               src={charlie}
-              alignment="self-start -translate-x-8 md:translate-x-0 translate-y-4 md:translate-y-0"
+              alignment="self-start -translate-x-12 md:translate-x-0 translate-y-12 md:translate-y-0"
             />
           </div>
         </div>
