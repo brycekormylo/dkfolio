@@ -14,10 +14,9 @@ const about_dogs = [
 
 const Dogs = () => {
   return (
-    <div className="mt-[8rem] flex min-h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row-reverse md:justify-evenly">
+    <div className="-mt-[4rem] flex min-h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row-reverse md:justify-evenly">
       <Parallax speed={-10}>
         <div className="max-w-screen flex flex-col">
-          <div className="divider w-[14rem] self-start md:hidden" />
           <div className="flex h-[44rem] w-[36rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem]">
             <CircleImage
               src={millie}

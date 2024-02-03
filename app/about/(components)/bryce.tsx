@@ -14,10 +14,9 @@ const about_bryce = [
 
 const Bryce = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-start px-2 py-20 md:flex-row md:justify-evenly">
+    <div className="flex min-h-screen flex-col items-center justify-start px-2 py-20 md:flex-row md:justify-evenly">
       <Parallax speed={-10}>
         <div className="max-w-screen flex flex-col gap-6">
-          <div className="md:hidden divider -me-10 self-end w-[6rem]" />
           <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
             <Image
               src={bryce}
