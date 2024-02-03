@@ -73,7 +73,7 @@ const LillyLegacy = () => {
             </div>
             <div className="flex flex-col items-center justify-center gap-4 pt-6 text-sm md:pe-[10rem] md:pt-0 md:text-base">
               <Link
-                href={"www.lilyslegacy.org"}
+                href={"https://www.lilyslegacy.org"}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -82,7 +82,7 @@ const LillyLegacy = () => {
                 </div>
               </Link>
               <Link
-                href={"www.instagram.com/lilyslegacyseniordogs/"}
+                href={"https://www.instagram.com/lilyslegacyseniordogs/"}
                 rel="noopener noreferrer"
                 target="_blank"
               >
