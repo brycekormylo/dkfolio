@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { LuGlasses } from "react-icons/lu";
 import us_photo from "../../../public/images/bryce_and_danielle_christian.jpg";
-import { Parallax, useParallax } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 import Link from "next/link";
 
 const AboutMeIntro = [

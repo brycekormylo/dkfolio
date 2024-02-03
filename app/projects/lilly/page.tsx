@@ -33,7 +33,7 @@ const LillyLegacy = () => {
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
         Puppy Project
       </h1>
-      <div className="-my-[6rem] flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:ps-20 md:pb-10">
+      <div className="-my-[6rem] flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:pb-10 md:ps-[6rem]">
         <Parallax speed={-6}>
           <div className="flex h-[48rem] w-[100vw] flex-col justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0 md:flex-row">
             <CircleImage

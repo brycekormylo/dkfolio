@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
-import ellie_img from "../../../public/images/aspen.jpg";
 import ellie_overlook from "../../../public/images/ellie_overlook.jpg";
 
 const about_ellie = [

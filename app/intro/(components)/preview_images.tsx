@@ -6,10 +6,7 @@ import beach_cliff from "../../../public/images/beach_cliff.jpg";
 import river from "../../../public/images/river.jpg";
 import la_jolla_seals from "../../../public/images/la_jolla_seals.jpg";
 import aspen from "../../../public/images/aspen.jpg";
-import devils_slide from "../../../public/images/devils_slide.jpg";
-import paraglider from "../../../public/images/paraglider.jpg";
 import drone_shore from "../../../public/images/drone_shore.jpg";
-import chimney_cow from "../../../public/images/chimney_cow.jpg";
 import squirrel from "../../../public/images/squirrel.jpg";
 
 const PreviewImages = () => {

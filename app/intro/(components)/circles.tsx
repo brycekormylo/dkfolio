@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
 import devils_slide from "../../../public/images/devils_slide.jpg";
