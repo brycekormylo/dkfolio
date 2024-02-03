@@ -55,7 +55,7 @@ const ComingSoon: React.FC<Props> = ({
       </div>
       <div
         className={`z-10 flex min-w-0 flex-col gap-6 ${
-          reverse ? "self-end" : "self-start"
+          reverse ? "items-end self-end" : "items-start self-start"
         }`}
       >
         <div
@@ -65,9 +65,11 @@ const ComingSoon: React.FC<Props> = ({
               : "-translate-x-10 md:translate-x-0"
           }`}
         />
-        <div className="pe-4 md:pe-10">
+        <div className="px-4 md:pe-10">
           <Link href={href} rel="noopener noreferrer" target="_blank">
-            <div className="neo flex min-w-0 items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
+            <div
+              className={`neo flex flex-row gap-2 rounded-xl bg-timber p-2 dark:bg-smoke`}
+            >
               <LuInstagram size={24} />
               <p>{insta}</p>
             </div>
