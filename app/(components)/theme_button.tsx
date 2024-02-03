@@ -17,7 +17,7 @@ const ThemeButton = () => {
   const { theme, setTheme } = useTheme();
   const [isChangingTheme, setIsChangingTheme] = useState(false);
   const { rive, RiveComponent } = useRive({
-    src: "themeicon.riv",
+    src: "/riv/themeicon.riv",
     artboard: "main",
     stateMachines: "default",
     autoplay: true,

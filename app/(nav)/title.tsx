@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 const Title = () => {
   const { theme } = useTheme();
   const { rive, RiveComponent } = useRive({
-    src: "camera.riv",
+    src: "/riv/camera.riv",
     artboard: "main",
     autoplay: true,
     stateMachines: "default",

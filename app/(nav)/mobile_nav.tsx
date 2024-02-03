@@ -35,7 +35,7 @@ export default function MobileNavBar() {
   const [isExtended, setExtended] = useState<boolean>(false);
   const { theme, setTheme } = useTheme();
   const { rive, RiveComponent } = useRive({
-    src: "menuicon.riv",
+    src: "/riv/menuicon.riv",
     stateMachines: "default",
     autoplay: true,
     layout: new Layout({
