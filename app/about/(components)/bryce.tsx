@@ -25,7 +25,7 @@ const Bryce = () => {
           />
         </div>
       </Parallax>
-      <div className="z-10 bg-timber/75 dark:bg-smoke/75 flex flex-col justify-between gap-10 md:max-w-[42vw]">
+      <div className="z-10 rounded-xl p-2 bg-timber/75 dark:bg-smoke/75 flex flex-col justify-between gap-10 md:max-w-[42vw]">
         <h1 className="self-end text-2xl md:text-5xl uppercase">Hi, I&apos;m Bryce</h1>
         <div className="flex flex-col justify-evenly gap-4">
           {about_bryce.map((section, i) => (

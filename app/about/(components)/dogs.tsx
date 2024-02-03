@@ -14,8 +14,14 @@ const about_dogs = [
 
 const Dogs = () => {
   return (
-    <div className="mt-[10rem] flex h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row md:justify-evenly">
-      <div className="flex flex-col justify-between gap-10 md:max-w-[48rem]">
+    <div className="mt-[10rem] flex h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row-reverse md:justify-evenly">
+      <Parallax speed={-10}>
+        <div className="flex h-[30rem] w-[30rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem]">
+          <CircleImage src={millie} alignment="self-end" />
+          <CircleImage src={charlie} alignment="self-start" />
+        </div>
+      </Parallax>
+      <div className="flex flex-col justify-between gap-10 rounded-xl bg-timber/25 p-2 dark:bg-smoke/25 md:max-w-[48rem]">
         <h1 className="self-end text-2xl uppercase md:text-5xl">
           Hi, we&apos;re Charlie and Millie
         </h1>
@@ -26,10 +32,6 @@ const Dogs = () => {
             </p>
           ))}
         </div>
-      </div>
-      <div className="flex h-[36rem] w-[36rem] flex-row justify-center md:-mt-32">
-        <CircleImage src={millie} alignment="self-end" />
-        <CircleImage src={charlie} alignment="self-start" />
       </div>
     </div>
   );

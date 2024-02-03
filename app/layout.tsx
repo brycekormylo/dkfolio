@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import "../public/styles/globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.kormylophotography.com'),
   title: "Danielle Kormylo || Film Landscape and Wildlife Photographer",
   description: "Portfolio website",
   keywords: ["Danielle", "Kormylo", "Photography", "photographer", "film"],

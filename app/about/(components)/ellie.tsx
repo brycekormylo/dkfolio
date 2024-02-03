@@ -15,20 +15,8 @@ const about_ellie = [
 
 const Ellie = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-start px-2 py-20 md:flex-row md:justify-evenly">
-      <div className="z-10 flex flex-col justify-between gap-10 bg-timber/75 dark:bg-smoke/75 md:max-w-[42vw]">
-        <h1 className="self-end text-2xl uppercase md:text-5xl">
-          Hiya, I&apos;m Danielle{" "}
-        </h1>
-        <div className="flex flex-col justify-evenly gap-4">
-          {about_ellie.map((section, i) => (
-            <p key={i} className="indent-6 text-xs md:text-sm">
-              {section}
-            </p>
-          ))}
-        </div>
-      </div>
-      <Parallax speed={-15}>
+    <div className="flex h-screen flex-col items-center justify-start px-2 py-20 md:flex-row-reverse md:justify-evenly">
+      <Parallax speed={-10}>
         <div className="relative z-0 h-[12rem] w-[12rem] md:h-[36rem] md:w-[36rem]">
           <Image
             src={ellie_overlook}
@@ -38,6 +26,18 @@ const Ellie = () => {
           />
         </div>
       </Parallax>
+      <div className="z-10 flex flex-col justify-between gap-10 rounded-xl bg-timber/75 p-2 dark:bg-smoke/75 md:max-w-[42vw]">
+        <h1 className="self-end text-2xl uppercase md:text-5xl">
+          Hiya, I&apos;m Danielle
+        </h1>
+        <div className="flex flex-col justify-evenly gap-4">
+          {about_ellie.map((section, i) => (
+            <p key={i} className="indent-6 text-xs md:text-sm">
+              {section}
+            </p>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
