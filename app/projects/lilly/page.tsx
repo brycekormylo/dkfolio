@@ -76,7 +76,7 @@ const LillyLegacy = () => {
                 <div className="translate h-[36rem] w-[36rem]  rounded-full bg-ash/25"></div>
               </Parallax>
             </div>
-            <div className="flex flex-col items-center justify-center gap-4 pt-6 text-sm md:pe-[10rem] md:pt-0 md:text-base">
+            <div className="z-10 flex flex-col items-center justify-center gap-4 pt-6 text-sm md:pe-[10rem] md:pt-0 md:text-base">
               <Link
                 href={"https://www.lilyslegacy.org"}
                 rel="noopener noreferrer"
