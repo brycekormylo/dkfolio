@@ -33,9 +33,9 @@ const LillyLegacy = () => {
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
         Puppy Project
       </h1>
-      <div className="flex flex-col justify-start px-2 md:flex-row md:justify-between md:px-10 md:pb-10">
+      <div className="-my-20 flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:px-10 md:pb-10">
         <Parallax speed={-10}>
-          <div className="max-w-screen flex flex-col">
+          <div className="max-w-screen z-0 flex flex-col">
             <div className="flex h-[44rem] w-[36rem] translate-x-[-8rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0">
               <CircleImage
                 src={ollie}
@@ -48,7 +48,7 @@ const LillyLegacy = () => {
             </div>
           </div>
         </Parallax>
-        <div className="flex flex-col justify-evenly gap-6 indent-6 md:ms-20 md:max-w-[48rem]">
+        <div className="z-10 -my-[7.5rem] flex flex-col justify-start gap-6 rounded-xl bg-timber/50 p-2 indent-6 dark:bg-smoke/50 md:my-0 md:ms-20 md:max-w-[48rem]">
           {PuppyProjectIntro.map((section, i) => (
             <p key={i} className="indent-6 text-xs md:text-sm">
               {section}
@@ -56,18 +56,18 @@ const LillyLegacy = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-12 md:-mt-20">
+      <div className="flex flex-col gap-6 pt-8 md:-mt-20 md:gap-12 md:pt-0">
         <div className="divider self-start" />
         <h1 className="mx-4 self-start text-2xl uppercase md:mx-20 md:text-5xl">
           Lily&apos;s Legacy
         </h1>
-        <div className="flex justify-start">
+        <div className="flex justify-start px-2">
           <div className="flex w-screen flex-col justify-start md:mx-20 md:flex-row md:justify-between">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 bg-timber/50 p-2 dark:bg-smoke/50">
               {LilyIntro.map((section, i) => (
                 <p
                   key={i}
-                  className="self-center p-2 indent-6 text-xs md:max-w-[44rem] md:text-sm"
+                  className="self-center indent-6 text-xs md:max-w-[44rem] md:text-sm"
                 >
                   {section}
                 </p>

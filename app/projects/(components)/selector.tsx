@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import millie_ic from "../../../public/images/millie_ic.jpg";
-import sca_foggy_sunset from "../../../public/images/sca_foggy_sunset.jpg";
+import pillar from "../../../public/images/bw_pillar.jpg";
+
 
 const SelectorItems = [
   {
@@ -13,7 +13,7 @@ const SelectorItems = [
   {
     name: "Black + White",
     slug: "bw",
-    img: sca_foggy_sunset,
+    img: pillar,
   },
 ];
 

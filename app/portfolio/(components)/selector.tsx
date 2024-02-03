@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import sca_foggy_sunset from "../../../public/images/sca_foggy_sunset.jpg";
+import palm from "../../../public/images/palm.jpg";
 import drone_shore from "../../../public/images/drone_shore.jpg";
 import squirrel from "../../../public/images/squirrel.jpg";
 
@@ -14,7 +14,7 @@ const SelectorItems = [
   {
     name: "Digital",
     slug: "digital",
-    img: sca_foggy_sunset,
+    img: palm,
   },
   {
     name: "Drone",
