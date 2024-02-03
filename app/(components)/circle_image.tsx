@@ -23,7 +23,7 @@ const CircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
     <div
       style={{
         transition: "all 0.3s",
-        clipPath: `circle(${isHovered ? "32%" : "28%"} at 50%)`,
+        clipPath: `circle(${isHovered ? "33%" : "30%"} at 50%)`,
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -34,10 +34,12 @@ const CircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
       }`}
     >
       <Image
+        priority
         src={src}
         fill={true}
         className={`object-contain`}
         alt="Portfolio Image"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
   );
