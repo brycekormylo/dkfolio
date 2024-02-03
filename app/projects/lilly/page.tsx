@@ -35,7 +35,7 @@ const LillyLegacy = () => {
       </h1>
       <div className="-my-[6rem] flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:px-10 md:pb-10">
         <Parallax speed={-6}>
-          <div className="flex h-[48rem] w-[20rem] flex-col justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0 md:flex-row">
+          <div className="flex h-[48rem] w-[100vw] flex-col justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0 md:flex-row">
             <CircleImage
               src={ollie}
               alignment="self-center translate-x-8 md:translate-x-0 md:self-end translate-y-16 md:translate-y-0"
