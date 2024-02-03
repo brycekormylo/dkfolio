@@ -48,7 +48,7 @@ const LillyLegacy = () => {
             </div>
           </div>
         </Parallax>
-        <div className="flex flex-col justify-evenly indent-6 md:ms-20 md:max-w-[48rem]">
+        <div className="flex flex-col justify-evenly gap-6 indent-6 md:ms-20 md:max-w-[48rem]">
           {PuppyProjectIntro.map((section, i) => (
             <p key={i} className="indent-6 text-xs md:text-sm">
               {section}
