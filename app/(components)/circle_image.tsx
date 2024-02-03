@@ -29,7 +29,7 @@ const CircleImage: React.FC<ImageProps> = ({ src, alignment }) => {
       onMouseLeave={handleMouseLeave}
       className={`${alignment} relative aspect-[1/1] shadow-dark ${
         isHovered
-          ? "h-[30rem] w-[30rem] md:h-[40rem] md:w-[40rem]"
+          ? "h-[30irem] w-[30rem] md:h-[40rem] md:w-[40rem]"
           : "h-[24rem] w-[24rem] md:h-[28rem] md:w-[28rem]"
       }`}
     >

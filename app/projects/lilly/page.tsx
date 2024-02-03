@@ -29,7 +29,7 @@ const LilyIntro = [
 
 const LillyLegacy = () => {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="max-w-screen flex flex-col gap-12 overflow-hidden">
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
         Puppy Project
       </h1>
@@ -61,7 +61,7 @@ const LillyLegacy = () => {
         </h1>
         <div className="flex justify-start px-2">
           <div className="flex w-screen flex-col justify-start md:mx-20 md:flex-row md:justify-between">
-            <div className="flex flex-col gap-6 bg-timber/50 p-2 dark:bg-smoke/50">
+            <div className="z-10 flex flex-col gap-6 rounded-xl bg-timber/50 p-2 dark:bg-smoke/50">
               {LilyIntro.map((section, i) => (
                 <p
                   key={i}
@@ -71,9 +71,9 @@ const LillyLegacy = () => {
                 </p>
               ))}
             </div>
-            <div className="translate absolute block -translate-x-[-16rem] self-end md:hidden">
+            <div className="relative z-0 -my-[18rem] md:hidden">
               <Parallax speed={-15}>
-                <div className="translate h-[36rem] w-[36rem]  rounded-full bg-ash/25"></div>
+                <div className="h-[36rem] w-[36rem] rounded-full bg-ash/25" />
               </Parallax>
             </div>
             <div className="z-10 flex flex-col items-center justify-center gap-4 pt-6 text-sm md:pe-[10rem] md:pt-0 md:text-base">
@@ -109,7 +109,7 @@ const LillyLegacy = () => {
           <div className="divider" />
           <div className="flex flex-row gap-4 self-end text-sm md:pe-10 md:text-base">
             <Link
-              href={"www.instagram.com/kormylopuppyproject/"}
+              href={"https://www.instagram.com/kormylopuppyproject/"}
               rel="noopener noreferrer"
               target="_blank"
             >
