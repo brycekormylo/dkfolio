@@ -46,12 +46,14 @@ const LillyLegacy = () => {
             />
           </div>
         </Parallax>
-        <div className="z-10 -my-[7.5rem] flex flex-col justify-start gap-6 rounded-xl bg-timber/50 p-2 indent-6 dark:bg-smoke/50 md:my-0 md:ms-20 md:max-w-[48rem]">
-          {PuppyProjectIntro.map((section, i) => (
-            <p key={i} className="indent-6 text-xs md:text-sm">
-              {section}
-            </p>
-          ))}
+        <div className="z-10 -my-[7.5rem]  md:my-0 md:ms-20 md:max-w-[48rem]">
+          <div className="flex flex-col gap-6 rounded-xl bg-timber/50 p-2 indent-6 dark:bg-smoke/50">
+            {PuppyProjectIntro.map((section, i) => (
+              <p key={i} className="indent-6 text-xs md:text-sm">
+                {section}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-6 pt-8 md:-mt-20 md:gap-12 md:pt-0">
