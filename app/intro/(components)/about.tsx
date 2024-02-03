@@ -30,7 +30,7 @@ const About = () => {
             ))}
             <button
               onClick={() => router.push("about")}
-              className="neo max-w-[10rem] self-end rounded-xl bg-ash/25 px-4 py-2"
+              className="z-10 neo max-w-[10rem] self-end rounded-xl bg-ash/25 px-4 py-2"
             >
               <div className="flex items-center justify-evenly gap-2">
                 <p>Read more</p>

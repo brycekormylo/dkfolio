@@ -6,7 +6,13 @@ import ThemeButton from "../(components)/theme_button";
 import { motion } from "framer-motion";
 import Title from "./title";
 import { useTheme } from "next-themes";
-import { useRive, Layout, Fit, Alignment, useStateMachineInput } from "@rive-app/react-canvas";
+import {
+  useRive,
+  Layout,
+  Fit,
+  Alignment,
+  useStateMachineInput,
+} from "@rive-app/react-canvas";
 
 const NavbarItems = [
   {
@@ -44,24 +50,29 @@ export default function MobileNavBar() {
     }),
   });
 
-  const extendInput = useStateMachineInput(rive, "default", "extend", false)
-  const themeInput = useStateMachineInput(rive, "default", "dark", theme === "dark")
+  const extendInput = useStateMachineInput(rive, "default", "extend", false);
+  const themeInput = useStateMachineInput(
+    rive,
+    "default",
+    "dark",
+    theme === "dark"
+  );
 
   const handleClick = () => {
     setExtended(!isExtended);
     if (extendInput) {
-      extendInput.value = !isExtended
+      extendInput.value = !isExtended;
     }
   };
 
   useEffect(() => {
     if (themeInput) {
-      themeInput.value = theme === "dark"
+      themeInput.value = theme === "dark";
     }
- }, [theme, themeInput]);
+  }, [theme, themeInput]);
 
   return (
-    <div className="flex h-auto w-screen flex-col items-center overflow-hidden px-8">
+    <div className="flex h-auto w-screen flex-col items-center overflow-hidden px-8 pt-4">
       <div className="z-20 flex flex-col items-center justify-start px-2 py-4">
         <Link href={`/intro`}>
           <Title />
