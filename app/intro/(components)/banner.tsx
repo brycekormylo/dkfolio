@@ -14,7 +14,7 @@ const Banner = () => {
             fill={true}
             className="object-contain"
             alt="Banner Image"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="100vw"
 
           />
         </div>
@@ -25,7 +25,7 @@ const Banner = () => {
             fill={true}
             className="object-contain"
             alt="Banner Image"
-            sizes="(max-width: 768px) 100vw"
+            sizes="100vw"
 
           />
         </div>
