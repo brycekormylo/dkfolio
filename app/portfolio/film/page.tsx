@@ -13,30 +13,30 @@ import devils_slide from "../../../public/images/devils_slide.jpg";
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import millie_ic from "../../../public/images/millie_ic.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
+import chimney from "../../../public/images/dkfolio_0424/chimney_24.jpeg"
+import dock_rope from "../../../public/images/dkfolio_0424/dock_rope.jpg"
+import rainbow from "../../../public/images/dkfolio_0424/rainbow.jpeg"
+import rainbow_2 from "../../../public/images/dkfolio_0424/rainbow_2.jpg"
+import roaring_seal from "../../../public/images/dkfolio_0424/roaring_seal.jpg"
+import roaring_seal_2 from "../../../public/images/dkfolio_0424/roaring_seal_2.jpg"
+import rolling_fog from "../../../public/images/dkfolio_0424/rolling_fog.jpg"
+
+
+
 import LandscapeRow from "../../(components)/landscape_row";
 import PortraitRow from "../../(components)/portrait_row";
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 
 const Film = () => {
-  const portraits = [
-    river,
-    cow,
-    la_jolla_seals,
-    squirrel,
-    aspen,
-    beach_cliff,
-    lifeguard_tower,
-    millie_ic,
-  ];
-  const landscapes = [devils_slide, chimney_cow, yosemite, bee];
 
   return (
     <div className="flex w-screen flex-col gap-1 md:gap-4">
+      <LandscapeRow images={[roaring_seal, bee]} />
       <PortraitRow images={[beach_cliff, aspen, cow]} />
-      <LandscapeRow images={[bee, devils_slide]} />
+      <LandscapeRow images={[chimney_cow, devils_slide]} />
       <PortraitRow images={[la_jolla_seals, river, squirrel]} />
-      <LandscapeRow images={[yosemite, chimney_cow]} />
+      <LandscapeRow images={[rainbow_2, yosemite]} />
       <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
         <div className="divider" />
         <div className="self-end px-2 md:px-10">
