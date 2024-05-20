@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import millie_ic from "../../../public/images/millie_ic.jpg";
+import charlie_car from "../../../public/images/charlie_car.jpeg";
 import pillar from "../../../public/images/bw_pillar.jpg";
 
 const SelectorItems = [
@@ -13,6 +14,11 @@ const SelectorItems = [
     name: "Black + White",
     slug: "bw",
     img: pillar,
+  },
+  {
+    name: "A Day in the Life",
+    slug: "life",
+    img: charlie_car,
   },
 ];
 
@@ -36,7 +42,7 @@ const Selector = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <div className="flex justify-center rounded-full md:h-10 md:w-40">
+          <div className="flex justify-center rounded-full md:h-10 md:w-[12rem]">
             <h2 className="text-md self-center md:text-xl">{item.name}</h2>
           </div>
         </Link>
