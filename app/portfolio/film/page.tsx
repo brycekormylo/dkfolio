@@ -21,8 +21,6 @@ import roaring_seal from "../../../public/images/dkfolio_0424/roaring_seal.jpg"
 import roaring_seal_2 from "../../../public/images/dkfolio_0424/roaring_seal_2.jpg"
 import rolling_fog from "../../../public/images/dkfolio_0424/rolling_fog.jpg"
 
-
-
 import LandscapeRow from "../../(components)/landscape_row";
 import PortraitRow from "../../(components)/portrait_row";
 import Link from "next/link";

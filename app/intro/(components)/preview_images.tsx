@@ -16,7 +16,7 @@ const PreviewImages = () => {
         <ParallaxCircleImage src={beach_cliff} speed={-20} />
         <Parallax speed={-10}>
           <ParallaxCircleImage
-            src={river}
+            src={squirrel}
             speed={-5}
             disabled={true}
             height={12}
@@ -27,7 +27,7 @@ const PreviewImages = () => {
         </div>
         <Parallax speed={-4}>
           <ParallaxCircleImage
-            src={squirrel}
+            src={lifeguard_tower}
             speed={-10}
             disabled={true}
             height={20}
@@ -56,7 +56,7 @@ const PreviewImages = () => {
           </Parallax>
         </div>
         <div className="md:translate-y-10">
-          <ParallaxCircleImage src={lifeguard_tower} speed={-15} />
+          <ParallaxCircleImage src={river} speed={-15} />
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const Socials = () => {
           </div>
         </Parallax>
       </div>
-      <div className="divider z-20 col-start-1 row-start-1 self-start justify-self-end" />
+      <div className="divider z-20 col-start-1 row-start-1 self-start justify-self-end [&_*]:transition-all [&_*]:ease-linear" />
       <div className="z-10 col-start-1 row-start-1 flex flex-col justify-center gap-6 self-center md:h-[40rem] md:gap-20">
         <div className="mx-2 flex h-auto flex-col self-center rounded-2xl bg-timber/75 px-4 py-6 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:max-w-[40rem]">
           <p className="p-2 indent-6 text-xs md:p-4 md:text-base">

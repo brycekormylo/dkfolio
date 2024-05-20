@@ -35,12 +35,16 @@ const ParallaxCircleImage: React.FC<ImageProps> = ({
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="shadow-inner relative"
+      className="relative shadow-inner"
     >
       <Parallax speed={speed}>
         <div
           className={`relative aspect-[3/5] transition-all duration-300 ${
-            isHovered ? "h-[32rem] md:h-[40rem]" : disabled ? `h-[${height}rem]` : "h-[24rem] md:h-[32rem]"
+            isHovered
+              ? "h-[32rem] md:h-[40rem]"
+              : disabled
+              ? `h-[${height}rem]`
+              : "h-[24rem] md:h-[32rem]"
           }`}
         >
           <Image
