@@ -27,7 +27,7 @@ const LilyIntro = [
   "Brace yourself because adopting a senior dog will totally flip your perspective and these seasoned pups? Well they'll just leave paw prints on your heart that rival a mural! Ready for some furry joy in your life? Take a peek at Lily's Legacy and think about giving a senior pup the cozy home they've been dreaming of!",
 ];
 
-const LillyLegacy = () => {
+const PuppyProject = () => {
   return (
     <div className="max-w-screen flex flex-col gap-12 overflow-hidden">
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
@@ -46,7 +46,7 @@ const LillyLegacy = () => {
             />
           </div>
         </Parallax>
-        <div className="z-10 -my-[7.5rem]  md:my-0 md:ms-20 md:max-w-[48rem]">
+        <div className="z-10 -my-[7.5rem] md:my-0 md:ms-20 md:max-w-[48rem]">
           <div className="flex flex-col gap-6 rounded-xl bg-timber/50 p-2 indent-6 dark:bg-smoke/50">
             {PuppyProjectIntro.map((section, i) => (
               <p key={i} className="indent-6 text-xs md:text-sm">
@@ -127,4 +127,4 @@ const LillyLegacy = () => {
   );
 };
 
-export default LillyLegacy;
+export default PuppyProject;

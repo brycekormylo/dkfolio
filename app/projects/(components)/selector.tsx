@@ -7,7 +7,7 @@ import pillar from "../../../public/images/bw_pillar.jpg";
 const SelectorItems = [
   {
     name: "Puppy Project",
-    slug: "lilly",
+    slug: "puppy-project",
     img: millie_ic,
   },
   {

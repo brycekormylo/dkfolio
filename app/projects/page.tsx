@@ -1,5 +1,5 @@
-import LillyLegacy from "./lilly/page";
+import PuppyProject from "./puppy-project/page";
 
 export default function Projects() {
-  return <LillyLegacy />;
+  return <PuppyProject />;
 }

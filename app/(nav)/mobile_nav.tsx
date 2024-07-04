@@ -25,7 +25,7 @@ const NavbarItems = [
   },
   {
     name: "Projects",
-    slug: "projects/lilly",
+    slug: "projects/puppy-project",
   },
   {
     name: "Store",
