@@ -6,7 +6,7 @@ import { Parallax } from "react-scroll-parallax";
 import bee from "../../../public/images/bee.jpg";
 
 const contact_text =
-  "Whether you're yearning to recreate memories, elevate your space with unique artwork, or to simply bask in the beauty of breathtaking scenes and majestic creatures, we're your golden ticket to transforming your dreams into a reality worthy of framing!";
+  "Whether you're yearning to recreate memories, elevate your space with unique artwork or to simply bask in the beauty of breathtaking scenes with majestic creatures, we're your golden ticket to transforming your dreams into a reality worth framing!";
 
 const Socials = () => {
   const router = useRouter();

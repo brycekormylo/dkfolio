@@ -5,9 +5,9 @@ import { Parallax } from "react-scroll-parallax";
 import Link from "next/link";
 
 const AboutMeIntro = [
-  "Nestled in the vibrant San Francisco Bay Area, Danielle, accompanied by her husband Bryce and their two dogs, made her creative mark when they transplanted in February 2020. What sets her apart? Specializing in film, Danielle brings her unique perspective and boundless creativity to every project she undertakes. She's not just a photographer; she's a perpetual creative! Constantly immersed in building, designing, and extending her creativity beyond the lens, she infuses every aspect of her life with a touch of innovation.",
+  "Nestled in the beautiful and vibrant San Francisco Bay Area, Danielle made her creative mark when she, accompanied by her husband Bryce and their two dogs, transplanted to the area in February 2020. What sets her apart? Specializing in film, Danielle blends her unique perspective and boundless creativity to every project she undertakes. She's not just a photographer, she's a perpetual creative! Constantly immersed in building, designing, and extending her creativity beyond the lens, she infuses every aspect of her life with a touch of innovation.",
 
-  "Danielle and Bryce's love story began in the magical city of Bergamo, Italy, e parlano Italiano ancora! They are the definition of passionate adventurers! The span of their interests includes hiking, cultural exploration, music-making, volleyball, sailing, painting, woodwork, and a myriad of other creative pursuits. They are forever learners at heart. Dreaming big is second nature to them and their journey never stops! When it's time to unwind, catch them kicking back to Harry Potter or willfully suffering through old Legend of Zelda games.",
+  "Danielle and Bryce's love story began in the magical city of Bergamo, Italy, e parlano Italiano ancora! They are the definition of passionate adventurers! Their span of interests includes hiking, cultural exploration, music-making, sports, sailing, painting, woodworking, and a myriad of other creative pursuits. They are truly forever learners at heart. Dreaming big is second nature to them and their journey never stops! When it's time to unwind, catch them kicking back to Harry Potter or wilfully suffering through old Legend of Zelda games.",
 ];
 
 const About = () => {
@@ -30,7 +30,7 @@ const About = () => {
               href="about"
               className="neo z-10 self-end rounded-xl bg-ash/25 px-4 py-2 [&_*]:transition-all [&_*]:ease-linear"
             >
-              <div className="-ms-5 flex items-center justify-start gap-2 ">
+              <div className="-ms-5 flex items-center justify-start gap-2">
                 <p>Read more</p>
                 <LuGlasses size={24} />
               </div>
