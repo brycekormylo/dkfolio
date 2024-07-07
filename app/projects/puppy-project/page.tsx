@@ -18,9 +18,7 @@ import { Parallax } from "react-scroll-parallax";
 const PuppyProjectIntro = [
   "We channel our passions into supporting dog rescues and shelters across the SF Bay Area, creating lasting connections between dogs and their compatible families to speed up adoptions. Our firm belief in the power of quality presentation drives us to volunteer, capturing personalized photos and building custom websites that tell everyone's story. Understanding dog psychology and body language is essential for ensuring their comfort during this confusing and often challenging period. Building trust and forming bonds is our top priority. With our photography expertise fused with a steadfast commitment to each dog's well-being, we authentically capture their shining personalities! As a web and iOS developer with an eye for design, Bryce further recognizes the importance of user-friendly websites while combining functionality with aesthetic appeal to facilitate smoother adoption processes.",
 
-  "The Puppy Project was inspired by our very sweet and misunderstood senior dog Wolfe, who reshaped our perspectives on adoption. Wolfe's reactivity issues, stemming from 9 years of abuse, led us to receiving professional training, which continues to benefit us to this day! In 2022 we unexpectedly lost Ollie, our sweet and sassy 4 year old Border Collie, after a week long battle in the hospital. This experience emphasized the urgency of placing dogs, especially seniors, into the right homes swiftly, which finally initiated our project. We are committed to ensuring no time is lost for pups seeking forever homes because we understand that every moment with our companions is precious!",
-
-  "If you're seeking a refreshed look with professional images for your rescue, we would love to join paws and make a difference together! Please reach out through our contact form, we’re thrilled to work alongside you. Let’s create tales of happiness because creating tails of happiness is what truly brings us joy!",
+  "The Puppy Project was inspired by our very affectionate and misunderstood senior dog Wolfe, who reshaped our perspectives on adoption. Wolfe's reactivity issues, stemming from 9 years of abuse, led us to receiving professional training, which continues to benefit us to this day! In 2022 we unexpectedly lost Ollie, our sweet and sassy 4 year old Border Collie, after a week long battle in the hospital. This experience emphasized the urgency of placing dogs, especially seniors, into the right homes swiftly, which finally initiated our project. We are committed to ensuring no time is lost for pups seeking forever homes because we understand that every moment with our companions is precious!",
 ];
 
 const LilyIntro = [
@@ -55,6 +53,19 @@ const PuppyProject = () => {
                 {section}
               </p>
             ))}
+            <p className="indent-6 text-xs md:text-sm">
+              If you're seeking a refreshed look with professional images for
+              your rescue, please reach out through our{" "}
+              <Link
+                href={"../../contact"}
+                className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
+              >
+                contact form
+              </Link>
+              , we would be thrilled to work alongside you. Let’s join paws and
+              create tales of happiness because creating tails of happiness is
+              what truly brings us joy!
+            </p>
           </div>
         </div>
       </div>
