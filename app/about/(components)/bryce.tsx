@@ -5,12 +5,17 @@ import { Parallax } from "react-scroll-parallax";
 import bryce from "../../../public/images/bryce.jpg";
 
 const about_bryce = [
-  "I'm an iOS and web developer, but thoroughly enjoy my time working as a second shooter for my wife, Danielle. My approach to photography is to capture the distinct details that often go overlooked. I aim to produce a diverse set of captivating photos at the end of each shoot, with each image offering something unique. Film photography is particularly valuable in achieving this goal, as the mechanical interface between photographer and camera presents a fascinating challenge. Film has been increasingly interesting for me as I constantly learning about the developing and printing processes, which has been a new and exciting aspect of photography.",
+  "Having grown up in San Diego,  I’m a very opinionated burrito critic and l feel most alive near the ocean!  The California coastline has always felt like home, making my relocation to San Francisco to further my career as a software developer an easy transition.  My love of natural beauty beside my long-standing interest in photography makes me thrive as a second shooter for Danielle.  Photography enables me to focus on the details that often get missed and film is a perfect medium to create truly unique results.  The mechanical interface between photographer and camera presents a fascinating challenge, making every image a true measure of skill.  My goal is to show a new perspective, broaden the horizons of everyone I interact with, and learn from every experience.  Whether it’s a new angle on a shot, a unique solution to a problem, or creating a cocktail recipe tuned to your personal tastes, I’ve got you covered.",
 
-  "While my interests and hobbies are constantly changing, I have a strong desire to learn and dive deeply into everything I attempt. I enjoy solving problems in creative ways, as well as designing and building things. Aside from my diverse interests, as a website designer and builder, my skills in website development and design complement our team's expertise. I find building websites to be a liberating pursuit that enables me to explore the world of design in new ways while providing new challenges to overcome. I relish the creative process and take great pride in seeing my work come to life. As a team with Danielle, I also provide a unique behind-the-scenes aid to make our clients look their best and keep them at ease during the website building process.",
+  "Wherever I am, I have always gravitated toward problem solving, naturally guiding me to a technical career.  I have found a passion for software development, focused on web and iOS applications. I find it to be the perfect combination of logic and design, enabling me to explore limitless potential in new ways.  My other interests honestly range over too many different topics.  Luckily, I have a strong drive to learn and dive deeply into each of them.  In my time away from photography and software development, I’m usually found cooking italian food, small-boat sailing, bartending, planning new projects, building tables, playing Titanfall 2 or out with our dogs.  I take pride in being versatile and having diverse interests,  combining them gives me my unique creative flavor!",
 
-  "In my free time away from the camera and computer, I also bartend, go small-boat sailing, build with various materials, play video games, and explore the outdoors. While I take pride in being versatile and having diverse interests, I also derive great satisfaction from applying my skills to each of these passions.",
+  "I’m equipped to fill a variety of roles and build projects with both detail and scale in mind.  Beyond the assistance I provide as a second shooter, my skills in website development and design complement our business, helping showcase Danielle’s photography and services.  I built and maintain this website among several other larger scale projects, check out my work!  If you’ve got a project, I’m always looking for new opportunities.",
 ];
+
+const conclusionPt1 =
+  "I’m equipped to fill a variety of roles and build projects with both detail and scale in mind.  Beyond the assistance I provide as a second shooter, my skills in website development and design complement our business, helping showcase Danielle’s photography and services.  I built and maintain this website among several other larger scale projects, ";
+const conclusionPt2 =
+  " If you’ve got a project, I’m always looking for new opportunities.";
 
 const Bryce = () => {
   return (
@@ -39,6 +44,18 @@ const Bryce = () => {
               {section}
             </p>
           ))}
+          <p className="indent-6 text-xs md:text-sm">
+            {conclusionPt1}
+            <a
+              className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
+              href={"https://www.brycekormylo.me/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              check out my work!
+            </a>
+            {conclusionPt2}
+          </p>
         </div>
       </div>
     </div>
