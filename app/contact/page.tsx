@@ -6,7 +6,7 @@ import ScrollUp from "../(components)/scroll_up";
 
 export default function Contact() {
   return (
-    <div className="grid min-h-[200vh] w-screen flex-col overflow-hidden py-[4rem] md:h-auto">
+    <div className="grid h-[200vh] w-screen flex-col overflow-hidden py-[4rem] md:h-auto">
       <ScrollUp />
       <div className="z-10 col-start-1 row-start-1 flex flex-row items-start justify-center">
         <ContactForm />
