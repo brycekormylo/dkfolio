@@ -21,7 +21,7 @@ const About = () => {
         </Parallax>
       </div>
       <div className="flex flex-row justify-between gap-8 px-2 md:p-10">
-        <div className="flex flex-col justify-center md:max-w-[60%]">
+        <div className="flex flex-col justify-center md:max-w-[60%] [&_*]:transition-all [&_*]:ease-linear">
           <div className="flex flex-col gap-8 rounded-xl bg-timber/75 px-2 py-6 indent-6 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:px-8 md:py-12">
             {AboutMeIntro.map((section, i) => (
               <p key={i} className="text-xs md:text-base">
@@ -30,7 +30,7 @@ const About = () => {
             ))}
             <Link
               href="about"
-              className="neo z-10 self-end rounded-xl bg-ash/25 px-4 py-2 [&_*]:transition-all [&_*]:ease-linear"
+              className="neo z-10 self-end rounded-xl bg-ash/25 px-4 py-2"
             >
               <div className="-ms-5 flex items-center justify-start gap-2">
                 <p>Read more</p>
