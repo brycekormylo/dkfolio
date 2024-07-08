@@ -71,7 +71,7 @@ const PuppyProject = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 pt-8 md:-mt-20 md:gap-12 md:pt-0">
+      <div className="flex flex-col gap-6 pt-8 md:-mt-20 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
         <div className="divider self-start" />
         <h1 className="mx-4 self-start text-2xl uppercase md:mx-20 md:text-5xl">
           Lily&apos;s Legacy

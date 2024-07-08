@@ -24,7 +24,7 @@ const SelectorItems = [
 
 const Selector = () => {
   return (
-    <div className="flex flex-row justify-center gap-2 py-4 md:gap-[9rem] md:py-10">
+    <div className="flex flex-row justify-center gap-2 py-4 md:gap-[9rem] md:py-10 [&_*]:transition-all [&_*]:ease-linear">
       {SelectorItems.map((item, i) => (
         <Link
           key={i}

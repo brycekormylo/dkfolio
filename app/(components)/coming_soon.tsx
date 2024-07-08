@@ -64,7 +64,7 @@ const ComingSoon = ({
               : "-translate-x-10 md:translate-x-0"
           }`}
         />
-        <div className="px-4 md:pe-10">
+        <div className="px-4 md:pe-10 [&_*]:transition-all [&_*]:ease-linear">
           <Link href={href} rel="noopener noreferrer" target="_blank">
             <div
               className={`neo flex flex-row gap-2 rounded-xl bg-timber p-2 dark:bg-smoke`}

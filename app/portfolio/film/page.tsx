@@ -33,7 +33,7 @@ const Film = () => {
       <LandscapeRow images={[devils_slide, rainbow]} />
       <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
         <div className="divider" />
-        <div className="self-end px-2 md:px-10">
+        <div className="self-end px-2 md:px-10 [&_*]:transition-all [&_*]:ease-linear">
           <Link
             href={"https://www.instagram.com/kormylophotography/"}
             rel="noopener noreferrer"

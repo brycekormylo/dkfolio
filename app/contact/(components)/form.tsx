@@ -165,7 +165,7 @@ function ContactForm() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="neo rounded-xl border-[1px] border-black/50 bg-white px-4 py-2 text-base dark:bg-black md:text-xl"
+            className="neo rounded-xl border-[1px] border-black/50 bg-white px-4 py-2 text-base transition-all ease-linear dark:bg-black md:text-xl"
           >
             {state.submitting ? "Submitting..." : "Submit 🥂"}
           </button>

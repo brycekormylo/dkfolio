@@ -28,7 +28,7 @@ const Socials = () => {
       </div>
       <div className="divider z-20 col-start-1 row-start-1 self-start justify-self-end [&_*]:transition-all [&_*]:ease-linear" />
       <div className="z-10 col-start-1 row-start-1 flex flex-col justify-center gap-6 self-center md:h-[40rem] md:gap-20">
-        <div className="mx-2 flex h-auto flex-col self-center rounded-2xl bg-timber/75 px-4 py-6 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:max-w-[40rem]">
+        <div className="mx-2 flex h-auto flex-col self-center rounded-2xl bg-timber/75 px-4 py-6 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:max-w-[40rem] [&_*]:transition-all [&_*]:ease-linear">
           <p className="p-2 indent-6 text-xs md:p-4 md:text-base">
             {contact_text}
           </p>
@@ -39,7 +39,7 @@ const Socials = () => {
             <p>Let&apos;s chat</p>
           </button>
         </div>
-        <div className="max-w-screen flex flex-col items-center justify-start gap-4 self-end p-2 text-sm md:flex-row md:p-10 md:text-base">
+        <div className="max-w-screen flex flex-col items-center justify-start gap-4 self-end p-2 text-sm md:flex-row md:p-10 md:text-base [&_*]:transition-all [&_*]:ease-linear">
           <Link
             href={"https://www.instagram.com/kormylophotography/"}
             rel="noopener noreferrer"
