@@ -21,6 +21,11 @@ const PuppyProjectIntro = [
   "The Puppy Project was inspired by our very affectionate and misunderstood senior dog Wolfe, who reshaped our perspectives on adoption. Wolfe's reactivity issues, stemming from 9 years of abuse, led us to receiving professional training, which continues to benefit us to this day! In 2022 we unexpectedly lost Ollie, our sweet and sassy 4 year old Border Collie, after a week long battle in the hospital. This experience emphasized the urgency of placing dogs, especially seniors, into the right homes swiftly, which finally initiated our project. We are committed to ensuring no time is lost for pups seeking forever homes because we understand that every moment with our companions is precious!",
 ];
 
+const PuppyConcl1 =
+  "If you're seeking a refreshed look with professional images for your rescue, please reach out through our ";
+const PuppyConcl2 =
+  ", we would be thrilled to work alongside you. Let's join paws and create tales of happiness because creating tails of happiness is what truly brings us joy!";
+
 const LilyIntro = [
   "Lily's Legacy isn't your average dog sanctuary, it's a haven for senior pups where love and care flow as freely as frozen Kongs! Whether they waltzed in as strays or came in through the surrender door, these golden oldies are craving heaps of attention and affection. Lily's Legacy not only understands this, but exceeds expectations by showering these wise woofers with second, third, and fourth chances! As long as they're under Lily's care you can expect happy, healthy, wagging tails and cozy cuddles!",
 
@@ -54,17 +59,14 @@ const PuppyProject = () => {
               </p>
             ))}
             <p className="indent-6 text-xs md:text-sm">
-              If you're seeking a refreshed look with professional images for
-              your rescue, please reach out through our{" "}
+              {PuppyConcl1}
               <Link
                 href={"../../contact"}
                 className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
               >
                 contact form
               </Link>
-              , we would be thrilled to work alongside you. Let&apos;s join paws
-              and create tales of happiness because creating tails of happiness
-              is what truly brings us joy!
+              {PuppyConcl2}
             </p>
           </div>
         </div>
