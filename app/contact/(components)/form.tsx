@@ -6,7 +6,6 @@ import { useForm, ValidationError } from "@formspree/react";
 const Subjects = [
   "Custom Landscapes and Wildlife",
   "Puppy Project",
-  "App & Web Development",
   "General Inquiries",
 ];
 
