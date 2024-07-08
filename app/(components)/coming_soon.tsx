@@ -15,14 +15,14 @@ type Props = {
   reverse: boolean;
 };
 
-const ComingSoon: React.FC<Props> = ({
+const ComingSoon = ({
   image,
   text = "More images coming soon!",
   href,
   insta,
   title,
   reverse,
-}) => {
+}: Props) => {
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-20 overflow-hidden py-[3rem]">
       <ScrollUp />
