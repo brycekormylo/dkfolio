@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import palm from "../../../public/images/palm.jpg";
+import palm from "../../../public/images/updates7-7b/palm.jpg";
 import drone_shore from "../../../public/images/drone_shore.jpg";
 import squirrel from "../../../public/images/squirrel.jpg";
 

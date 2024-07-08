@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
-import down_cliff from "../../../public/images/down_cliff.jpg";
-import palm from "../../../public/images/palm.jpg";
-import sca_foggy_sunset from "../../../public/images/sca_foggy_sunset.jpg";
-import dock_rope from "../../../public/images/dkfolio_0424/dock_rope.jpg";
+import down_cliff from "../../../public/images/updates7-7b/down_cliff.jpg";
+import palm from "../../../public/images/updates7-7b/palm.jpg";
+import sca_foggy_sunset from "../../../public/images/updates7-7b/sca_fog.jpg";
+import dock_rope from "../../../public/images/updates7-7b/dock_rope.jpg";
 import rolling_fog from "../../../public/images/dkfolio_0424/rolling_fog.jpg";
 import LandscapeRow from "@/app/(components)/landscape_row";
 import PortraitRow from "@/app/(components)/portrait_row";
