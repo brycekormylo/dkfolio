@@ -1,3 +1,5 @@
+"use client";
+
 import ParallaxCircleImage from "@/app/(components)/parallax_circle_image";
 import { Parallax } from "react-scroll-parallax";
 

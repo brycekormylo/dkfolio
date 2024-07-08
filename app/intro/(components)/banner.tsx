@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import chimney_lg from "../../../public/chimney/chimney_lg.jpg";
 import chimney_lg_cropped from "../../../public/chimney/chimney_lg_cropped.jpg";
@@ -15,7 +16,6 @@ const Banner = () => {
             className="object-contain"
             alt="Banner Image"
             sizes="100vw"
-
           />
         </div>
         <div className="relative block h-full w-screen shadow-inner md:hidden">
@@ -26,7 +26,6 @@ const Banner = () => {
             className="object-contain"
             alt="Banner Image"
             sizes="100vw"
-
           />
         </div>
       </ParallaxBannerLayer>

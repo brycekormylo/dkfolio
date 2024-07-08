@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { LuGlasses } from "react-icons/lu";
 import us_photo from "../../../public/images/bryce_and_danielle_christian.jpg";

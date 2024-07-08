@@ -1,5 +1,3 @@
-"use client";
-
 import charlie_car from "../../../public/images/charlie_car.jpeg";
 import ComingSoon from "@/app/(components)/coming_soon";
 

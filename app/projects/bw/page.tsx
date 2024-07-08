@@ -1,5 +1,3 @@
-"use client";
-
 import pillar from "../../../public/images/bw_pillar.jpg";
 import ComingSoon from "@/app/(components)/coming_soon";
 

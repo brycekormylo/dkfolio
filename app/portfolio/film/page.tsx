@@ -1,5 +1,3 @@
-"use client";
-
 import chimney_cow from "../../../public/images/chimney_cow.jpg";
 import river from "../../../public/images/river.jpg";
 import cow from "../../../public/images/cow.jpg";

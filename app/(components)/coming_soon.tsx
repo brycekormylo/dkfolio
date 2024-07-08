@@ -1,7 +1,6 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 import ScrollUp from "./scroll_up";
 import Link from "next/link";

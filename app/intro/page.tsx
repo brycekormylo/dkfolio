@@ -1,5 +1,3 @@
-"use client";
-
 import Banner from "./(components)/banner";
 import OpeningPhrase from "./(components)/opener";
 import Circles from "./(components)/circles";
