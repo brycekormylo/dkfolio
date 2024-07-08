@@ -14,6 +14,7 @@ export default function Store() {
       </div>
       <div className="col-start-1 row-start-1 mt-12 self-start md:mt-24">
         <Image
+          priority
           src={devils_slide}
           alt="Circle Image"
           className="object-fit z-0 h-64 w-64 rounded-full blur-sm md:h-[45rem] md:w-[45rem]"
