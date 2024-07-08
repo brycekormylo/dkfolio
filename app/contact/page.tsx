@@ -1,34 +1,27 @@
-"use client";
-
 import ContactForm from "./(components)/form";
 import Links from "./(components)/links";
-import { Parallax } from "react-scroll-parallax";
 import la_jolla_seals from "../../public/images/la_jolla_seals_sm.jpg";
 import Image from "next/image";
 import ScrollUp from "../(components)/scroll_up";
 
 export default function Contact() {
   return (
-    <div className="flex min-h-screen w-screen flex-col items-center justify-start overflow-hidden py-[4rem]">
+    <div className="grid min-h-[200vh] w-screen flex-col overflow-hidden py-[4rem] md:h-auto">
       <ScrollUp />
-      <div className="z-10 flex flex-row justify-evenly">
+      <div className="z-10 col-start-1 row-start-1 flex flex-row items-start justify-center">
         <ContactForm />
       </div>
-      <div className="divider mb-4 mt-12 self-start" />
-      <div className="z-10 self-start md:px-10">
+      <div className="divider col-start-1 row-start-1 self-end" />
+      <div className="z-10 col-start-1 row-start-1 self-end pb-8 md:px-10">
         <Links />
       </div>
-      <div className="flex flex-row justify-end">
-        <Parallax speed={-15}>
-          <div className="translate fixed bottom-0 left-0 z-0 h-[45rem] w-[45rem] translate-y-[22rem] p-4 md:translate-x-40">
-            <Image
-              src={la_jolla_seals}
-              alt="Circle Image"
-              fill={true}
-              className="z-0 rounded-full object-cover blur-sm"
-            />
-          </div>
-        </Parallax>
+      <div className="col-start-1 row-start-1 mb-16 self-end justify-self-end md:mb-0 md:mt-24">
+        <Image
+          priority
+          src={la_jolla_seals}
+          alt="Circle Image"
+          className="object-fit z-0 h-64 w-64 rounded-full blur-sm md:h-[45rem] md:w-[45rem]"
+        />
       </div>
     </div>
   );

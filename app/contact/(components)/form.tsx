@@ -73,7 +73,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex rounded-2xl bg-timber/50 py-8 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:min-h-[24rem] md:min-w-[42rem]">
+    <div className="flex items-center justify-center rounded-2xl bg-timber/50 py-8 shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:h-[32rem] md:min-w-[42rem]">
       <div
         className={`${
           success ? "block" : "hidden"
