@@ -62,9 +62,9 @@ const PuppyProject = () => {
               >
                 contact form
               </Link>
-              , we would be thrilled to work alongside you. Let’s join paws and
-              create tales of happiness because creating tails of happiness is
-              what truly brings us joy!
+              , we would be thrilled to work alongside you. Let&apos;s join paws
+              and create tales of happiness because creating tails of happiness
+              is what truly brings us joy!
             </p>
           </div>
         </div>
