@@ -5,7 +5,7 @@ type ImageProps = {
   images: StaticImageData[];
 };
 
-const LandscapeRow: React.FC<ImageProps> = ({ images }) => {
+const LandscapeRow = ({ images }: ImageProps) => {
   return (
     <div className="flex h-auto w-screen justify-center gap-1 md:gap-4">
       {images.map((image, i) => {

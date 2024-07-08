@@ -5,12 +5,15 @@ import palm from "../../../public/images/updates7-7b/palm.jpg";
 import sca_foggy_sunset from "../../../public/images/updates7-7b/sca_fog.jpg";
 import dock_rope from "../../../public/images/updates7-7b/dock_rope.jpg";
 import rolling_fog from "../../../public/images/dkfolio_0424/rolling_fog.jpg";
+import chimney from "../../../public/chimney/chimney_lg.jpg";
 import LandscapeRow from "@/app/(components)/landscape_row";
 import PortraitRow from "@/app/(components)/portrait_row";
+import PanoramaRow from "@/app/(components)/pano_row";
 
 const Digital = () => {
   return (
     <div className="flex w-screen flex-col gap-1 md:gap-4">
+      <PanoramaRow image={chimney} />
       <PortraitRow images={[palm, down_cliff, dock_rope]} />
       <LandscapeRow images={[sca_foggy_sunset, rolling_fog]} />
       <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
