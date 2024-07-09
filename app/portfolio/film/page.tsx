@@ -6,14 +6,14 @@ import wave from "../../../public/images/wave.jpg";
 import paraglider from "../../../public/images/paraglider.jpg";
 import la_jolla_seals from "../../../public/images/la_jolla_seals.jpg";
 import squirrel from "../../../public/images/squirrel.jpg";
-import dead_trees from "../../../public/images/updates7-7/dead_trees.jpg";
+import dead_trees from "../../../public/images/update709/aspen.jpg";
 import beach_cliff from "../../../public/images/beach_cliff.jpg";
 import bee from "../../../public/images/bee.jpg";
 import devils_slide from "../../../public/images/devils_slide.jpg";
 import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
 import chimney from "../../../public/images/updates7-7/chimney.jpg";
-import rainbow from "../../../public/images/updates7-7/vernal-falls-rainbow.jpg";
+import rainbow from "../../../public/images/update709/vernal_rainbow.jpg";
 import elephant_seal_fight from "../../../public/images/updates7-7/elephant_seal_fight.jpg";
 
 import LandscapeRow from "../../(components)/landscape_row";

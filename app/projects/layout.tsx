@@ -7,7 +7,7 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
     <section>
       <ScrollUp />
       <Selector />
-      <div className="flex w-screen flex-col items-end gap-10 pt-10">
+      <div className="flex grow flex-row-reverse pt-10">
         <div className="divider" />
       </div>
       {children}

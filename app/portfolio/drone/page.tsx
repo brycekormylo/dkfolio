@@ -1,15 +1,35 @@
-import drone_shore from "../../../public/images/drone_shore.jpg";
+import LandscapeRow from "@/app/(components)/landscape_row";
+import PortraitRow from "@/app/(components)/portrait_row";
+import Link from "next/link";
+import { LuInstagram } from "react-icons/lu";
 
-import ComingSoon from "@/app/(components)/coming_soon";
+import drone_shore from "../../../public/images/drone_shore.jpg";
+import tiburon from "../../../public/images/update709/tib_drone.jpg";
+import lotr from "../../../public/images/update709/lotr.jpg";
+import surf_drone from "../../../public/images/update709/surf_drone.jpg";
+import trippy_road from "../../../public/images/update709/trippy_road.jpg";
 
 const Drone = () => {
   return (
-    <ComingSoon
-      image={drone_shore}
-      href="https://www.instagram.com/drone.ylo/"
-      insta="drone.ylo"
-      reverse={true}
-    />
+    <div className="flex w-screen flex-col gap-1 md:gap-4">
+      <PortraitRow images={[surf_drone, trippy_road, drone_shore]} />
+      <LandscapeRow images={[tiburon, lotr]} />
+      <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
+        <div className="divider" />
+        <div className="self-end px-2 md:px-10 [&_*]:transition-all [&_*]:ease-linear">
+          <Link
+            href={"https://www.instagram.com/drone.ylo/"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
+              <LuInstagram size={24} />
+              <p>drone.ylo</p>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 
