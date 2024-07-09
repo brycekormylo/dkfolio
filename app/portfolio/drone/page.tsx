@@ -3,7 +3,7 @@ import PortraitRow from "@/app/(components)/portrait_row";
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 
-import drone_shore from "../../../public/images/drone_shore.jpg";
+import drone_shore from "../../../public/images/update709/beach_drone.jpg";
 import tiburon from "../../../public/images/update709/tib_drone.jpg";
 import lotr from "../../../public/images/update709/lotr.jpg";
 import surf_drone from "../../../public/images/update709/surf_drone.jpg";
@@ -12,8 +12,8 @@ import trippy_road from "../../../public/images/update709/trippy_road.jpg";
 const Drone = () => {
   return (
     <div className="flex w-screen flex-col gap-1 md:gap-4">
-      <PortraitRow images={[surf_drone, trippy_road, drone_shore]} />
-      <LandscapeRow images={[tiburon, lotr]} />
+      <LandscapeRow images={[lotr, tiburon]} />
+      <PortraitRow images={[drone_shore, trippy_road, surf_drone]} />
       <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
         <div className="divider" />
         <div className="self-end px-2 md:px-10 [&_*]:transition-all [&_*]:ease-linear">

@@ -8,7 +8,7 @@ import beach_cliff from "../../../public/images/beach_cliff.jpg";
 import river from "../../../public/images/river.jpg";
 import la_jolla_seals from "../../../public/images/la_jolla_seals.jpg";
 import aspen from "../../../public/images/update709/aspen.jpg";
-import drone_shore from "../../../public/images/drone_shore.jpg";
+import drone_shore from "../../../public/images/update709/beach_drone.jpg";
 import squirrel from "../../../public/images/squirrel.jpg";
 
 const PreviewImages = () => {
