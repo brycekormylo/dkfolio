@@ -90,7 +90,7 @@ const Life = () => {
           <LandscapeRow images={[millie_pup_annoy_charlie, ch_frisbee_wave]} />
           <PortraitRow images={[boat_millie, mi_sleeping_sd, ch_esa]} />
           <LandscapeRow images={[ch_ol, wedding_mexican_food]} />
-          <PortraitRow images={[annoyed_muff, bd_sophia, ch_pup_la]} />
+          <PortraitRow images={[ch_pup_la, bd_sophia, annoyed_muff]} />
         </div>
         <div className="my-10 flex flex-col gap-6 self-end">
           <div className="divider" />
