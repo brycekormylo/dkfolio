@@ -6,16 +6,16 @@ import ScrollUp from "../(components)/scroll_up";
 
 export default function Contact() {
   return (
-    <div className="grid h-[200vh] w-screen flex-col overflow-hidden py-[4rem] md:h-auto">
+    <div className="grid min-h-screen w-screen overflow-hidden py-8 md:h-auto md:py-[4rem]">
       <ScrollUp />
-      <div className="z-10 col-start-1 row-start-1 flex flex-row items-start justify-center">
+      <div className="z-10 col-start-1 row-start-1 flex justify-center">
         <ContactForm />
       </div>
-      <div className="divider col-start-1 row-start-1 self-end" />
-      <div className="z-10 col-start-1 row-start-1 self-end pb-8 md:px-10">
+      <div className="divider col-start-1 row-start-2 self-end md:row-start-1" />
+      <div className="z-10 col-start-1 row-start-2 mt-16 self-end pb-8 md:row-start-1 md:mt-0 md:px-10">
         <Links />
       </div>
-      <div className="col-start-1 row-start-1 mb-16 self-end justify-self-end md:mb-0 md:mt-24">
+      <div className="col-start-1 row-start-2 self-end justify-self-end md:row-start-1 md:mb-0 md:mt-24">
         <Image
           priority
           src={la_jolla_seals}
