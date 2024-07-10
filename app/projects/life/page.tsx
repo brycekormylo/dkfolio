@@ -1,9 +1,28 @@
-import ch_double_wave from "../../../public/images/update709/ch_double_wave.jpg";
 import awoo from "../../../public/images/update709/awoo.jpg";
+import be_hmb from "../../../public/images/update709/be_hmb.jpg";
+import tunnel_view_charlie from "../../../public/images/update709/tunnel_view_charlie.jpg";
+import ch_roadtrip from "../../../public/images/update709/ch_roadtrip.jpg";
+import wedding_mexican_food from "../../../public/images/update709/wedding_mexican_food.jpg";
+import ch_frisbee_wave from "../../../public/images/update709/ch_frisbee_wave.jpg";
+import ch_ol from "../../../public/images/update709/ch_ol.jpg";
+import millie_pup_annoy_charlie from "../../../public/images/update709/millie_pup_annoy_charlie.jpg";
+
+import wedding_pier_laughing from "../../../public/images/update709/wedding_pier_laughing.jpg";
+import ch_take_the_wheel from "../../../public/images/update709/ch_take_the_wheel.jpg";
+import bd_christian from "../../../public/images/bryce_and_danielle_christian.jpg";
+import bd_sophia from "../../../public/images/bryce_and_danielle_sophia.jpg";
+import ch_esa from "../../../public/images/update709/ch_esa.jpg";
+import ch_pup_la from "../../../public/images/update709/ch_pup_la.jpg";
+import yosemite_falls_family from "../../../public/images/update709/yosemite_falls_family.jpg";
+import mi_305_frisbee from "../../../public/images/update709/mi_305_frisbee.jpg";
+import annoyed_muff from "../../../public/images/update709/annoyed_muff.jpg";
+import mi_sleeping_sd from "../../../public/images/update709/mi_sleeping_sd.jpg";
 import ice_cream_millie from "../../../public/images/update709/ice_cream_millie.jpg";
 import boat_millie from "../../../public/images/update709/boat_millie.jpg";
-import ch_muddy from "../../../public/images/update709/ch_muddy.jpg";
-import be_hmb from "../../../public/images/update709/be_hmb.jpg";
+import fun_sophia from "../../../public/images/update709/fun_sophia.jpg";
+import b_pup_millie from "../../../public/images/update709/b_pup_millie.jpg";
+import millie_smile from "../../../public/images/update709/millie_smile.jpg";
+
 import Link from "next/link";
 import Image from "next/image";
 import { LuInstagram } from "react-icons/lu";
@@ -37,10 +56,10 @@ const Life = () => {
               sizes="100vw"
             />
           </div>
-          <div className="mt-[5rem] flex flex-col gap-[2rem] md:me-36 md:w-[48rem]">
-            <p className="w-full indent-6 md:me-12 ">{text}</p>
-            <p className="w-full indent-6 md:me-12 ">{text2}</p>
-            <p className="w-full indent-6 md:me-12 ">
+          <div className="mt-[5rem] flex w-full flex-col gap-[2rem] indent-6 md:me-48 md:w-[48rem] ">
+            <p>{text}</p>
+            <p>{text2}</p>
+            <p>
               {text3[0]}
               <a
                 className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
@@ -55,8 +74,17 @@ const Life = () => {
           </div>
         </div>
         <div className="mt-[2rem] flex w-screen flex-col gap-1 md:mt-[6rem] md:gap-4">
-          <LandscapeRow images={[awoo, ch_double_wave]} />
-          <PortraitRow images={[ice_cream_millie, ch_muddy, boat_millie]} />
+          <PortraitRow
+            images={[wedding_pier_laughing, ch_pup_la, yosemite_falls_family]}
+          />
+          <LandscapeRow images={[awoo, ch_roadtrip]} />
+          <PortraitRow images={[boat_millie, fun_sophia, ch_take_the_wheel]} />
+          <LandscapeRow images={[tunnel_view_charlie, be_hmb]} />
+          <PortraitRow images={[b_pup_millie, bd_christian, mi_305_frisbee]} />
+          <LandscapeRow images={[millie_pup_annoy_charlie, ch_frisbee_wave]} />
+          <PortraitRow images={[mi_sleeping_sd, millie_smile, ch_esa]} />
+          <LandscapeRow images={[ch_ol, wedding_mexican_food]} />
+          <PortraitRow images={[annoyed_muff, ice_cream_millie, bd_sophia]} />
         </div>
         <div className="my-10 flex flex-col gap-6 self-end">
           <div className="divider" />
