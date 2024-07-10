@@ -45,18 +45,17 @@ const Life = () => {
         A Day in the Life
       </h1>
       <div className="flex flex-col gap-6 pt-8 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
-        <div className="max-w-screen flex flex-row items-start justify-between gap-6">
-          <div className="relative z-0 ms-36 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
+        <div className="max-w-screen flex flex-col items-start gap-6 md:flex-row md:justify-between">
+          <div className="relative z-0 h-[16rem] w-[16rem] self-center md:ms-36 md:h-[36rem] md:w-[36rem] md:self-start">
             <Image
               priority
               src={be_hmb}
               alt="Circle Image"
               fill={true}
               className="rounded-full object-cover"
-              sizes="100vw"
             />
           </div>
-          <div className="mt-[5rem] flex w-full flex-col gap-[2rem] indent-6 md:me-48 md:w-[48rem] ">
+          <div className="mt-8 flex w-full flex-col gap-[2rem] px-2 indent-6 md:me-48 md:mt-[5rem] md:w-[48rem] ">
             <p>{text}</p>
             <p>{text2}</p>
             <p>
