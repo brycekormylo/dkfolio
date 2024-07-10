@@ -44,7 +44,7 @@ const Life = () => {
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
         A Day in the Life
       </h1>
-      <div className="flex flex-col gap-6 pt-8 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
+      <div className="flex flex-col gap-6 px-2 pt-8 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
         <div className="max-w-screen flex flex-col items-start gap-6 md:flex-row md:justify-between">
           <div className="relative z-0 h-[16rem] w-[16rem] self-center md:ms-36 md:h-[36rem] md:w-[36rem] md:self-start">
             <Image
