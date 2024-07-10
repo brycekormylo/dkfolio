@@ -81,13 +81,13 @@ const Life = () => {
               yosemite_falls_family,
             ]}
           />
-          <LandscapeRow images={[awoo, ch_roadtrip]} />
+          <LandscapeRow images={[millie_pup_annoy_charlie, ch_roadtrip]} />
           <PortraitRow images={[millie_smile, fun_sophia, mi_305_frisbee]} />
           <LandscapeRow images={[tunnel_view_charlie, be_hmb]} />
           <PortraitRow
             images={[ch_take_the_wheel, bd_christian, b_pup_millie]}
           />
-          <LandscapeRow images={[millie_pup_annoy_charlie, ch_frisbee_wave]} />
+          <LandscapeRow images={[awoo, ch_frisbee_wave]} />
           <PortraitRow images={[boat_millie, mi_sleeping_sd, ch_esa]} />
           <LandscapeRow images={[ch_ol, wedding_mexican_food]} />
           <PortraitRow images={[ch_pup_la, bd_sophia, annoyed_muff]} />
