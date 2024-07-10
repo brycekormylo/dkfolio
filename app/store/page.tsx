@@ -20,7 +20,7 @@ export default function Store() {
           className="object-fit z-0 h-64 w-64 rounded-full blur-sm md:h-[45rem] md:w-[45rem]"
         />
       </div>
-      <div className="divider col-start-1 col-end-1 mb-12 self-end justify-self-end md:mb-36" />
+      <div className="divider col-start-1 col-end-1 row-start-1 mb-12 self-end justify-self-end md:mb-36 " />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { LuGlasses } from "react-icons/lu";
+import { BsEyeglasses } from "react-icons/bs";
 import us_photo from "../../../public/images/bryce_and_danielle_christian.jpg";
 import { Parallax } from "react-scroll-parallax";
 import Link from "next/link";
@@ -34,7 +35,7 @@ const About = () => {
             >
               <div className="-ms-5 flex items-center justify-start gap-2">
                 <p>Read more</p>
-                <LuGlasses size={24} />
+                <BsEyeglasses size={24} />
               </div>
             </Link>
           </div>

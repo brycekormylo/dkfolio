@@ -20,13 +20,13 @@ const Digital = () => {
         <div className="divider" />
         <div className="self-end px-2 md:px-10 [&_*]:transition-all [&_*]:ease-linear">
           <Link
-            href={"https://www.instagram.com/kormylophotography/"}
+            href={"https://www.instagram.com/digikorm/"}
             rel="noopener noreferrer"
             target="_blank"
           >
             <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
               <LuInstagram size={24} />
-              <p>kormylophotography</p>
+              <p>digikorm</p>
             </div>
           </Link>
         </div>

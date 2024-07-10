@@ -11,7 +11,13 @@ import LandscapeRow from "@/app/(components)/landscape_row";
 import PortraitRow from "@/app/(components)/portrait_row";
 
 const text =
-  "Ditch the daily 9am-5pm grind, this personal project is all about navigating life's adventures, twists and turns! Diving beyond work walls, we offer a peek into our lives and our never ending sea of interests. From breathtaking travels to delightfully quirky hobbies, and everything in between. Forget a one-sided story because this is an open invitation to connect! Are you a fellow adventurer who thrives on the unexpected? Do you have loads of different interests? Do you have a passion for constantly learning and improving? We see the magic in everyday moments, big or small, just like you. We capture the extraordinary hiding within the ordinary, and we're thrilled to share our journey with you. Embrace life’s ever changing nature, follow us on instagram to connect and get the latest updates! 🌴";
+  "Ditch the daily 9am-5pm grind, this personal project is all about navigating life's adventures, twists and turns! Diving beyond work walls, we offer a peek into our lives and our never ending sea of interests. From breathtaking travels to delightfully quirky hobbies, and everything in between.";
+const text2 =
+  "Forget a one-sided story because this is an open invitation to connect! Are you a fellow adventurer who thrives on the unexpected? Do you have loads of different interests? Do you have a passion for constantly learning and improving? We see the magic in everyday moments, big or small, just like you. We capture the extraordinary hiding within the ordinary, and we're thrilled to share our journey with you.";
+const text3 = [
+  "Embrace life’s ever changing nature, follow us on ",
+  " to connect and get the latest updates! 🌴",
+];
 
 const Life = () => {
   return (
@@ -31,10 +37,22 @@ const Life = () => {
               sizes="100vw"
             />
           </div>
-
-          <p className="w-full indent-6 md:me-12 md:mt-[6rem] md:w-[42vw]">
-            {text}
-          </p>
+          <div className="mt-[5rem] flex flex-col gap-[2rem] md:me-36 md:w-[48rem]">
+            <p className="w-full indent-6 md:me-12 ">{text}</p>
+            <p className="w-full indent-6 md:me-12 ">{text2}</p>
+            <p className="w-full indent-6 md:me-12 ">
+              {text3[0]}
+              <a
+                className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
+                href={"https://www.instagram.com/kormylophotography/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                instagram
+              </a>
+              {text3[1]}
+            </p>
+          </div>
         </div>
         <div className="mt-[2rem] flex w-screen flex-col gap-1 md:mt-[6rem] md:gap-4">
           <LandscapeRow images={[awoo, ch_double_wave]} />
@@ -50,7 +68,7 @@ const Life = () => {
             >
               <div className="neo flex items-center justify-end gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
                 <LuInstagram size={24} />
-                <p>kormylphotography</p>
+                <p>kormylophotography</p>
               </div>
             </Link>
           </div>
