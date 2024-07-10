@@ -43,7 +43,9 @@ const Selector = () => {
             />
           </div>
           <div className="flex justify-center rounded-full md:h-10 md:w-[12rem]">
-            <h2 className="text-md self-center md:text-xl">{item.name}</h2>
+            <h2 className="text-md self-center text-center md:text-xl">
+              {item.name}
+            </h2>
           </div>
         </Link>
       ))}
