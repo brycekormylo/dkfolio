@@ -1,13 +1,17 @@
-import charlie_car from "../../../public/images/charlie_car.jpeg";
 import ch_double_wave from "../../../public/images/update709/ch_double_wave.jpg";
 import awoo from "../../../public/images/update709/awoo.jpg";
 import ice_cream_millie from "../../../public/images/update709/ice_cream_millie.jpg";
 import boat_millie from "../../../public/images/update709/boat_millie.jpg";
 import ch_muddy from "../../../public/images/update709/ch_muddy.jpg";
+import be_hmb from "../../../public/images/update709/be_hmb.jpg";
 import Link from "next/link";
+import Image from "next/image";
 import { LuInstagram } from "react-icons/lu";
 import LandscapeRow from "@/app/(components)/landscape_row";
 import PortraitRow from "@/app/(components)/portrait_row";
+
+const text =
+  "Ditch the daily 9am-5pm grind, this personal project is all about navigating life's adventures, twists and turns! Diving beyond work walls, we offer a peek into our lives and our never ending sea of interests. From breathtaking travels to delightfully quirky hobbies, and everything in between. Forget a one-sided story because this is an open invitation to connect! Are you a fellow adventurer who thrives on the unexpected? Do you have loads of different interests? Do you have a passion for constantly learning and improving? We see the magic in everyday moments, big or small, just like you. We capture the extraordinary hiding within the ordinary, and we're thrilled to share our journey with you. Embrace life’s ever changing nature, follow us on instagram to connect and get the latest updates! 🌴";
 
 const Life = () => {
   return (
@@ -16,7 +20,23 @@ const Life = () => {
         A Day in the Life
       </h1>
       <div className="flex flex-col gap-6 pt-8 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
-        <div className="flex w-screen flex-col gap-1 md:gap-4">
+        <div className="max-w-screen flex flex-row items-start justify-between gap-6">
+          <div className="relative z-0 ms-36 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
+            <Image
+              priority
+              src={be_hmb}
+              alt="Circle Image"
+              fill={true}
+              className="rounded-full object-cover"
+              sizes="100vw"
+            />
+          </div>
+
+          <p className="w-full indent-6 md:me-12 md:mt-[6rem] md:w-[42vw]">
+            {text}
+          </p>
+        </div>
+        <div className="mt-[2rem] flex w-screen flex-col gap-1 md:mt-[6rem] md:gap-4">
           <LandscapeRow images={[awoo, ch_double_wave]} />
           <PortraitRow images={[ice_cream_millie, ch_muddy, boat_millie]} />
         </div>
