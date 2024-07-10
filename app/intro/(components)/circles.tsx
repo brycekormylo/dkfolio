@@ -12,7 +12,7 @@ const CircleItems = [
   },
   {
     name: "Projects",
-    slug: "projects/lilly",
+    slug: "projects/puppy-project",
     img: millie_ic,
   },
   {
