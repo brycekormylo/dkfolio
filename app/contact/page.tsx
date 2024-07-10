@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="z-10 col-start-1 row-start-2 mt-16 self-end pb-8 md:row-start-1 md:mt-0 md:px-10">
         <Links />
       </div>
-      <div className="col-start-1 row-start-2 self-end justify-self-end md:row-start-1 md:mb-0 md:mt-24">
+      <div className="col-start-1 row-start-2 -mt-36 self-end justify-self-end md:row-start-1 md:mt-0 ">
         <Image
           priority
           src={la_jolla_seals}
