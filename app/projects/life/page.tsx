@@ -1,27 +1,27 @@
-import awoo from "../../../public/images/update709/awoo.jpg";
-import be_hmb from "../../../public/images/update709/be_hmb.jpg";
-import tunnel_view_charlie from "../../../public/images/update709/tunnel_view_charlie.jpg";
-import ch_roadtrip from "../../../public/images/update709/ch_roadtrip.jpg";
-import wedding_mexican_food from "../../../public/images/update709/wedding_mexican_food.jpg";
-import ch_frisbee_wave from "../../../public/images/update709/ch_frisbee_wave.jpg";
-import ch_ol from "../../../public/images/update709/ch_ol.jpg";
-import millie_pup_annoy_charlie from "../../../public/images/update709/millie_pup_annoy_charlie.jpg";
+import awoo from "../../../public/images/awoo.jpg";
+import be_hmb from "../../../public/images/be_hmb.jpg";
+import tunnel_view_charlie from "../../../public/images/tunnel_view_charlie.jpg";
+import ch_roadtrip from "../../../public/images/ch_roadtrip.jpg";
+import wedding_mexican_food from "../../../public/images/wedding_mexican_food.jpg";
+import ch_frisbee_wave from "../../../public/images/ch_frisbee_wave.jpg";
+import ch_ol from "../../../public/images/ch_ol.jpg";
+import millie_pup_annoy_charlie from "../../../public/images/millie_pup_annoy_charlie.jpg";
 
-import wedding_pier_laughing from "../../../public/images/update709/wedding_pier_laughing.jpg";
-import ch_take_the_wheel from "../../../public/images/update709/ch_take_the_wheel.jpg";
-import bd_christian from "../../../public/images/bryce_and_danielle_christian.jpg";
-import bd_sophia from "../../../public/images/bryce_and_danielle_sophia.jpg";
-import ch_esa from "../../../public/images/update709/ch_esa.jpg";
-import ch_pup_la from "../../../public/images/update709/ch_pup_la.jpg";
-import yosemite_falls_family from "../../../public/images/update709/yosemite_falls_family.jpg";
-import mi_305_frisbee from "../../../public/images/update709/mi_305_frisbee.jpg";
-import annoyed_muff from "../../../public/images/update709/annoyed_muff.jpg";
-import mi_sleeping_sd from "../../../public/images/update709/mi_sleeping_sd.jpg";
-import ice_cream_millie from "../../../public/images/update709/ice_cream_millie.jpg";
-import boat_millie from "../../../public/images/update709/boat_millie.jpg";
-import fun_sophia from "../../../public/images/update709/fun_sophia.jpg";
-import b_pup_millie from "../../../public/images/update709/b_pup_millie.jpg";
-import millie_smile from "../../../public/images/update709/millie_smile.jpg";
+import wedding_pier_laughing from "../../../public/images/wedding_pier_laughing.jpg";
+import ch_take_the_wheel from "../../../public/images/ch_take_the_wheel.jpg";
+import bd_christian from "../../../public/images/be_close_up.jpg";
+import bd_sophia from "../../../public/images/prof_sophia.jpg";
+import ch_esa from "../../../public/images/ch_esa.jpg";
+import ch_pup_la from "../../../public/images/ch_pup_la.jpg";
+import yosemite_falls_family from "../../../public/images/yosemite_falls_family.jpg";
+import mi_305_frisbee from "../../../public/images/mi_305_frisbee.jpg";
+import annoyed_muff from "../../../public/images/annoyed_muff.jpg";
+import mi_sleeping_sd from "../../../public/images/mi_sleeping_sd.jpg";
+import ice_cream_millie from "../../../public/images/ice_cream_millie.jpg";
+import boat_millie from "../../../public/images/boat_millie.jpg";
+import fun_sophia from "../../../public/images/fun_sophia.jpg";
+import b_pup_millie from "../../../public/images/b_pup_millie.jpg";
+import millie_smile from "../../../public/images/millie_smile.jpg";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -55,7 +55,7 @@ const Life = () => {
               className="rounded-full object-cover"
             />
           </div>
-          <div className="mt-8 flex w-full flex-col gap-[2rem] px-4 indent-6 md:me-48 md:mt-[5rem] md:w-[48rem] ">
+          <div className="mt-8 flex w-full flex-col gap-[2rem] px-4 indent-6 md:me-48 md:mt-[5rem] md:w-[48rem]">
             <p>{text}</p>
             <p>{text2}</p>
             <p>

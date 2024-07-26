@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { LuGlasses } from "react-icons/lu";
 import { BsEyeglasses } from "react-icons/bs";
-import us_photo from "../../../public/images/bryce_and_danielle_christian.jpg";
+import us_photo from "../../../public/images/be_close_up.jpg";
 import { Parallax } from "react-scroll-parallax";
 import Link from "next/link";
 

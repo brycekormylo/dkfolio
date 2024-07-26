@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import millie_ic from "../../../public/images/millie_ic.jpg";
+import millie_ic from "../../../public/images/ice_cream_millie.jpg";
 import yosemite from "../../../public/images/yosemite.jpg";
 import devils_slide from "../../../public/images/devils_slide.jpg";
 

@@ -5,7 +5,7 @@ type ImageProps = {
   images: StaticImageData[];
 };
 
-const PortraitRow: React.FC<ImageProps> = ({ images }) => {
+const PortraitRow = ({ images }: ImageProps) => {
   return (
     <div className="flex h-auto w-screen justify-center gap-1 md:gap-4">
       {images.map((image, i) => {
@@ -13,7 +13,7 @@ const PortraitRow: React.FC<ImageProps> = ({ images }) => {
           <div key={i}>
             <ModalImage
               src={image}
-              className="relative aspect-[5/7] w-[30vw]"
+              className="relative aspect-[2/3] w-[30vw]"
             />
           </div>
         );

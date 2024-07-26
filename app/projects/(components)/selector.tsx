@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import millie_ic from "../../../public/images/millie_ic.jpg";
-import charlie_car from "../../../public/images/charlie_car.jpeg";
+import millie_ic from "../../../public/images/ice_cream_millie.jpg";
+import charlie_car from "../../../public/images/roadtrip_charlie.jpg";
 import pillar from "../../../public/images/bw_pillar.jpg";
 
 const SelectorItems = [

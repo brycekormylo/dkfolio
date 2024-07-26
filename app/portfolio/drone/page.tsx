@@ -3,11 +3,11 @@ import PortraitRow from "@/app/(components)/portrait_row";
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 
-import drone_shore from "../../../public/images/update709/beach_drone.jpg";
-import tiburon from "../../../public/images/update709/tib_drone.jpg";
-import lotr from "../../../public/images/update709/lotr.jpg";
-import surf_drone from "../../../public/images/update709/surf_drone.jpg";
-import trippy_road from "../../../public/images/update709/trippy_road.jpg";
+import drone_shore from "../../../public/images/beach_drone.jpg";
+import tiburon from "../../../public/images/tib_drone.jpg";
+import lotr from "../../../public/images/lotr.jpg";
+import surf_drone from "../../../public/images/surf_drone.jpg";
+import trippy_road from "../../../public/images/trippy_road.jpg";
 
 const Drone = () => {
   return (
