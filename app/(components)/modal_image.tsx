@@ -22,7 +22,7 @@ const ModalImage: React.FC<ImageProps> = ({ src, className }) => {
         fill={true}
         className="object-fill"
         alt="Portfolio Image"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 33vw"
+        sizes="(max-width: 768px) 100vw, 50vw"
       />
       {isModalVisible && (
         <div
