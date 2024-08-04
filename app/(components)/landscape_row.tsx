@@ -13,7 +13,7 @@ const LandscapeRow = ({ images }: ImageProps) => {
           <div key={i}>
             <ModalImage
               src={image}
-              className="relative aspect-[7/5] w-[45.5vw]"
+              className="relative aspect-[3/2] w-[45.5vw]"
             />
           </div>
         );
