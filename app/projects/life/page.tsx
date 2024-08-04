@@ -6,6 +6,9 @@ import wedding_mexican_food from "../../../public/images/wedding_mexican_food.jp
 import ch_frisbee_wave from "../../../public/images/ch_frisbee_wave.jpg";
 import ch_ol from "../../../public/images/ch_ol.jpg";
 import millie_pup_annoy_charlie from "../../../public/images/millie_pup_annoy_charlie.jpg";
+import c_hole_1 from "../../../public/images/c_hole_1.jpg";
+import c_hole_2 from "../../../public/images/c_hole_2.jpg";
+import cm_fixation_beach from "../../../public/images/cm_fixation_beach.jpg";
 
 import wedding_pier_laughing from "../../../public/images/wedding_pier_laughing.jpg";
 import ch_take_the_wheel from "../../../public/images/ch_take_the_wheel.jpg";
@@ -22,6 +25,9 @@ import boat_millie from "../../../public/images/boat_millie.jpg";
 import fun_sophia from "../../../public/images/fun_sophia.jpg";
 import b_pup_millie from "../../../public/images/b_pup_millie.jpg";
 import millie_smile from "../../../public/images/millie_smile.jpg";
+import c_ball_couch from "../../../public/images/c_ball_couch.jpg";
+import cm_hole from "../../../public/images/cm_hole.jpg";
+import mc_frisbee_hole from "../../../public/images/mc_frisbee_hole.jpg";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -80,16 +86,18 @@ const Life = () => {
               yosemite_falls_family,
             ]}
           />
-          <LandscapeRow images={[millie_pup_annoy_charlie, ch_roadtrip]} />
-          <PortraitRow images={[millie_smile, fun_sophia, mi_305_frisbee]} />
+          <LandscapeRow images={[cm_fixation_beach, ch_roadtrip]} />
+          <PortraitRow images={[c_ball_couch, annoyed_muff, mc_frisbee_hole]} />
+          <LandscapeRow images={[awoo, ch_ol]} />
+          <PortraitRow images={[ch_take_the_wheel, millie_smile, fun_sophia]} />
           <LandscapeRow images={[tunnel_view_charlie, be_hmb]} />
-          <PortraitRow
-            images={[ch_take_the_wheel, bd_christian, b_pup_millie]}
+          <PortraitRow images={[b_pup_millie, bd_christian, mi_305_frisbee]} />
+          <LandscapeRow images={[c_hole_1, ch_frisbee_wave]} />
+          <PortraitRow images={[boat_millie, mi_sleeping_sd, bd_sophia]} />
+          <LandscapeRow
+            images={[wedding_mexican_food, millie_pup_annoy_charlie]}
           />
-          <LandscapeRow images={[awoo, ch_frisbee_wave]} />
-          <PortraitRow images={[boat_millie, mi_sleeping_sd, ch_esa]} />
-          <LandscapeRow images={[ch_ol, wedding_mexican_food]} />
-          <PortraitRow images={[ch_pup_la, bd_sophia, annoyed_muff]} />
+          <PortraitRow images={[cm_hole, ch_pup_la, ch_esa]} />
         </div>
         <div className="my-10 flex flex-col gap-6 self-end">
           <div className="divider" />
