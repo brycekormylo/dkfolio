@@ -2,6 +2,19 @@
 
 import blackie_laid_down from "../../../public/images/puppy/blackie_laid_down.jpg";
 import sunrise_portrait from "../../../public/images/puppy/sunrise_portrait.jpg";
+import gemma_kiss from "../../../public/images/puppy/gemma_kiss.jpg";
+import chance_portrait from "../../../public/images/puppy/chance_portrait.jpg";
+import gemma_portrait from "../../../public/images/puppy/gemma_portrait.jpg";
+import heidi_bloop from "../../../public/images/puppy/heidi_bloop.jpg";
+import navarro_flowers from "../../../public/images/puppy/navarro_flowers.jpg";
+import navarro_relaxing from "../../../public/images/puppy/navarro_relaxing.jpg";
+import navarro_walking from "../../../public/images/puppy/navarro_walking.jpg";
+import puddin_landscape from "../../../public/images/puppy/puddin_landscape.jpg";
+import puddin_portrait from "../../../public/images/puppy/puddin_portrait.jpg";
+import zarina_cute_ears from "../../../public/images/puppy/zarina_cute_ears.jpg";
+import zarina_lap from "../../../public/images/puppy/zarina_lap.jpg";
+import blackie_hop from "../../../public/images/puppy/blackie_hop.jpg";
+import reign_ear_rub from "../../../public/images/puppy/reign_ear_rub.jpg";
 import blackie_portrait from "../../../public/images/puppy/blackie_portrait.jpg";
 import reign_sniffing from "../../../public/images/puppy/reign_sniffing.jpg";
 import reign_butt_scratches from "../../../public/images/puppy/reign_butt_scratches.jpg";
@@ -34,13 +47,13 @@ const LilyIntro = [
 
 const PuppyProject = () => {
   return (
-    <div className="max-w-screen flex flex-col gap-12 overflow-hidden">
+    <div className="flex overflow-hidden flex-col gap-12 max-w-screen">
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
         Puppy Project
       </h1>
-      <div className="-my-[6rem] flex flex-col justify-start px-2 pb-[10rem] md:my-0 md:flex-row md:justify-between md:pb-10 md:ps-[6rem]">
+      <div className="flex flex-col justify-start px-2 md:flex-row md:justify-between md:pb-10 md:my-0 -my-[6rem] pb-[10rem] md:ps-[6rem]">
         <Parallax speed={-6}>
-          <div className="flex h-[48rem] max-w-[100vw] flex-col justify-center md:-mt-32 md:h-[36rem] md:w-[36rem] md:translate-x-0 md:flex-row">
+          <div className="flex flex-col justify-center md:flex-row md:-mt-32 md:translate-x-0 h-[48rem] max-w-[100vw] md:h-[36rem] md:w-[36rem]">
             <CircleImage
               src={ollie}
               alignment="self-center translate-x-8 md:translate-x-0 md:self-end translate-y-16 md:translate-y-0"
@@ -51,14 +64,14 @@ const PuppyProject = () => {
             />
           </div>
         </Parallax>
-        <div className="z-10 -my-[7.5rem] md:my-0 md:ms-20 md:max-w-[48rem]">
-          <div className="flex flex-col gap-6 rounded-xl bg-timber/50 p-2 indent-6 dark:bg-smoke/50">
+        <div className="z-10 md:my-0 -my-[7.5rem] md:ms-20 md:max-w-[48rem]">
+          <div className="flex flex-col gap-6 p-2 rounded-xl bg-timber/50 indent-6 dark:bg-smoke/50">
             {PuppyProjectIntro.map((section, i) => (
-              <p key={i} className="indent-6 text-xs md:text-sm">
+              <p key={i} className="text-xs md:text-sm indent-6">
                 {section}
               </p>
             ))}
-            <p className="indent-6 text-xs md:text-sm">
+            <p className="text-xs md:text-sm indent-6">
               {PuppyConcl1}
               <Link
                 href={"../../contact"}
@@ -72,34 +85,34 @@ const PuppyProject = () => {
         </div>
       </div>
       <div className="flex flex-col gap-6 pt-8 md:-mt-20 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
-        <div className="divider self-start" />
-        <h1 className="mx-4 self-start text-2xl uppercase md:mx-20 md:text-5xl">
+        <div className="self-start divider" />
+        <h1 className="self-start mx-4 text-2xl uppercase md:mx-20 md:text-5xl">
           Lily&apos;s Legacy
         </h1>
         <div className="flex justify-start px-2">
-          <div className="flex w-screen flex-col justify-start md:mx-20 md:flex-row md:justify-between">
-            <div className="z-10 flex flex-col gap-6 rounded-xl bg-timber/50 p-2 dark:bg-smoke/50">
+          <div className="flex flex-col justify-start w-screen md:flex-row md:justify-between md:mx-20">
+            <div className="flex z-10 flex-col gap-6 p-2 rounded-xl bg-timber/50 dark:bg-smoke/50">
               {LilyIntro.map((section, i) => (
                 <p
                   key={i}
-                  className="self-center indent-6 text-xs md:max-w-[44rem] md:text-sm"
+                  className="self-center text-xs md:text-sm indent-6 md:max-w-[44rem]"
                 >
                   {section}
                 </p>
               ))}
             </div>
-            <div className="relative z-0 -my-[18rem] md:hidden">
+            <div className="relative z-0 md:hidden -my-[18rem]">
               <Parallax speed={-15}>
-                <div className="h-[36rem] w-[36rem] rounded-full bg-ash/25" />
+                <div className="rounded-full h-[36rem] w-[36rem] bg-ash/25" />
               </Parallax>
             </div>
-            <div className="z-10 flex flex-col items-center justify-center gap-4 pt-6 text-sm md:pe-[10rem] md:pt-0 md:text-base">
+            <div className="flex z-10 flex-col gap-4 justify-center items-center pt-6 text-sm md:pt-0 md:text-base md:pe-[10rem]">
               <Link
                 href={"https://www.lilyslegacy.org"}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <div className="neo flex items-center justify-start gap-2 rounded-xl bg-ash/25 p-2">
+                <div className="flex gap-2 justify-start items-center p-2 rounded-xl neo bg-ash/25">
                   <p>Lily&apos;s Legacy Website</p>
                 </div>
               </Link>
@@ -108,7 +121,7 @@ const PuppyProject = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <div className="neo flex items-center justify-start gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
+                <div className="flex gap-2 justify-start items-center p-2 rounded-xl neo bg-timber dark:bg-smoke">
                   <LuInstagram size={24} />
                   <p>lilyslegacyseniordogs</p>
                 </div>
@@ -116,21 +129,30 @@ const PuppyProject = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-screen flex-col gap-1 md:gap-4">
+        <div className="flex flex-col gap-1 w-screen md:gap-4">
           <PortraitRow
-            images={[sunrise_portrait, reign_sniffing, blackie_portrait]}
+            images={[navarro_flowers, gemma_portrait, blackie_portrait]}
           />
-          <LandscapeRow images={[blackie_laid_down, reign_butt_scratches]} />
+          <LandscapeRow images={[reign_butt_scratches, navarro_relaxing]} />
+          <PortraitRow
+            images={[zarina_cute_ears, chance_portrait, heidi_bloop]}
+          />
+          <LandscapeRow images={[blackie_laid_down, puddin_landscape]} />
+          <PortraitRow
+            images={[reign_sniffing, navarro_walking, sunrise_portrait]}
+          />
+          <LandscapeRow images={[gemma_kiss, zarina_lap]} />
+          <PortraitRow images={[blackie_hop, puddin_portrait, reign_ear_rub]} />
         </div>
-        <div className="my-10 flex flex-col gap-6 self-end">
+        <div className="flex flex-col gap-6 self-end my-10">
           <div className="divider" />
-          <div className="flex flex-row gap-4 self-end text-sm md:pe-10 md:text-base">
+          <div className="flex flex-row gap-4 self-end text-sm md:text-base md:pe-10">
             <Link
               href={"https://www.instagram.com/kormylopuppyproject/"}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className="neo flex items-center justify-end gap-2 rounded-xl bg-timber p-2 dark:bg-smoke">
+              <div className="flex gap-2 justify-end items-center p-2 rounded-xl neo bg-timber dark:bg-smoke">
                 <LuInstagram size={24} />
                 <p>kormylopuppyproject</p>
               </div>

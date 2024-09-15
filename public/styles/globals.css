@@ -36,35 +36,49 @@ a {
 }
 
 .stack > * {
-  grid-area: "stack"
+  grid-area: "stack";
 }
 
-
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  10% {
+    transform: rotate(-8deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-@layer components{
-  .neo{
-    @apply [&_*]:transition-all [&_*]:ease-linear hover:scale-[1.02] hover:shadow-neo hover:bg-gradient-to-br hover:from-[#d9d6cd4e] dark:hover:from-[] hover:to-[#fffff43c] dark:hover:to-[] active:shadow-neo active:scale-[1.02] dark:hover:shadow-neodark
+@layer components {
+  .neo {
+    @apply hover:scale-[1.02] hover:bg-gradient-to-br hover:from-[#d9d6cd4e] hover:to-[#fffff43c] hover:shadow-neo active:scale-[1.02] active:shadow-neo dark:hover:from-[] dark:hover:to-[] dark:hover:shadow-neodark [&_*]:transition-all [&_*]:ease-linear;
   }
-  .divider{
-    @apply h-[1px] w-[61vw] md:w-[40vw] bg-ash
+  .divider {
+    @apply h-[1px] w-[61vw] bg-ash md:w-[40vw];
   }
 }
-
