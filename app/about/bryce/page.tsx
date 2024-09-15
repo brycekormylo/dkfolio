@@ -17,32 +17,32 @@ const conclusionPt2 =
 
 const Bryce = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-start px-2 py-20 md:flex-row md:justify-evenly">
+    <div className="flex flex-col justify-start items-center py-20 px-2 min-h-screen md:flex-row md:justify-evenly">
       <Parallax speed={-10}>
-        <div className="max-w-screen flex flex-col gap-6">
+        <div className="flex flex-col gap-6 max-w-screen">
           <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
             <Image
               priority
               src={bryce}
               alt="Circle Image"
               fill={true}
-              className="rounded-full object-cover"
+              className="object-cover rounded-full"
               sizes="100vw"
             />
           </div>
         </div>
       </Parallax>
-      <div className="z-10 flex flex-col justify-between gap-10 rounded-xl bg-timber/75 p-2 dark:bg-smoke/75 md:max-w-[42vw]">
+      <div className="flex z-10 flex-col gap-10 justify-between p-2 rounded-xl bg-timber/75 md:max-w-[42vw] dark:bg-smoke/75">
         <h1 className="self-end text-2xl uppercase md:text-5xl">
           Hi, I&apos;m Bryce
         </h1>
-        <div className="flex flex-col justify-evenly gap-4">
+        <div className="flex flex-col gap-4 justify-evenly">
           {about_bryce.map((section, i) => (
-            <p key={i} className="indent-6 text-xs md:text-sm">
+            <p key={i} className="text-xs md:text-sm indent-6">
               {section}
             </p>
           ))}
-          <p className="indent-6 text-xs md:text-sm">
+          <p className="text-xs md:text-sm indent-6">
             {conclusionPt1}
             <a
               className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"

@@ -13,10 +13,10 @@ const about_dogs = [
 
 const Dogs = () => {
   return (
-    <div className="-mt-[4rem] flex min-h-screen flex-col items-center justify-start px-2 md:-mt-[10rem] md:flex-row-reverse md:justify-evenly">
+    <div className="flex flex-col justify-start items-center px-2 min-h-screen md:flex-row-reverse md:justify-evenly -mt-[4rem] md:-mt-[10rem]">
       <Parallax speed={-10}>
-        <div className="max-w-screen flex flex-col">
-          <div className="flex h-[44rem] w-[36rem] flex-row justify-center md:-mt-32 md:h-[36rem] md:w-[36rem]">
+        <div className="flex flex-col max-w-screen">
+          <div className="flex flex-row justify-center md:-mt-32 h-[44rem] w-[36rem] md:h-[36rem] md:w-[36rem]">
             <CircleImage
               src={millie}
               alignment="self-end translate-x-12 md:translate-x-0 -translate-y-12 md:translate-y-0"
@@ -28,13 +28,13 @@ const Dogs = () => {
           </div>
         </div>
       </Parallax>
-      <div className="-mt-10 flex flex-col justify-between gap-10 rounded-xl bg-timber/25 p-2 dark:bg-smoke/25 md:mt-0 md:max-w-[48rem] md:bg-transparent md:dark:bg-transparent">
+      <div className="flex flex-col gap-10 justify-between p-2 -mt-10 rounded-xl md:mt-0 md:bg-transparent bg-timber/25 md:max-w-[48rem] md:dark:bg-transparent dark:bg-smoke/25">
         <h1 className="self-end text-2xl uppercase md:text-5xl">
           Woof, we&apos;re Charlie and Millie
         </h1>
-        <div className="flex flex-col justify-evenly gap-4">
+        <div className="flex flex-col gap-4 justify-evenly">
           {about_dogs.map((section, i) => (
-            <p key={i} className="indent-6 text-xs md:text-sm">
+            <p key={i} className="text-xs md:text-sm indent-6">
               {section}
             </p>
           ))}

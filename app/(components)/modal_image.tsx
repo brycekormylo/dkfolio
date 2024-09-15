@@ -8,7 +8,7 @@ type ImageProps = {
   className: string;
 };
 
-const ModalImage: React.FC<ImageProps> = ({ src, className }) => {
+const ModalImage = ({ src, className }: ImageProps) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -27,7 +27,7 @@ const ModalImage: React.FC<ImageProps> = ({ src, className }) => {
       {isModalVisible && (
         <div
           onClick={toggleModal}
-          className="fixed left-0 top-0 z-50 h-full w-full bg-timber/85 backdrop-blur-lg dark:bg-smoke/85"
+          className="fixed top-0 left-0 z-50 w-full h-full bg-timber/85 backdrop-blur-lg dark:bg-smoke/85"
         >
           <Image
             src={src}
