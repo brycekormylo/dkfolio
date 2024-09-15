@@ -142,7 +142,7 @@ const PuppyProject = () => {
             images={[reign_sniffing, navarro_walking, sunrise_portrait]}
           />
           <LandscapeRow images={[gemma_kiss, zarina_lap]} />
-          <PortraitRow images={[blackie_hop, puddin_portrait, reign_ear_rub]} />
+          <PortraitRow images={[reign_ear_rub, blackie_hop, puddin_portrait]} />
         </div>
         <div className="flex flex-col gap-6 self-end my-10">
           <div className="divider" />
