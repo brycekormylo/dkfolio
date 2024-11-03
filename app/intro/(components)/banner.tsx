@@ -5,8 +5,7 @@ import { useImage } from "@/context/image-provider";
 
 const Banner = () => {
   const { getImage, getBanner } = useImage();
-  const chimney_lg = getImage("chimney_lg").url;
-  const chimney_lg_cropped = getBanner("chimney_lg_cropped").url;
+  const chimney_lg = getImage("chimney_banner").url;
 
   return (
     <ParallaxBanner className="-my-0 md:my-0 h-[12rem] md:h-[22.5rem]">

@@ -15,7 +15,7 @@ const Digital = () => {
   const sca_foggy_sunset = getImage("fog_marin_headlands");
   const dock_rope = getImage("dock_rope");
   const rolling_fog = getImage("rolling_fog");
-  const chimney = getImage("chimney_lg").url;
+  const chimney = getImage("chimney_banner").url;
 
   return (
     <div className="flex flex-col gap-1 w-screen md:gap-4">

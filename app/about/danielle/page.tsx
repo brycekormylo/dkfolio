@@ -3,7 +3,6 @@
 import { useImage } from "@/context/image-provider";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
-import ellie_overlook from "../../../public/images/ellie_overlook.jpg";
 
 const about_ellie_pt1 = [
   "As the lead brain, heart, and lens behind Kormylo Photography, I’ve always been driven by a deep love for the craft. Rooted in Toronto’s maple-scented streets, my passion for film photography blossomed at 15 years old. I was obsessed with the mechanical dance and technical tango of film, from scouting locations to developing and printing in the darkroom. It’s an intricate and meditative process, one that slows down time and makes each step deliberate, allowing every moment to be fully savoured. Restless by nature, I soon expanded into digital and drone photography, revelling in the creative possibilities they opened. Although I initially focused on portraiture and weddings, my time living in Italy and California ignited a deep connection with landscapes and wildlife. After years of digital burnout, returning to nature and film felt like rediscovering my purpose, which has been a game changer for me!",
@@ -56,9 +55,9 @@ const Ellie = () => {
   const { getImage } = useImage();
   const ellie_overlook = getImage("ellie_overlook").url;
   return (
-    <div className="flex flex-col justify-start items-center px-2 min-h-screen md:flex-row-reverse md:justify-evenly md:py-20">
+    <div className="flex flex-col justify-start items-center py-20 px-2 min-h-screen md:flex-row-reverse md:justify-evenly">
       <Parallax speed={-10}>
-        <div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
+        <div className="relative z-0 h-[16rem] w-[16rem] md:my-[-32rem] md:h-[36rem] md:w-[36rem]">
           <Image
             priority
             src={ellie_overlook}
