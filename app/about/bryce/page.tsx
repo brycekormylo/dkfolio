@@ -3,7 +3,6 @@
 import { useImage } from "@/context/image-provider";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
-import bryce from "../../../public/images/bryce.jpg";
 
 const about_bryce = [
   "As a San Diego native, I’m a very opinionated burrito critic and l feel most alive near the ocean!  The California coastline has always felt like home, making my relocation to San Francisco to further my career as a software developer an easy transition.  My love of natural beauty beside my long-standing interest in photography makes me thrive as a second shooter for Danielle.  Photography enables me to focus on the details that often get missed and film is a perfect medium to create truly unique results.  The mechanical interface between photographer and camera presents a fascinating challenge, making every image a true measure of skill.  My goal is to show a new perspective, broaden the horizons of everyone I interact with, and learn from every experience.  Whether it’s a new angle on a shot, a unique solution to a problem, or creating a cocktail recipe tuned to your personal tastes, I’ve got you covered.",
