@@ -8,6 +8,7 @@ import millie_ls from "../../../public/images/millie_pup_annoy_charlie.jpg";
 import charlie from "../../../public/images/roadtrip_charlie.jpg";
 import charlie_ls_1 from "../../../public/images/c_insane_frisbee.jpg";
 import charlie_ls_2 from "../../../public/images/c_puppy_yosemite.jpg";
+import { useImage } from "@/context/image-provider";
 
 const about_dogs = [
   "Charlie, our resident Ravenclaw, is an Australian shepherd who thrives on challenges, both physical and mental. She delights in road trips, she's a whiz at beach frisbee, loves to show off, and will do anything for top-notch snacks! As a creative genius with boundless energy, Charlie has an unmatched love for high-quality treats. She's constantly teaching herself new tricks just to indulge in her favourite snacks. This affectionate ball of joy can brighten anyone's day, forcing you to love her whether you want to or not! When Charlie isn't conquering the great outdoors or camping, she likes to kick back by watching her favourite shows and movies like Avatar The Last Airbender, Korra, Moana, and Shrek! Of course, the experience isn't complete until she peacefully dozes off with a ball in her mouth and legs stretched out like a little bear rug.",
@@ -34,6 +35,13 @@ const about_millie_2 = [
 ];
 
 const Dogs = () => {
+  const { getImage } = useImage();
+
+  const millie = getImage("boat_millie").url;
+  const millie_ls = getImage("millie_pup_annoy_charlie").url;
+  const charlie = getImage("roadtrip_charlie").url;
+  const charlie_ls_1 = getImage("c_insane_frisbee").url;
+  const charlie_ls_2 = getImage("c_puppy_yosemite").url;
   return (
     <div className="flex flex-col w-full">
       <div className="flex flex-col justify-start items-center px-2 pb-24 min-h-screen md:flex-row-reverse md:justify-evenly -mt-[4rem] md:-mt-[10rem]">

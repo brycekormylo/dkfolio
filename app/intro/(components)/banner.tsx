@@ -1,27 +1,30 @@
 "use client";
 import Image from "next/image";
-import chimney_lg from "../../../public/chimney/chimney_lg.jpg";
-import chimney_lg_cropped from "../../../public/chimney/chimney_lg_cropped.jpg";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
+import { useImage } from "@/context/image-provider";
 
 const Banner = () => {
+  const { getImage, getBanner } = useImage();
+  const chimney_lg = getImage("chimney_lg").url;
+  const chimney_lg_cropped = getBanner("chimney_lg_cropped").url;
+
   return (
-    <ParallaxBanner className="-my-0 h-[12rem] md:my-0 md:h-[22.5rem]">
+    <ParallaxBanner className="-my-0 md:my-0 h-[12rem] md:h-[22.5rem]">
       <ParallaxBannerLayer speed={-15}>
-        <div className="relative hidden h-full w-screen shadow-inner md:block">
+        <div className="hidden relative w-screen h-full shadow-inner md:block">
           <Image
             priority
             src={chimney_lg}
             fill={true}
             className="object-contain"
-            alt="Banner Image"
+            alt="Banner jmage"
             sizes="100vw"
           />
         </div>
-        <div className="relative block h-full w-screen shadow-inner md:hidden">
+        <div className="block relative w-screen h-full shadow-inner md:hidden">
           <Image
             priority
-            src={chimney_lg_cropped}
+            src={chimney_lg}
             fill={true}
             className="object-contain"
             alt="Banner Image"

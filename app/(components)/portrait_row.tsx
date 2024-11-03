@@ -1,18 +1,19 @@
 import { StaticImageData } from "next/image";
 import ModalImage from "@/app/(components)/modal_image";
+import { ImageData } from "@/context/image-provider";
 
 type ImageProps = {
-  images: StaticImageData[];
+  images: ImageData[];
 };
 
 const PortraitRow = ({ images }: ImageProps) => {
   return (
-    <div className="flex h-auto w-screen justify-center gap-1 md:gap-4">
+    <div className="flex gap-1 justify-center w-screen h-auto md:gap-4">
       {images.map((image, i) => {
         return (
           <div key={i}>
             <ModalImage
-              src={image}
+              src={image.url}
               className="relative aspect-[2/3] w-[30vw]"
             />
           </div>

@@ -3,18 +3,21 @@
 import ParallaxCircleImage from "@/app/(components)/parallax_circle_image";
 import { Parallax } from "react-scroll-parallax";
 
-import lifeguard_tower from "../../../public/images/lifeguard_tower.jpg";
-import beach_cliff from "../../../public/images/beach_cliff.jpg";
-import river from "../../../public/images/river.jpg";
-import la_jolla_seals from "../../../public/images/la_jolla_seals.jpg";
-import aspen from "../../../public/images/aspen.jpg";
-import drone_shore from "../../../public/images/beach_drone.jpg";
-import squirrel from "../../../public/images/squirrel.jpg";
+import { useImage } from "@/context/image-provider";
 
 const PreviewImages = () => {
+  const { getImage } = useImage();
+
+  const lifeguard_tower = getImage("lifeguard_tower").url;
+  const beach_cliff = getImage("beach_cliff").url;
+  const river = getImage("river").url;
+  const la_jolla_seals = getImage("la_jolla_seals").url;
+  const aspen = getImage("aspen").url;
+  const drone_shore = getImage("beach_drone").url;
+  const squirrel = getImage("squirrel").url;
   return (
     <div className="flex flex-col md:mt-[15rem]">
-      <div className="flex w-screen flex-col items-center justify-center gap-4 md:flex-row">
+      <div className="flex flex-col gap-4 justify-center items-center w-screen md:flex-row">
         <ParallaxCircleImage src={beach_cliff} speed={-20} />
         <Parallax speed={-10}>
           <ParallaxCircleImage
@@ -35,7 +38,7 @@ const PreviewImages = () => {
             height={20}
           />
         </Parallax>
-        <div className="translate-x-20 md:-translate-y-20 md:translate-x-0">
+        <div className="translate-x-20 md:translate-x-0 md:-translate-y-20">
           <Parallax speed={-10}>
             <ParallaxCircleImage
               src={drone_shore}
@@ -46,7 +49,7 @@ const PreviewImages = () => {
           </Parallax>
         </div>
       </div>
-      <div className="flex w-screen flex-col flex-wrap items-center justify-center md:mt-[-12rem] md:flex-row md:gap-[20rem]">
+      <div className="flex flex-col flex-wrap justify-center items-center w-screen md:flex-row md:mt-[-12rem] md:gap-[20rem]">
         <div className="-translate-x-10 md:translate-x-0">
           <Parallax speed={8}>
             <ParallaxCircleImage

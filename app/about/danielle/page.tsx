@@ -1,5 +1,6 @@
 "use client";
 
+import { useImage } from "@/context/image-provider";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
 import ellie_overlook from "../../../public/images/ellie_overlook.jpg";
@@ -52,6 +53,8 @@ const about_ellie_pt2 = [
 ];
 
 const Ellie = () => {
+  const { getImage } = useImage();
+  const ellie_overlook = getImage("ellie_overlook").url;
   return (
     <div className="flex flex-col justify-start items-center px-2 min-h-screen md:flex-row-reverse md:justify-evenly md:py-20">
       <Parallax speed={-10}>

@@ -1,32 +1,12 @@
 "use client";
 
-import blackie_laid_down from "../../../public/images/puppy/blackie_laid_down.jpg";
-import sunrise_portrait from "../../../public/images/puppy/sunrise_portrait.jpg";
-import gemma_kiss from "../../../public/images/puppy/gemma_kiss.jpg";
-import chance_portrait from "../../../public/images/puppy/chance_portrait.jpg";
-import gemma_portrait from "../../../public/images/puppy/gemma_portrait.jpg";
-import heidi_bloop from "../../../public/images/puppy/heidi_bloop.jpg";
-import navarro_flowers from "../../../public/images/puppy/navarro_flowers.jpg";
-import navarro_relaxing from "../../../public/images/puppy/navarro_relaxing.jpg";
-import navarro_walking from "../../../public/images/puppy/navarro_walking.jpg";
-import puddin_landscape from "../../../public/images/puppy/puddin_landscape.jpg";
-import puddin_portrait from "../../../public/images/puppy/puddin_portrait.jpg";
-import zarina_cute_ears from "../../../public/images/puppy/zarina_cute_ears.jpg";
-import zarina_lap from "../../../public/images/puppy/zarina_lap.jpg";
-import blackie_hop from "../../../public/images/puppy/blackie_hop.jpg";
-import reign_ear_rub from "../../../public/images/puppy/reign_ear_rub.jpg";
-import blackie_portrait from "../../../public/images/puppy/blackie_portrait.jpg";
-import reign_sniffing from "../../../public/images/puppy/reign_sniffing.jpg";
-import reign_butt_scratches from "../../../public/images/puppy/reign_butt_scratches.jpg";
-
 import LandscapeRow from "../../(components)/landscape_row";
 import PortraitRow from "../../(components)/portrait_row";
 import CircleImage from "@/app/(components)/circle_image";
-import ollie from "../../../public/images/o2.jpg";
-import wolfe from "../../../public/images/wolfe_pt.jpg";
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 import { Parallax } from "react-scroll-parallax";
+import { useImage } from "@/context/image-provider";
 
 const PuppyProjectIntro = [
   "We channel our passions into supporting dog rescues and shelters across the SF Bay Area, creating lasting connections between dogs and their compatible families to speed up adoptions. Our firm belief in the power of quality presentation drives us to volunteer, capturing personalized photos and building custom websites that tell everyone's story. Understanding dog psychology and body language is essential for ensuring their comfort during this confusing and often challenging period. Building trust and forming bonds is our top priority. With our photography expertise fused with a steadfast commitment to each dog's well-being, we authentically capture their shining personalities! As a web and iOS developer with an eye for design, Bryce further recognizes the importance of user-friendly websites while combining functionality with aesthetic appeal to facilitate smoother adoption processes.",
@@ -46,6 +26,30 @@ const LilyIntro = [
 ];
 
 const PuppyProject = () => {
+  const { getImage, getPuppyProjectImage } = useImage();
+
+  const blackie_laid_down = getPuppyProjectImage("blackie_laid_down");
+  const sunrise_portrait = getPuppyProjectImage("sunrise_portrait");
+  const gemma_kiss = getPuppyProjectImage("gemma_kiss");
+  const chance_portrait = getPuppyProjectImage("chance_portrait");
+  const gemma_portrait = getPuppyProjectImage("gemma_portrait");
+  const heidi_bloop = getPuppyProjectImage("heidi_bloop");
+  const navarro_flowers = getPuppyProjectImage("navarro_flowers");
+  const navarro_relaxing = getPuppyProjectImage("navarro_relaxing");
+  const navarro_walking = getPuppyProjectImage("navarro_walking");
+  const puddin_landscape = getPuppyProjectImage("puddin_landscape");
+  const puddin_portrait = getPuppyProjectImage("puddin_portrait");
+  const zarina_cute_ears = getPuppyProjectImage("zarina_cute_ears");
+  const zarina_lap = getPuppyProjectImage("zarina_lap");
+  const blackie_hop = getPuppyProjectImage("blackie_hop");
+  const reign_ear_rub = getPuppyProjectImage("reign_ear_rub");
+  const blackie_portrait = getPuppyProjectImage("blackie_portrait");
+  const reign_sniffing = getPuppyProjectImage("reign_sniffing");
+  const reign_butt_scratches = getPuppyProjectImage("reign_butt_scratches");
+
+  const ollie = getImage("o2").url;
+  const wolfe = getImage("wolfe_pt").url;
+
   return (
     <div className="flex overflow-hidden flex-col gap-12 max-w-screen">
       <h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">

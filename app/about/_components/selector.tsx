@@ -1,28 +1,32 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import ellie_overlook from "../../../public/images/ellie_overlook.jpg";
-import bryce from "../../../public/images/bryce.jpg";
-import cm_fixation_beach from "../../../public/images/cm_fixation_beach.jpg";
-
-const SelectorItems = [
-  {
-    name: "Danielle",
-    slug: "/about/danielle",
-    img: ellie_overlook,
-  },
-  {
-    name: "Bryce",
-    slug: "/about/bryce",
-    img: bryce,
-  },
-  {
-    name: "Charlie + Millie",
-    slug: "/about/dogs",
-    img: cm_fixation_beach,
-  },
-];
+import { useImage } from "@/context/image-provider";
 
 const Selector = () => {
+  const { getImage } = useImage();
+  const ellie_overlook = getImage("ellie_overlook");
+  const bryce = getImage("bryce");
+  const cm_fixation_beach = getImage("cm_fixation_beach");
+
+  const SelectorItems = [
+    {
+      name: "Danielle",
+      slug: "/about/danielle",
+      img: ellie_overlook,
+    },
+    {
+      name: "Bryce",
+      slug: "/about/bryce",
+      img: bryce,
+    },
+    {
+      name: "Charlie + Millie",
+      slug: "/about/dogs",
+      img: cm_fixation_beach,
+    },
+  ];
   return (
     <div className="flex flex-row justify-evenly gap-2 py-4 md:py-10 [&_*]:transition-all [&_*]:ease-linear">
       {SelectorItems.map((item, i) => (
@@ -35,7 +39,7 @@ const Selector = () => {
           <div className="flex relative h-[5rem] w-[5rem] md:h-[18rem] md:w-[18rem]">
             <Image
               priority
-              src={item.img}
+              src={item.img.url}
               alt="Circle Image"
               fill={true}
               className="object-cover rounded-full"

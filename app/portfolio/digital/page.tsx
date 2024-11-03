@@ -1,22 +1,28 @@
+"use client";
+
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
-import down_cliff from "../../../public/images/down_cliff.jpg";
-import palm from "../../../public/images/palm.jpg";
-import sca_foggy_sunset from "../../../public/images/fog_marin_headlands.jpg";
-import dock_rope from "../../../public/images/dock_rope.jpg";
-import rolling_fog from "../../../public/images/rolling_fog.jpg";
-import chimney from "../../../public/chimney/chimney_lg.jpg";
 import LandscapeRow from "@/app/(components)/landscape_row";
 import PortraitRow from "@/app/(components)/portrait_row";
 import PanoramaRow from "@/app/(components)/pano_row";
+import { useImage } from "@/context/image-provider";
 
 const Digital = () => {
+  const { getImage, getBanner } = useImage();
+
+  const down_cliff = getImage("down_cliff");
+  const palm = getImage("palm");
+  const sca_foggy_sunset = getImage("fog_marin_headlands");
+  const dock_rope = getImage("dock_rope");
+  const rolling_fog = getImage("rolling_fog");
+  const chimney = getImage("chimney_lg").url;
+
   return (
-    <div className="flex w-screen flex-col gap-1 md:gap-4">
+    <div className="flex flex-col gap-1 w-screen md:gap-4">
       <PanoramaRow image={chimney} />
       <PortraitRow images={[palm, down_cliff, dock_rope]} />
       <LandscapeRow images={[sca_foggy_sunset, rolling_fog]} />
-      <div className="flex flex-col items-end justify-start gap-6 self-end py-6">
+      <div className="flex flex-col gap-6 justify-start items-end self-end py-6">
         <div className="divider" />
         <div className="self-end px-2 md:px-10 [&_*]:transition-all [&_*]:ease-linear">
           <Link
@@ -24,7 +30,7 @@ const Digital = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <div className="neo flex items-center justify-start gap-2 rounded-xl p-2">
+            <div className="flex gap-2 justify-start items-center p-2 rounded-xl neo">
               <LuInstagram size={24} />
               <p>digikorm</p>
             </div>

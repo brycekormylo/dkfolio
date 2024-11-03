@@ -1,5 +1,6 @@
 "use client";
 
+import { useImage } from "@/context/image-provider";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
 import bryce from "../../../public/images/bryce.jpg";
@@ -16,6 +17,8 @@ const conclusionPt2 =
   "! If you’ve got a project, I’m always looking for new opportunities.";
 
 const Bryce = () => {
+  const { getImage } = useImage();
+  const bryce = getImage("bryce").url;
   return (
     <div className="flex flex-col justify-start items-center py-20 px-2 min-h-screen md:flex-row md:justify-evenly">
       <Parallax speed={-10}>

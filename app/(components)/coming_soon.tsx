@@ -7,7 +7,7 @@ import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 
 type Props = {
-  image: StaticImageData;
+  image: string;
   title?: string;
   text?: string;
   href: string;
@@ -24,17 +24,17 @@ const ComingSoon = ({
   reverse,
 }: Props) => {
   return (
-    <div className="flex min-h-screen w-screen flex-col items-center justify-center gap-20 overflow-hidden py-[3rem]">
+    <div className="flex overflow-hidden flex-col gap-20 justify-center items-center w-screen min-h-screen py-[3rem]">
       <ScrollUp />
       <h1
-        className={`z-10 self-end pe-2 text-2xl uppercase md:pe-10 md:text-5xl`}
+        className={`z-10 self-end pe-2 text-2xl uppercase md:pe-36 md:text-5xl`}
       >
         {title}
       </h1>
-      <div className="z-10 flex h-[25rem] flex-col items-center justify-center gap-4 rounded-xl bg-timber/75 px-4 py-2 text-xl shadow-neo dark:bg-smoke/75 dark:shadow-neodark md:w-[40rem]">
-        <h2 className="text-lg">{text}</h2>
+      <div className="flex z-10 flex-col gap-4 justify-center items-center py-2 px-4 text-xl rounded-xl h-[25rem] bg-timber/75 shadow-neo md:w-[40rem] dark:bg-smoke/75 dark:shadow-neodark">
+        <h2 className="text-lg text-center md:px-32">{text}</h2>
       </div>
-      <div className="z-0 flex flex-row justify-self-end">
+      <div className="flex z-0 flex-row justify-self-end">
         <Parallax speed={-15}>
           <div
             className={`translate fixed bottom-0 z-0 h-[45rem] w-[45rem] ${
@@ -46,7 +46,7 @@ const ComingSoon = ({
               src={image}
               alt="Circle Image"
               fill={true}
-              className="z-0 rounded-full object-cover p-4 blur-sm"
+              className="object-cover z-0 p-4 rounded-full blur-sm"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>

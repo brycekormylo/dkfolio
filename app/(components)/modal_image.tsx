@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 
 type ImageProps = {
-  src: StaticImageData;
+  src: string;
   className: string;
 };
 

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 
 type ImageProps = {
-  src: StaticImageData;
+  src: string;
   speed?: number;
   height?: number;
   disabled?: Boolean;

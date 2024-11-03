@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 type ImageProps = {
-  src: StaticImageData;
+  src: string;
   alignment: string;
 };
 
