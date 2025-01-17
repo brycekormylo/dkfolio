@@ -87,7 +87,7 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-4 items-center w-full md:flex-row md:justify-between">
+					<div className="flex flex-col-reverse gap-4 items-center w-full md:flex-row md:justify-between">
 						<div className="flex justify-center w-full md:h-[32rem]">
 							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
 								{about_charlie_2.map((section) => (
@@ -119,7 +119,7 @@ const Dogs = () => {
 					<h2 className="self-start text-4xl md:px-72 md:pt-16 md:text-6xl">
 						MILLIE
 					</h2>
-					<div className="flex flex-col items-center w-full md:flex-row md:justify-between">
+					<div className="flex flex-col-reverse gap-4 items-center w-full md:flex-row md:justify-between">
 						<div className="flex justify-center w-full md:h-[32rem]">
 							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
 								{about_millie.map((section) => (
@@ -145,7 +145,7 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col-reverse items-center w-full md:flex-row md:justify-between">
+					<div className="flex flex-col gap-4 items-center w-full md:flex-row md:justify-between">
 						<div className="relative z-0 md:mt-12 w-[16rem] overflow-clip aspect-square md:ms-24 md:w-[54rem]">
 							<Image
 								priority
