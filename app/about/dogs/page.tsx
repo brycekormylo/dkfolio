@@ -33,25 +33,24 @@ const Dogs = () => {
 	const charlie = getImage("roadtrip_charlie").url;
 	const charlie_ls_1 = getImage("c_puppy_yosemite").url;
 	const charlie_ls_2 = getImage("c_tv_ball").url;
+
 	return (
 		<div className="flex flex-col mb-48 w-full">
-			<div className="flex flex-col justify-start items-center px-2 pb-24 min-h-screen md:flex-row-reverse md:justify-evenly -mt-[4rem] md:-mt-[10rem]">
-				<Parallax speed={-10}>
-					<div className="flex flex-col max-w-screen">
-						<div className="flex flex-row justify-center h-[44rem] w-[36rem] md:mt-[20rem] md:h-[36rem] md:w-[36rem]">
-							<CircleImage
-								src={millie}
-								alignment="self-end translate-x-12 md:translate-x-0 -translate-y-12 md:translate-y-0"
-							/>
-							<CircleImage
-								src={charlie}
-								alignment="self-start -translate-x-12 md:translate-x-0 translate-y-12 md:translate-y-0"
-							/>
-						</div>
+			<div className="flex flex-col justify-start items-center px-2 md:flex-row-reverse md:justify-evenly md:pb-24 -mt-[4rem] md:-mt-[10rem]">
+				<div className="flex flex-col">
+					<div className="flex flex-row justify-center h-[44rem] w-[36rem] md:mt-[20rem] md:h-[36rem] md:w-[36rem]">
+						<CircleImage
+							src={millie}
+							alignment="self-end translate-x-16 md:translate-x-0 -translate-y-12 md:translate-y-0"
+						/>
+						<CircleImage
+							src={charlie}
+							alignment="self-start -translate-x-16 md:translate-x-0 translate-y-12 md:translate-y-0"
+						/>
 					</div>
-				</Parallax>
+				</div>
 				<div className="flex flex-col gap-10 p-2 -mt-10 rounded-xl md:mt-96 md:bg-transparent bg-timber/25 md:max-w-[48rem] md:dark:bg-transparent dark:bg-smoke/25">
-					<h1 className="self-end pb-36 text-2xl uppercase md:text-5xl">
+					<h1 className="self-end px-4 pb-12 text-3xl uppercase md:pb-36 md:text-5xl">
 						Woof, we&apos;re Charlie and Millie
 					</h1>
 				</div>
@@ -60,8 +59,10 @@ const Dogs = () => {
 			<div className="flex flex-col gap-12 px-2 w-full">
 				<div className="flex flex-col gap-16 w-full">
 					<div className="divider md:-ms-52 md:min-w-[52vw]" />
-					<h2 className="self-end px-72 pt-16 text-6xl">CHARLIE</h2>
-					<div className="flex flex-col items-center w-full md:flex-row md:justify-between">
+					<h2 className="self-end text-4xl md:px-72 md:pt-16 md:text-6xl">
+						CHARLIE
+					</h2>
+					<div className="flex flex-col gap-4 items-center w-full md:flex-row md:justify-between">
 						<div className="relative z-0 w-[16rem] overflow-clip aspect-square md:ms-24 md:w-[54rem]">
 							<Image
 								priority
@@ -77,7 +78,7 @@ const Dogs = () => {
 								{about_charlie.map((section) => (
 									<p
 										key={section}
-										className="w-[70%] indent-6 text-xs md:text-base"
+										className="md:w-[70%] indent-6 text-sm md:text-base"
 									>
 										{section}
 									</p>
@@ -86,13 +87,13 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col items-center w-full md:flex-row md:justify-between">
+					<div className="flex flex-col gap-4 items-center w-full md:flex-row md:justify-between">
 						<div className="flex justify-center w-full md:h-[32rem]">
 							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
 								{about_charlie_2.map((section) => (
 									<p
 										key={section}
-										className="w-[70%] indent-6 text-xs md:text-base"
+										className="md:w-[70%] indent-6 text-sm md:text-base"
 									>
 										{section}
 									</p>
@@ -115,14 +116,16 @@ const Dogs = () => {
 				<div className="mt-24 divider md:-ms-52 md:min-w-[52vw]" />
 
 				<div className="flex flex-col gap-16 w-full">
-					<h2 className="self-start px-72 pt-16 text-6xl">MILLIE</h2>
+					<h2 className="self-start text-4xl md:px-72 md:pt-16 md:text-6xl">
+						MILLIE
+					</h2>
 					<div className="flex flex-col items-center w-full md:flex-row md:justify-between">
 						<div className="flex justify-center w-full md:h-[32rem]">
 							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
 								{about_millie.map((section) => (
 									<p
 										key={section}
-										className="w-[70%] indent-6 text-xs md:text-base"
+										className="md:w-[70%] indent-6 text-sm md:text-base"
 									>
 										{section}
 									</p>
@@ -142,7 +145,7 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col items-center w-full md:flex-row md:justify-between">
+					<div className="flex flex-col-reverse items-center w-full md:flex-row md:justify-between">
 						<div className="relative z-0 md:mt-12 w-[16rem] overflow-clip aspect-square md:ms-24 md:w-[54rem]">
 							<Image
 								priority
@@ -159,7 +162,7 @@ const Dogs = () => {
 								{about_millie_2.map((section) => (
 									<p
 										key={section}
-										className="w-[70%] indent-6 text-xs md:text-base"
+										className="md:w-[70%] indent-6 text-sm md:text-base"
 									>
 										{section}
 									</p>

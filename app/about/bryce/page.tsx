@@ -4,7 +4,7 @@ import { useImage } from "@/context/image-provider";
 import Image from "next/image";
 
 const about_bryce = [
-	"As a San Diego native, I’m a very opinionated burrito critic and l feel most alive near the ocean!  The California coastline has always felt like home, making my relocation to San Francisco to further my career as a software developer an easy transition.  My love of natural beauty beside my long-standing interest in photography makes me thrive as a second shooter for Danielle.  Photography enables me to focus on the details that often get missed and film is a perfect medium to create truly unique results.  The mechanical interface between photographer and camera presents a fascinating challenge, making every image a true measure of skill.  My goal is to show a new perspective, broaden the horizons of everyone I interact with, and learn from every experience.  Whether it’s a new angle on a shot, a unique solution to a problem, or creating a cocktail recipe tuned to your personal tastes, I’ve got you covered.",
+	"As a San Diego native, I’m a very opinionated burrito critic and I feel most alive near the ocean!  The California coastline has always felt like home, making my relocation to San Francisco to further my career as a software developer an easy transition.  My love of natural beauty beside my long-standing interest in photography makes me thrive as a second shooter for Danielle.  Photography enables me to focus on the details that often get missed and film is a perfect medium to create truly unique results.  The mechanical interface between photographer and camera presents a fascinating challenge, making every image a true measure of skill.  My goal is to show a new perspective, broaden the horizons of everyone I interact with, and learn from every experience.  Whether it’s a new angle on a shot, a unique solution to a problem, or creating a cocktail recipe tuned to your personal tastes, I’ve got you covered.",
 
 	"Wherever I am, I have always gravitated toward problem solving, naturally guiding me to a technical career.  I have found a passion for software development, focused on web and iOS applications. I find it to be the perfect combination of logic and design, enabling me to explore limitless potential in new ways.  My other interests honestly range over too many different topics.  Luckily, I have a strong drive to learn and dive deeply into each of them.  In my time away from photography and software development, I’m usually found cooking Italian food, small-boat sailing, bartending, planning new projects, building tables, playing Titanfall 2 or out with our dogs.  I take pride in being versatile and having diverse interests,  combining them gives me my unique creative flavor!",
 ];
@@ -18,8 +18,8 @@ const Bryce = () => {
 	const { getImage } = useImage();
 	const bryce = getImage("bryce").url;
 	return (
-		<div className="flex flex-col mb-36">
-			<div className="flex flex-col justify-start items-center py-20 px-2 md:flex-row md:justify-evenly md:items-start">
+		<div className="flex flex-col gap-4 px-4 pt-20 mb-36">
+			<div className="flex flex-col justify-start items-center md:flex-row md:justify-evenly md:items-start md:pb-20">
 				<div className="flex flex-col gap-6 max-w-screen">
 					<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 						<Image
@@ -32,18 +32,17 @@ const Bryce = () => {
 						/>
 					</div>
 				</div>
-				<div className="flex z-10 flex-col gap-10 justify-between p-2 rounded-xl md:mt-12 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+				<div className="flex z-10 flex-col gap-10 mt-12 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
 					<h1 className="self-end text-2xl uppercase md:text-5xl">
 						Hi, I&apos;m Bryce
 					</h1>
-					<div className="flex flex-col gap-8 justify-evenly">
-						<p className="text-xs md:text-base indent-12">{about_bryce[0]}</p>
-					</div>
+					<p className="text-sm md:text-base indent-12">{about_bryce[0]}</p>
 				</div>
 			</div>
-			<div className="flex z-10 flex-col gap-10 justify-between self-center p-2 rounded-xl bg-timber/75 md:max-w-[72vw] dark:bg-smoke/75">
-				<p className="text-xs md:text-base indent-12">{about_bryce[1]}</p>
-				<p className="text-xs md:text-base indent-12">
+
+			<div className="flex z-10 flex-col gap-4 justify-between self-center rounded-xl md:gap-10 bg-timber/75 md:max-w-[72vw] dark:bg-smoke/75">
+				<p className="text-sm md:text-base indent-12">{about_bryce[1]}</p>
+				<p className="text-sm md:text-base indent-12">
 					{conclusionPt1}
 					<a
 						className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
