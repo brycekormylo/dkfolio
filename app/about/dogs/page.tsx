@@ -57,14 +57,14 @@ const Dogs = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col gap-12 px-2 w-full">
-				<div className="flex flex-col gap-16 w-full">
-					<div className="divider md:-ms-52 md:min-w-[52vw]" />
-					<h2 className="self-end text-4xl md:px-72 md:pt-16 md:text-6xl">
-						CHARLIE
-					</h2>
-					<div className="flex flex-col gap-4 items-center w-full md:flex-row md:justify-between">
-						<div className="relative z-0 w-[16rem] overflow-clip aspect-square md:ms-24 md:w-[54rem]">
+			<div className="flex flex-col px-4 mb-36">
+				<div className="flex flex-row pt-10 grow">
+					<div className="divider" />
+				</div>
+
+				<div className="flex flex-col justify-start items-center pt-20 md:flex-row md:justify-evenly md:items-start">
+					<div className="flex flex-col gap-6 max-w-screen">
+						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
 								priority
 								src={charlie_ls_1}
@@ -74,43 +74,18 @@ const Dogs = () => {
 								sizes="100vw"
 							/>
 						</div>
-						<div className="flex justify-center w-full md:h-[32rem]">
-							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
-								{about_charlie.map((section) => (
-									<p
-										key={section}
-										className="md:w-[70%] indent-6 text-sm md:text-base"
-									>
-										{section}
-									</p>
-								))}
-							</div>
-						</div>
 					</div>
 
-					<div className="flex flex-col-reverse gap-4 items-center w-full md:flex-row md:justify-between">
-						<div className="flex justify-center w-full md:h-[32rem]">
-							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
-								{about_charlie_2.slice(0, 2).map((section) => (
-									<p
-										key={section}
-										className="md:w-[70%] indent-6 text-sm md:text-base"
-									>
-										{section}
-									</p>
-								))}
-								<p className="md:w-[70%] indent-6 text-sm md:text-base">
-									{about_charlie_2[2]}
-									<a
-										className="underline"
-										href="https://www.instagram.com/kormylopuppyproject"
-									>
-										{"Instagram."}
-									</a>
-								</p>
-							</div>
-						</div>
-						<div className="relative z-0 md:mt-12 w-[16rem] overflow-clip aspect-square md:me-24 md:w-[54rem]">
+					<div className="flex z-10 flex-col gap-10 mt-12 rounded-xl md:gap-20 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+						<h1 className="self-end text-2xl uppercase md:text-5xl">Charlie</h1>
+						<p className="text-sm md:text-base indent-12">{about_charlie[0]}</p>
+						<p className="text-sm md:text-base indent-12">{about_charlie[1]}</p>
+					</div>
+				</div>
+
+				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end md:pb-20">
+					<div className="flex flex-col gap-6 py-12 md:py-0 max-w-screen">
+						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
 								priority
 								src={charlie_ls_2}
@@ -121,29 +96,26 @@ const Dogs = () => {
 							/>
 						</div>
 					</div>
+
+					<div className="flex z-10 flex-col gap-10 mb-28 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+						<p className="text-sm md:text-base indent-12">
+							{about_charlie_2[0]}
+						</p>
+						<p className="text-sm md:text-base indent-12">
+							{about_charlie_2[1]}
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div className="flex flex-col px-4 mb-36">
+				<div className="flex flex-row pt-10 grow">
+					<div className="divider" />
 				</div>
 
-				<div className="mt-24 divider md:-ms-52 md:min-w-[52vw]" />
-
-				<div className="flex flex-col gap-16 w-full">
-					<h2 className="self-start text-4xl md:px-72 md:pt-16 md:text-6xl">
-						MILLIE
-					</h2>
-					<div className="flex flex-col-reverse gap-4 items-center w-full md:flex-row md:justify-between">
-						<div className="flex justify-center w-full md:h-[32rem]">
-							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
-								{about_millie.map((section) => (
-									<p
-										key={section}
-										className="md:w-[70%] indent-6 text-sm md:text-base"
-									>
-										{section}
-									</p>
-								))}
-							</div>
-						</div>
-
-						<div className="relative z-0 md:mt-12 w-[16rem] overflow-clip aspect-square md:me-24 md:w-[54rem]">
+				<div className="flex flex-col justify-start items-center pt-20 md:flex-row md:justify-evenly md:items-start">
+					<div className="flex flex-col gap-6 max-w-screen">
+						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
 								priority
 								src={millie_ls_2}
@@ -155,30 +127,34 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-4 items-center w-full md:flex-row md:justify-between">
-						<div className="relative z-0 md:mt-12 w-[16rem] overflow-clip aspect-square md:ms-24 md:w-[54rem]">
+					<div className="flex z-10 flex-col gap-10 mt-12 rounded-xl md:gap-20 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+						<h1 className="self-end text-2xl uppercase md:text-5xl">Millie</h1>
+						<p className="text-sm md:text-base indent-12">{about_millie[0]}</p>
+						<p className="text-sm md:text-base indent-12">{about_millie[1]}</p>
+					</div>
+				</div>
+
+				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end md:pb-20">
+					<div className="flex flex-col gap-6 py-12 md:py-0 max-w-screen">
+						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
 								priority
 								src={millie_ls_1}
 								alt="Circle Image"
 								fill={true}
-								className="object-cover rounded-full aspect-square"
+								className="object-cover rounded-full"
 								sizes="100vw"
 							/>
 						</div>
+					</div>
 
-						<div className="flex justify-center w-full md:h-[32rem]">
-							<div className="flex flex-col flex-grow gap-8 justify-center items-center">
-								{about_millie_2.map((section) => (
-									<p
-										key={section}
-										className="md:w-[70%] indent-6 text-sm md:text-base"
-									>
-										{section}
-									</p>
-								))}
-							</div>
-						</div>
+					<div className="flex z-10 flex-col gap-10 mb-28 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+						<p className="text-sm md:text-base indent-12">
+							{about_millie_2[0]}
+						</p>
+						<p className="text-sm md:text-base indent-12">
+							{about_millie_2[1]}
+						</p>
 					</div>
 				</div>
 			</div>

@@ -177,7 +177,7 @@ const Ellie = () => {
 				</div>
 				<div className="flex flex-col gap-8 md:mt-36 md:max-w-[48vw]">
 					<p className="text-sm md:text-base indent-12">{about_ellie_pt2[3]}</p>
-					<p className="text-sm text-center md:text-base">
+					<p className="pt-12 text-sm text-center md:mx-32 md:text-base">
 						{about_ellie_pt2[4]}
 					</p>
 					<p className="text-sm text-center md:text-base">
