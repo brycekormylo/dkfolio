@@ -3,82 +3,82 @@
 @tailwind utilities;
 
 :root {
-  scrollbar-width: thin;
-  scrollbar-color: #a3a996 rgba(255, 255, 255, 0);
+	scrollbar-width: thin;
+	scrollbar-color: #a3a996 rgba(255, 255, 255, 0);
 }
 
 * {
-  min-width: 0;
-  margin: 0;
+	min-width: 0;
+	margin: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 html,
 body {
-  background-color: #f1eee4;
+	background-color: #f1eee4;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 .stack {
-  display: grid;
-  width: 100vw;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  grid-template-areas: "stack";
+	display: grid;
+	width: 100vw;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	grid-template-areas: "stack";
 }
 
 .stack > * {
-  grid-area: "stack";
+	grid-area: "stack";
 }
 
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
+	animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+	animation-duration: 2.5s; /* Change to speed up or slow down */
+	animation-iteration-count: infinite; /* Never stop waving :) */
+	transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+	display: inline-block;
 }
 
 @keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  5% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  10% {
-    transform: rotate(-8deg);
-  }
-  15% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-4deg);
-  }
-  25% {
-    transform: rotate(10deg);
-  }
-  30% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(14deg);
+	} /* The following five values can be played with to make the waving more or less extreme */
+	10% {
+		transform: rotate(-8deg);
+	}
+	15% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-4deg);
+	}
+	25% {
+		transform: rotate(10deg);
+	}
+	30% {
+		transform: rotate(0deg);
+	} /* Reset for the last half to pause */
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
 @layer components {
-  .neo {
-    @apply hover:scale-[1.02] hover:bg-gradient-to-br hover:from-[#d9d6cd4e] hover:to-[#fffff43c] hover:shadow-neo active:scale-[1.02] active:shadow-neo dark:hover:from-[] dark:hover:to-[] dark:hover:shadow-neodark [&_*]:transition-all [&_*]:ease-linear;
-  }
-  .divider {
-    @apply h-[1px] w-[61vw] bg-ash md:w-[40vw];
-  }
+	.neo {
+		@apply duration-75 hover:scale-[1.02] hover:bg-gradient-to-br hover:from-[#d9d6cd4e] hover:to-[#fffff43c] hover:shadow-neo active:scale-[1.02] active:shadow-neo dark:hover:from-[] dark:hover:to-[] dark:hover:shadow-neodark [&_*]:transition-all [&_*]:ease-linear;
+	}
+	.divider {
+		@apply h-[1px] w-[61vw] bg-ash md:w-[40vw];
+	}
 }

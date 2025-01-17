@@ -84,7 +84,7 @@ const Dogs = () => {
 				</div>
 
 				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end">
-					<div className="flex flex-col gap-6 py-12 md:py-0 max-w-screen">
+					<div className="flex flex-col gap-6 pt-12 md:py-0 max-w-screen">
 						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
 								priority
@@ -97,7 +97,7 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex z-10 flex-col gap-10 mb-28 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+					<div className="flex z-10 flex-col gap-10 rounded-xl md:mb-28 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
 						<p className="text-sm md:text-base indent-12">
 							{about_charlie_2[0]}
 						</p>
@@ -109,7 +109,7 @@ const Dogs = () => {
 			</div>
 
 			<div className="flex flex-col px-4 mb-12">
-				<div className="flex flex-row pt-10 grow">
+				<div className="flex flex-row md:pt-10 grow">
 					<div className="divider" />
 				</div>
 
@@ -148,7 +148,7 @@ const Dogs = () => {
 						</div>
 					</div>
 
-					<div className="flex z-10 flex-col gap-10 mb-28 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+					<div className="flex z-10 flex-col gap-10 rounded-xl md:mb-28 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
 						<p className="text-sm md:text-base indent-12">
 							{about_millie_2[0]}
 						</p>
