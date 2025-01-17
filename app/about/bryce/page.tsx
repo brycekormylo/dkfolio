@@ -22,7 +22,7 @@ const Bryce = () => {
 			<div className="flex flex-row pt-10 grow">
 				<div className="divider" />
 			</div>
-			<div className="flex flex-col justify-start items-center pt-20 md:flex-row md:justify-evenly md:items-start md:pb-20">
+			<div className="flex flex-col justify-start items-center pt-20 mb-12 md:flex-row md:justify-evenly md:items-start">
 				<div className="flex flex-col gap-6 max-w-screen">
 					<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 						<Image
@@ -43,7 +43,7 @@ const Bryce = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col justify-start items-center pt-20 md:flex-row-reverse md:justify-evenly md:items-start md:pb-20">
+			<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-start md:pb-20">
 				<div className="flex flex-col gap-6 max-w-screen">
 					<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 						<Image
@@ -67,7 +67,7 @@ const Bryce = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							check out my work
+							{"check out my work"}
 						</a>
 						{conclusionPt2}
 					</p>

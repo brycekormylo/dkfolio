@@ -63,15 +63,41 @@ const Ellie = () => {
 				<div className="divider" />
 			</div>
 			<div className="flex flex-col justify-start items-center px-2 pt-20 md:flex-row-reverse md:justify-evenly md:items-start">
-				<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
-					<Image
-						priority
-						src={ellie_overlook}
-						alt="Circle Image"
-						fill={true}
-						className="object-cover rounded-full"
-						sizes="100vw"
-					/>
+				<div className="flex flex-col items-end h-72">
+					<div className="relative w-[16rem] aspect-square md:w-[36rem]">
+						<Image
+							priority
+							src={ellie_overlook}
+							alt="Circle Image"
+							fill={true}
+							className="object-cover rounded-full"
+							sizes="100vw"
+						/>
+					</div>
+
+					<div className="flex gap-8 pt-4">
+						<div className="hidden relative md:block w-[16rem] aspect-square md:w-[16rem] md:h-[16rem]">
+							<Image
+								priority
+								src={ellie_overlook}
+								alt="Circle Image"
+								fill={true}
+								className="object-cover rounded-full"
+								sizes="100vw"
+							/>
+						</div>
+
+						<div className="hidden relative mt-36 md:block w-[16rem] aspect-square md:w-[24rem]">
+							<Image
+								priority
+								src={ellie_overlook}
+								alt="Circle Image"
+								fill={true}
+								className="object-cover rounded-full"
+								sizes="100vw"
+							/>
+						</div>
+					</div>
 				</div>
 
 				<div className="flex z-10 flex-col gap-8 justify-between p-2 rounded-xl md:mt-12 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
@@ -96,7 +122,7 @@ const Ellie = () => {
 			</div>
 
 			<div className="mt-12 md:mt-40 divider" />
-			<div className="flex justify-center my-12 mx-2 md:my-32">
+			<div className="flex justify-center my-12 mx-2 md:my-32 md:mt-40 md:me-64">
 				<div className="flex flex-col gap-4 items-start self-center py-4 px-4 rounded-2xl md:py-16 md:px-28 bg-timber shadow-neo dark:bg-smoke dark:shadow-neodark">
 					<h2 className="text-2xl text-center md:pb-2 md:text-3xl md:text-start">
 						{education.title}
