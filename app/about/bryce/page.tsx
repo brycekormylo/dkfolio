@@ -45,7 +45,7 @@ const Bryce = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end md:pb-20 md:-mt-24">
+			<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end md:pb-20 md:-mt-12">
 				<div className="flex flex-col gap-6 py-12 md:py-0 max-w-screen">
 					<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 						<Image

@@ -37,7 +37,7 @@ const Dogs = () => {
 			<div className="flex flex-row-reverse pt-10 grow">
 				<div className="divider" />
 			</div>
-			<div className="flex flex-col justify-start items-center px-2 md:flex-row-reverse md:justify-evenly md:items-start md:pb-12 -mt-[4rem] md:-mt-[10rem]">
+			<div className="flex flex-col justify-start items-center px-2 md:flex-row-reverse md:justify-evenly md:items-start -mt-[4rem] md:-mt-[10rem]">
 				<div className="flex flex-col">
 					<div className="flex flex-row justify-center md:mt-40 h-[44rem] w-[36rem] md:h-[36rem] md:w-[36rem]">
 						<CircleImage
@@ -57,7 +57,7 @@ const Dogs = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col px-4 mb-36">
+			<div className="flex flex-col px-4 mb-12">
 				<div className="flex flex-row pt-10 grow">
 					<div className="divider" />
 				</div>
@@ -83,7 +83,7 @@ const Dogs = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end md:pb-20">
+				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end">
 					<div className="flex flex-col gap-6 py-12 md:py-0 max-w-screen">
 						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
@@ -108,7 +108,7 @@ const Dogs = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col px-4 mb-36">
+			<div className="flex flex-col px-4 mb-12">
 				<div className="flex flex-row pt-10 grow">
 					<div className="divider" />
 				</div>
@@ -134,7 +134,7 @@ const Dogs = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end md:pb-20">
+				<div className="flex flex-col justify-start items-center md:flex-row-reverse md:justify-evenly md:items-end">
 					<div className="flex flex-col gap-6 py-12 md:py-0 max-w-screen">
 						<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 							<Image
