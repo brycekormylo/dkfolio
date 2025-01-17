@@ -70,7 +70,7 @@ const PuppyProject = () => {
 					</div>
 				</Parallax>
 
-				<div className="z-10 md:my-0 md:mb-20 -my-[7.5rem] md:me-20 md:max-w-[56vw]">
+				<div className="z-10 md:my-0 md:mb-20 -my-[7.5rem] md:me-12 md:max-w-[56vw]">
 					<div className="flex flex-col gap-6 p-2 rounded-xl bg-timber/50 dark:bg-smoke/50">
 						{PuppyProjectIntro.map((section) => (
 							<p

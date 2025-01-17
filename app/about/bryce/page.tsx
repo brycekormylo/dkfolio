@@ -37,7 +37,7 @@ const Bryce = () => {
 					</div>
 				</div>
 
-				<div className="flex z-10 flex-col gap-10 mt-12 rounded-xl md:gap-20 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+				<div className="flex z-10 flex-col gap-10 mt-12 rounded-xl md:gap-20 bg-timber/75 md:max-w-[52vw] dark:bg-smoke/75">
 					<h1 className="self-end text-2xl uppercase md:text-5xl">
 						Hi, I&apos;m Bryce
 					</h1>
