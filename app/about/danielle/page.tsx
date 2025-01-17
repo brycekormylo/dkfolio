@@ -59,8 +59,11 @@ const Ellie = () => {
 	const ellie_overlook = getImage("ellie_overlook").url;
 	return (
 		<div className="flex flex-col">
-			<div className="flex flex-col justify-start items-center px-2 pt-20 md:flex-row-reverse md:justify-evenly md:items-start md:pt-32">
-				<div className="relative z-0 md:mt-24 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
+			<div className="flex flex-row-reverse pt-10 grow">
+				<div className="divider" />
+			</div>
+			<div className="flex flex-col justify-start items-center px-2 pt-20 md:flex-row-reverse md:justify-evenly md:items-start">
+				<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 					<Image
 						priority
 						src={ellie_overlook}
@@ -71,7 +74,7 @@ const Ellie = () => {
 					/>
 				</div>
 
-				<div className="flex z-10 flex-col gap-8 justify-between p-2 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+				<div className="flex z-10 flex-col gap-8 justify-between p-2 rounded-xl md:mt-12 bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
 					<h1 className="self-start px-4 pt-12 text-3xl uppercase md:px-12 md:pt-0 md:text-5xl">
 						{"Hiya, I'm Danielle"}
 					</h1>

@@ -34,6 +34,9 @@ const Dogs = () => {
 
 	return (
 		<div className="flex flex-col mb-40 w-full">
+			<div className="flex flex-row-reverse pt-10 grow">
+				<div className="divider" />
+			</div>
 			<div className="flex flex-col justify-start items-center px-2 md:flex-row-reverse md:justify-evenly md:items-start md:pb-12 -mt-[4rem] md:-mt-[10rem]">
 				<div className="flex flex-col">
 					<div className="flex flex-row justify-center md:mt-40 h-[44rem] w-[36rem] md:h-[36rem] md:w-[36rem]">

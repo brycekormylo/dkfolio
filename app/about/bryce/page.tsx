@@ -12,14 +12,17 @@ const about_bryce = [
 const conclusionPt1 =
 	"I’m equipped to fill a variety of roles and build projects with both detail and scale in mind.  Beyond the assistance I provide as a second shooter, my skills in website development and design complement our business, helping showcase Danielle’s photography and services.  I built and maintain this website among several other larger scale projects, ";
 const conclusionPt2 =
-	"! If you’ve got a project, I’m always looking for new opportunities. Check my website for contact info if you'd like to discuss more.";
+	"! Check my website for contact info if you'd like to discuss anything. If you’ve got a project, I’m always looking for new opportunities.";
 
 const Bryce = () => {
 	const { getImage } = useImage();
 	const bryce = getImage("bryce").url;
 	return (
-		<div className="flex flex-col gap-4 px-4 pt-20 mb-36">
-			<div className="flex flex-col justify-start items-center md:flex-row md:justify-evenly md:items-start md:pb-20">
+		<div className="flex flex-col gap-4 px-4 mb-36">
+			<div className="flex flex-row pt-10 grow">
+				<div className="divider" />
+			</div>
+			<div className="flex flex-col justify-start items-center pt-20 md:flex-row md:justify-evenly md:items-start md:pb-20">
 				<div className="flex flex-col gap-6 max-w-screen">
 					<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 						<Image
@@ -40,20 +43,35 @@ const Bryce = () => {
 				</div>
 			</div>
 
-			<div className="flex z-10 flex-col gap-4 justify-between self-center rounded-xl md:gap-10 bg-timber/75 md:max-w-[72vw] dark:bg-smoke/75">
-				<p className="text-sm md:text-base indent-12">{about_bryce[1]}</p>
-				<p className="text-sm md:text-base indent-12">
-					{conclusionPt1}
-					<a
-						className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
-						href={"https://www.brycekormylo.me/"}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						check out my work
-					</a>
-					{conclusionPt2}
-				</p>
+			<div className="flex flex-col justify-start items-center pt-20 md:flex-row-reverse md:justify-evenly md:items-start md:pb-20">
+				<div className="flex flex-col gap-6 max-w-screen">
+					<div className="relative z-0 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
+						<Image
+							priority
+							src={bryce}
+							alt="Circle Image"
+							fill={true}
+							className="object-cover rounded-full"
+							sizes="100vw"
+						/>
+					</div>
+				</div>
+
+				<div className="flex z-10 flex-col gap-10 mt-12 rounded-xl bg-timber/75 md:max-w-[56vw] dark:bg-smoke/75">
+					<p className="text-sm md:text-base indent-12">{about_bryce[1]}</p>
+					<p className="text-sm md:text-base indent-12">
+						{conclusionPt1}
+						<a
+							className="font-regular border-b-[1px] border-b-smoke dark:border-b-timber"
+							href={"https://www.brycekormylo.me/"}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							check out my work
+						</a>
+						{conclusionPt2}
+					</p>
+				</div>
 			</div>
 		</div>
 	);
