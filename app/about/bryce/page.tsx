@@ -12,7 +12,7 @@ const about_bryce = [
 const conclusionPt1 =
 	"I’m equipped to fill a variety of roles and build projects with both detail and scale in mind.  Beyond the assistance I provide as a second shooter, my skills in website development and design complement our business, helping showcase Danielle’s photography and services.  I built and maintain this website among several other larger scale projects, ";
 const conclusionPt2 =
-	"! Check my website for contact info if you'd like to discuss anything. If you’ve got a project, I’m always looking for new opportunities.";
+	"! Take a look at my website for contact info if you'd like to discuss a project, I’m always looking for new opportunities.";
 
 const Bryce = () => {
 	const { getImage } = useImage();
