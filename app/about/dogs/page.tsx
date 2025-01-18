@@ -3,6 +3,7 @@
 import CircleImage from "@/app/(components)/circle_image";
 import Image from "next/image";
 import { useImage } from "@/context/image-provider";
+import Link from "next/link";
 
 const about_charlie = [
 	"Charlie, our resident Ravenclaw, is an Australian shepherd who thrives on both physical and mental challenges. She delights in road trips, is a whiz at frisbee, absolutely loves to show off for an audience, and will do anything for top-notch snacks! Charlie has lived in Utah, Ontario, and now California. She has travelled by car and plane, and although she has loved ones in multiple places, California has stolen her heart! The literal moment we crossed the state line on our move down here driving from New York, she could smell the Sierras and was MEGA excited, having visited only once as a puppy. She couldn’t settle down until we got to a local dog park in the Bay Area three hours later lol.",
@@ -103,6 +104,18 @@ const Dogs = () => {
 						</p>
 						<p className="text-sm md:text-base indent-12">
 							{about_charlie_2[1]}
+						</p>
+
+						<p className="text-sm md:text-base indent-12">
+							{about_charlie_2[2]}
+							<Link
+								href={"https://www.instagram.com/kormylopuppyproject"}
+								rel="noopener noreferrer"
+								target="_blank"
+								className="underline"
+							>
+								instagram!
+							</Link>
 						</p>
 					</div>
 				</div>
