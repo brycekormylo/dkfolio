@@ -29,7 +29,7 @@ const Selector = () => {
 		},
 	];
 	return (
-		<div className="flex flex-row justify-center gap-2 py-4 md:gap-[9rem] md:py-10 [&_*]:transition-all [&_*]:ease-linear">
+		<div className="flex flex-row justify-evenly gap-2 py-4 md:py-10 [&_*]:transition-all [&_*]:ease-linear">
 			{SelectorItems.map((item) => (
 				<Link
 					key={item.name}
