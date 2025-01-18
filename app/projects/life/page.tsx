@@ -67,7 +67,7 @@ const Life = () => {
 						/>
 					</div>
 
-					<div className="flex flex-col px-4 mt-8 w-full gap-[2rem] indent-6 md:me-24 md:max-w-[56vw] md:mt-[5rem]">
+					<div className="flex flex-col px-4 mt-8 w-full gap-[2rem] indent-6 md:me-24 md:max-w-[52vw] md:mt-[7rem]">
 						<p>{text}</p>
 						<p>{text2}</p>
 						<p>

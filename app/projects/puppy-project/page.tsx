@@ -52,7 +52,7 @@ const PuppyProject = () => {
 
 	return (
 		<div className="flex overflow-hidden flex-col gap-12 max-w-screen">
-			<h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-20 md:text-5xl">
+			<h1 className="self-end px-2 pt-10 text-2xl uppercase md:px-16 md:text-5xl">
 				Puppy Project
 			</h1>
 
@@ -96,7 +96,7 @@ const PuppyProject = () => {
 
 			<div className="flex flex-col gap-6 pt-8 md:-mt-20 md:gap-12 md:pt-0 [&_*]:transition-all [&_*]:ease-linear">
 				<div className="self-start divider" />
-				<h1 className="self-start mx-4 text-2xl uppercase md:mx-20 md:text-5xl">
+				<h1 className="self-start mx-4 text-2xl uppercase md:mx-20 md:text-5xl md:ps-14">
 					Lily&apos;s Legacy
 				</h1>
 				<div className="flex justify-start px-2">
