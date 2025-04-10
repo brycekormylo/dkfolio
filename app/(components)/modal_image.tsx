@@ -34,7 +34,7 @@ const ModalImage = ({ src, className }: ImageProps) => {
 				<button
 					type="button"
 					onClick={toggleModal}
-					className="fixed top-0 left-0 z-50 w-full h-full bg-timber/85 backdrop-blur-lg dark:bg-smoke/85"
+					className="fixed top-0 left-0 z-50 w-full h-full bg-white/85 backdrop-blur-lg dark:bg-black/85"
 				>
 					<Image
 						src={src}
