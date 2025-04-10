@@ -28,7 +28,6 @@ a {
 
 .stack {
 	display: grid;
-	width: 100vw;
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;

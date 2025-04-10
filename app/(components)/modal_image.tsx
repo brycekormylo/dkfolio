@@ -16,20 +16,23 @@ const ModalImage = ({ src, className }: ImageProps) => {
 	};
 
 	return (
-		<button
-			type="button"
-			onClick={toggleModal}
-			className={`relative ${className}`}
-		>
-			<Image
-				src={src}
-				fill={true}
-				className="object-fill"
-				alt="Portfolio Image"
-				sizes="100vw"
-			/>
+		<div className="stack">
+			<button
+				type="button"
+				onClick={toggleModal}
+				className={`relative ${className}`}
+			>
+				<Image
+					src={src}
+					fill={true}
+					className="object-fill stack"
+					alt={`${src.toString()}`}
+					sizes="100vw, 50vw, 33vw"
+				/>
+			</button>
 			{isModalVisible && (
-				<div
+				<button
+					type="button"
 					onClick={toggleModal}
 					className="fixed top-0 left-0 z-50 w-full h-full bg-timber/85 backdrop-blur-lg dark:bg-smoke/85"
 				>
@@ -40,10 +43,11 @@ const ModalImage = ({ src, className }: ImageProps) => {
 						alt="Fullscreen Image"
 						className="p-4"
 						sizes="100vw"
+						priority
 					/>
-				</div>
+				</button>
 			)}
-		</button>
+		</div>
 	);
 };
 
