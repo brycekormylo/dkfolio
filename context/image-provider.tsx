@@ -2,13 +2,12 @@
 
 import React, { createContext, useContext, type ReactNode } from "react";
 import imageData from "../public/img/images_fg.json";
-import bannerData from "../public/img/banners.json";
+import bannerData from "../public/img/banners_fg.json";
 import puppyProjectData from "../public/img/puppy_project_fg.json";
 
 export interface ImageData {
 	name: string;
 	url: string;
-	delete_url: string;
 }
 
 interface ImageContextProps {
