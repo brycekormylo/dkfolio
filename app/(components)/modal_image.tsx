@@ -30,6 +30,7 @@ const ModalImage = ({ src, className }: ImageProps) => {
 					sizes="100vw, 50vw, 33vw"
 				/>
 			</button>
+
 			{isModalVisible && (
 				<button
 					type="button"

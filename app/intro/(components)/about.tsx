@@ -20,17 +20,19 @@ const About = () => {
 		<div className="flex flex-col">
 			<div className="absolute self-end translate -translate-x-[-16rem]">
 				<Parallax rotate={[-135, -45]}>
-					<div className="rounded-full translate h-[36rem] w-[36rem] -translate-y-[10rem] bg-ash/25"></div>
+					<div className="rounded-full translate h-[36rem] w-[36rem] -translate-y-[10rem] bg-ash/25" />
 				</Parallax>
 			</div>
+
 			<div className="flex flex-row gap-8 justify-between px-2 md:p-10">
 				<div className="flex flex-col justify-center md:max-w-[60%] [&_*]:transition-all [&_*]:ease-linear">
 					<div className="flex flex-col gap-8 py-6 px-2 rounded-xl md:py-12 md:px-8 bg-timber/75 indent-6 shadow-neo dark:bg-smoke/75 dark:shadow-neodark">
-						{AboutMeIntro.map((section, i) => (
-							<p key={i} className="text-xs md:text-base">
+						{AboutMeIntro.map((section) => (
+							<p key={section} className="text-xs md:text-base">
 								{section}
 							</p>
 						))}
+
 						<Link
 							href="about"
 							className="z-10 self-end py-2 px-4 rounded-xl neo bg-ash/25"
@@ -42,6 +44,7 @@ const About = () => {
 						</Link>
 					</div>
 				</div>
+
 				<div className="hidden relative md:block md:translate-x-40 h-[20rem] w-[20rem] md:h-[32rem] md:w-[32rem]">
 					<Image
 						src={us_photo.url}

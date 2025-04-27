@@ -153,6 +153,7 @@ const Ellie = () => {
 						</p>
 					))}
 				</div>
+
 				<div className="relative z-0 md:mt-12 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 					<Image
 						priority
@@ -176,6 +177,7 @@ const Ellie = () => {
 						sizes="100vw"
 					/>
 				</div>
+
 				<div className="flex flex-col gap-8 md:mt-36 md:max-w-[48vw]">
 					<p className="text-sm md:text-base indent-12">{about_ellie_pt2[3]}</p>
 					<p className="text-sm md:text-base indent-12">{about_ellie_pt2[4]}</p>
