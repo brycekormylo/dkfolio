@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, type ReactNode } from "react";
+import { createContext, useContext } from "react";
 import imageData from "../public/img/images_fg.json";
 import bannerData from "../public/img/banners_fg.json";
 import puppyProjectData from "../public/img/puppy_project_fg.json";
@@ -20,7 +20,7 @@ interface ImageContextProps {
 const ImageContext = createContext<ImageContextProps | undefined>(undefined);
 
 interface ImageProviderProps {
-	children: ReactNode;
+	children: React.ReactNode;
 }
 
 const ImageProvider = ({ children }: ImageProviderProps) => {
@@ -28,26 +28,29 @@ const ImageProvider = ({ children }: ImageProviderProps) => {
 	const bannerImages = new Map<string, ImageData>();
 	const puppyProjectImages = new Map<string, ImageData>();
 
-	imageData.forEach((element) => {
-		const key = element.name?.split(".").at(0);
-		key && images.set(key, element);
-	});
+	const createImageMaps = () => {
+		for (const element of imageData) {
+			const key = element.name.split(".").at(0);
+			key && images.set(key, element);
+		}
 
-	puppyProjectData.forEach((element) => {
-		const key = element.name.split(".").at(0);
-		key && puppyProjectImages.set(key, element);
-	});
+		for (const element of puppyProjectData) {
+			const key = element.name.split(".").at(0);
+			key && puppyProjectImages.set(key, element);
+		}
 
-	bannerData.forEach((element) => {
-		const key = element.name.split(".").at(0);
-		key && bannerImages.set(key, element);
-	});
+		for (const element of bannerData) {
+			const key = element.name.split(".").at(0);
+			key && bannerImages.set(key, element);
+		}
+	};
+
+	createImageMaps();
 
 	const getImage = (name: string) => {
 		const image = images.get(name) ?? {
 			name: "Not found",
 			url: "",
-			delete_url: "",
 		};
 		return image;
 	};
@@ -56,7 +59,6 @@ const ImageProvider = ({ children }: ImageProviderProps) => {
 		const image = bannerImages.get(name) ?? {
 			name: "Not found",
 			url: "",
-			delete_url: "",
 		};
 		return image;
 	};
@@ -65,7 +67,6 @@ const ImageProvider = ({ children }: ImageProviderProps) => {
 		const image = puppyProjectImages.get(name) ?? {
 			name: "Not found",
 			url: "",
-			delete_url: "",
 		};
 		return image;
 	};

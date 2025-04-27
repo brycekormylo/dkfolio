@@ -46,6 +46,7 @@ const Selector = () => {
 							sizes="33vw"
 						/>
 					</div>
+
 					<div className="flex justify-center rounded-full md:h-10 md:w-50">
 						<h2 className="self-center text-center md:text-2xl text-md">
 							{item.name}
