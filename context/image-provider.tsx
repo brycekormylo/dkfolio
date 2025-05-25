@@ -49,8 +49,8 @@ const ImageProvider = ({ children }: ImageProviderProps) => {
 
 	const getImage = (name: string) => {
 		const image = images.get(name) ?? {
-			name: "Not found",
-			url: "",
+			name: name,
+			url: `https://file.garden/Z_cwVckjxktxt8Cu/portfolio/${name}.jpg`,
 		};
 		return image;
 	};

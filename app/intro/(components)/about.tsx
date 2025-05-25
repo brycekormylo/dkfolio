@@ -15,10 +15,11 @@ const AboutMeIntro = [
 const About = () => {
 	const { getImage } = useImage();
 
-	const us_photo = getImage("be_close_up");
+	const us_photo = getImage("fine_art_portrait_chels").url;
+
 	return (
 		<div className="flex flex-col">
-			<div className="absolute self-end translate -translate-x-[-16rem]">
+			<div className="absolute self-end translate -translate-x-[-12rem]">
 				<Parallax rotate={[-135, -45]}>
 					<div className="rounded-full translate h-[36rem] w-[36rem] -translate-y-[10rem] bg-ash/25" />
 				</Parallax>
@@ -45,12 +46,12 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="hidden relative md:block md:translate-x-40 h-[20rem] w-[20rem] md:h-[32rem] md:w-[32rem]">
+				<div className="hidden relative md:block md:translate-x-20 h-[20rem] w-[20rem] md:h-[32rem] md:w-[32rem]">
 					<Image
-						src={us_photo.url}
+						src={us_photo}
 						alt="Circle Image"
 						fill={true}
-						className="object-cover rounded-full"
+						className="object-fill rounded-full"
 						sizes="100vw"
 					/>
 				</div>

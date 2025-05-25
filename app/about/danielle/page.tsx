@@ -58,6 +58,10 @@ const about_ellie_pt2 = [
 const Ellie = () => {
 	const { getImage } = useImage();
 	const ellie_overlook = getImage("ellie_overlook").url;
+	const bw_be_beach_chels = getImage("bw_be_beach_chels").url;
+	const bw_hammock_chels = getImage("bw_hammock_chels").url;
+	const fine_art_portrait_chels = getImage("fine_art_portrait_chels").url;
+
 	return (
 		<div className="flex flex-col">
 			<div className="flex flex-row-reverse pt-10 grow">
@@ -80,7 +84,7 @@ const Ellie = () => {
 						<div className="hidden relative md:block w-[16rem] aspect-square md:w-[16rem] md:h-[16rem]">
 							<Image
 								priority
-								src={ellie_overlook}
+								src={fine_art_portrait_chels}
 								alt="Circle Image"
 								fill={true}
 								className="object-cover rounded-full"
@@ -88,13 +92,13 @@ const Ellie = () => {
 							/>
 						</div>
 
-						<div className="hidden relative mt-36 md:block w-[16rem] aspect-square md:w-[24rem]">
+						<div className="hidden relative mt-36 rounded-full md:block h-[16rem] overflow-clip w-[16rem] md:h-[24rem] md:w-[24rem]">
 							<Image
 								priority
-								src={ellie_overlook}
+								src={bw_hammock_chels}
 								alt="Circle Image"
 								fill={true}
-								className="object-cover rounded-full"
+								className="object-cover object-bottom"
 								sizes="100vw"
 							/>
 						</div>
@@ -170,7 +174,7 @@ const Ellie = () => {
 				<div className="relative z-0 md:mt-20 h-[16rem] w-[16rem] md:h-[36rem] md:w-[36rem]">
 					<Image
 						priority
-						src={ellie_overlook}
+						src={bw_be_beach_chels}
 						alt="Circle Image"
 						fill={true}
 						className="object-cover rounded-full"
